@@ -42,6 +42,16 @@ name = "Blog"
 url = "https://velog.io/@azzurri21"
 weight = 20
 
+[[menu.after]]
+name = "Study"
+url = "https://jseoplim.notion.site"
+weight = 30
+
+[[menu.after]]
+name = "Contact"
+url = "mailto:jseoplim@gmail.com"
+weight = 40
+
 [params]
 # (Optional, default light) Sets color theme: light, dark or auto.
 # Theme 'auto' switches between dark and light modes based on browser/os preferences
