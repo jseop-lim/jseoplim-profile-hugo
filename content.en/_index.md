@@ -39,14 +39,14 @@ I’m interested in programming languages, software engineering, machine learnin
 
 ## Education
 
-- **Bachelor of Science**, Korea University (2020.03 - 2026.02)
+- **Bachelor of Science**, Korea University (2020.03 - 2026.02)  
   Industrial and Management Engineering & Computer Science and Engineering
 
 ---
 
 ## Experience
 
-- **Backend Developer**, 8PERCENT, Inc. (2022.08 - 2024.08)
+- **Backend Developer**, 8PERCENT, Inc. (2022.08 - 2024.08)  
   - Established a onboarding program for backend developers
   - Redesigned a legacy loan application system
   - Upgraded the backend framework from Django 3.2 to 4.1
@@ -56,7 +56,7 @@ I’m interested in programming languages, software engineering, machine learnin
 
 ## Publications
 
-- **"에잇퍼센트 백엔드 개발자로 합류할 당신에게"**, 8PERCENT Tech Blog (2024).
+- **"에잇퍼센트 백엔드 개발자로 합류할 당신에게"**, 8PERCENT Tech Blog (2024).  
   Explored onboarding strategies for backend developers and shared insights on setting up efficient development workflows.
   
   {{<button href="https://8percent.github.io/2024-07-14/%EB%B0%B1%EC%97%94%EB%93%9C-%EC%98%A8%EB%B3%B4%EB%94%A9-%EC%88%98%EB%A6%BD/" target="_blank" rel="noopener noreferrer">}}Website{{</button>}}
