@@ -43,14 +43,19 @@ url = "https://velog.io/@azzurri21"
 weight = 20
 
 [[menu.after]]
+name = "Projects"
+url = "https://jseoplim.notion.site/project"
+weight = 30
+
+[[menu.after]]
 name = "Study"
 url = "https://jseoplim.notion.site"
-weight = 30
+weight = 40
 
 [[menu.after]]
 name = "Contact"
 url = "mailto:jseoplim@gmail.com"
-weight = 40
+weight = 50
 
 [params]
 # (Optional, default light) Sets color theme: light, dark or auto.
