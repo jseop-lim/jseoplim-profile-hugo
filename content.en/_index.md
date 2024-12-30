@@ -41,16 +41,18 @@ I’m interested in programming languages, software engineering, machine learnin
 
 ## Education
 
-- **Bachelor of Science**, Korea University (2020.03 - 2026.02)  
-  Industrial and Management Engineering & Computer Science and Engineering
+- **Bachelor of Science**, [Korea University](https://www.korea.ac.kr/sites/ko/index.do) (2020.03 - 2026.02)  
+  [College of Engineering](https://eng.korea.ac.kr/main/main.html), [Industrial and Management Engineering](https://ie.korea.ac.kr/ie/index.do)  
+  [College of Informatics](https://info.korea.ac.kr/info/index.do), [Computer Science and Engineering](https://cs.korea.ac.kr/cs/index.do) (Double Major)
 
-- **Daegu Science High School for the Gifted** (2016.02 - 2019.02)  
+- **[Daegu Science High School for the Gifted](https://dshs.dge.hs.kr/dshsh/main.do)** (2016.02 - 2019.02)  
 
 ---
 
 ## Experience
 
-- **Backend Developer**, 8PERCENT, Inc. (2022.08 - 2024.08)  
+- **Backend Developer**, [8PERCENT, Inc.](https://8percent.kr/) (2022.08 - 2024.08)  
+  Skilled Industrial Personnel (산업기능요원)
   - Established a onboarding program for backend developers
   - Redesigned a legacy loan application system
   - Upgraded the backend framework from Django 3.2 to 4.1
@@ -64,3 +66,10 @@ I’m interested in programming languages, software engineering, machine learnin
   Explored onboarding strategies for backend developers and shared insights on setting up efficient development workflows.
   
   {{<button href="https://8percent.github.io/2024-07-14/%EB%B0%B1%EC%97%94%EB%93%9C-%EC%98%A8%EB%B3%B4%EB%94%A9-%EC%88%98%EB%A6%BD/" target="_blank" rel="noopener noreferrer">}}Website{{</button>}}
+
+---
+
+## Honors & Awards
+
+- **The National Scholarship for Science and Engineering**, [Korea Student Aid Foundation (KOSAF)](https://www.kosaf.go.kr/ko/main.do) (Spring 2022 - Fall 2025)  
+- **Dean's List**, [Korea University College of Engineering](https://eng.korea.ac.kr/main/main.html) (2022.02)
