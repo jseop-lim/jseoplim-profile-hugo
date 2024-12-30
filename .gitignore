@@ -1,0 +1,29 @@
+# Hugo 빌드 디렉토리
+/public/
+/resources/
+
+# Hugo 캐시 파일
+.hugo_build.lock
+
+# Netlify 배포 관련 백업 파일
+netlify.toml.backup
+
+# 로컬 환경 및 IDE 관련
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.idea/
+.vscode/
+
+# 운영 체제 별 임시 파일
+desktop.ini
+*~
+
+# 로그 파일
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Node.js 관련 (만약 사용 중인 경우)
+node_modules/
