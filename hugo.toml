@@ -33,7 +33,7 @@ weight = 1
 [menu]
 # [[menu.before]]
 [[menu.after]]
-name = "Github"
+name = "GitHub"
 url = "https://github.com/jseop-lim"
 weight = 10
 
