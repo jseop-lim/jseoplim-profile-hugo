@@ -41,16 +41,18 @@ I’m interested in programming languages, software engineering, machine learnin
 
 ## Education
 
-- **Bachelor of Science**, Korea University (2020.03 - 2026.02)  
-  Industrial and Management Engineering & Computer Science and Engineering
+- **Bachelor of Science**, [Korea University](https://www.korea.ac.kr/sites/ko/index.do) (2020.03 - 2026.02)  
+  [College of Engineering](https://eng.korea.ac.kr/main/main.html), [Industrial and Management Engineering](https://ie.korea.ac.kr/ie/index.do)  
+  [College of Informatics](https://info.korea.ac.kr/info/index.do), [Computer Science and Engineering](https://cs.korea.ac.kr/cs/index.do) (Double Major)
 
-- **Daegu Science High School for the Gifted** (2016.02 - 2019.02)  
+- **[Daegu Science High School for the Gifted](https://dshs.dge.hs.kr/dshsh/main.do)** (2016.02 - 2019.02)  
 
 ---
 
 ## Experience
 
-- **Backend Developer**, 8PERCENT, Inc. (2022.08 - 2024.08)  
+- **Backend Developer**, [8PERCENT, Inc.](https://8percent.kr/) (2022.08 - 2024.08)  
+  Skilled Industrial Personnel (산업기능요원)
   - Established a onboarding program for backend developers
   - Redesigned a legacy loan application system
   - Upgraded the backend framework from Django 3.2 to 4.1
