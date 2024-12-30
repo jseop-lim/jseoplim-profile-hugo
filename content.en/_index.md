@@ -33,6 +33,8 @@ Undergraduate Student at [Korea University](https://www.korea.ac.kr/sites/ko/ind
 
 {{% /columns %}}
 
+## About Me
+
 I’m interested in programming languages, software engineering, machine learning, and numerical optimization. With experience as a Python backend developer in the financial industry, I focus on creating clean and efficient software. I’m preparing for graduate studies in programming languages and look forward to starting research in this field.
 
 ---
@@ -41,6 +43,8 @@ I’m interested in programming languages, software engineering, machine learnin
 
 - **Bachelor of Science**, Korea University (2020.03 - 2026.02)  
   Industrial and Management Engineering & Computer Science and Engineering
+
+- **Daegu Science High School for the Gifted** (2016.02 - 2019.02)  
 
 ---
 
