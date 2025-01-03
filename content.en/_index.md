@@ -19,15 +19,7 @@ Undergraduate Student
 
 <i class="fas fa-envelope"></i> <jseoplim@gmail.com>
 
-{{<button href="/pdf/cv.pdf" target="_blank" rel="noopener noreferrer">}}
-  <i class="fas fa-file-pdf" style="color: #FD0E02; font-size: 1.2em;"></i> CV
-{{</button>}}  
-{{<button href="https://github.com/jseop-lim" target="_blank" rel="noopener noreferrer">}}
-  <i class="fab fa-github" style="color: #1A1F25; font-size: 1.2em;"></i> GitHub
-{{</button>}}
-{{<button href="https://www.linkedin.com/in/jseop-lim" target="_blank" rel="noopener noreferrer">}}
-  <i class="fab fa-linkedin" style="color: #0B66C2; font-size: 1.2em;"></i> LinkedIn
-{{</button>}}
+{{<button href="/pdf/cv.pdf" target="_blank" rel="noopener noreferrer">}}<i class="fas fa-file-pdf" style="color: #FD0E02; font-size: 1.2em;"></i> CV{{</button>}} {{<button href="https://github.com/jseop-lim" target="_blank" rel="noopener noreferrer">}}<i class="fab fa-github" style="color: #1A1F25; font-size: 1.2em;"></i> GitHub{{</button>}} {{<button href="https://www.linkedin.com/in/jseop-lim" target="_blank" rel="noopener noreferrer">}}<i class="fab fa-linkedin" style="color: #0B66C2; font-size: 1.2em;"></i> LinkedIn{{</button>}}
 
 <!-- <a href="/pdf/cv.pdf" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
   <i class="fas fa-file-pdf" style="color: #FD0E02; font-size: 1.2em;"></i> CV
@@ -40,6 +32,10 @@ Undergraduate Student
 </a> -->
 
 {{% /columns %}}
+
+
+{{< button relref="/" >}}Get Home{{< /button >}}
+{{< button href="<https://github.com/alex-shpak/hugo-book>" >}}Contribute{{< /button >}}
 
 ## About Me
 
