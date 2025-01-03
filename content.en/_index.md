@@ -11,17 +11,25 @@ type: docs
 
 <---> <!-- magic separator, between columns -->
 
-Undergraduate Student at [Korea University](https://www.korea.ac.kr/sites/ko/index.do)
+Undergraduate Student  
 
-[Industrial and Management Engineering](https://ie.korea.ac.kr/ie/index.do) & [Computer Science and Engineering](https://cs.korea.ac.kr/cs/index.do)
+[School of Industrial and Management Engineering](https://ie.korea.ac.kr/ie/index.do)  
+[College of Engineering](https://eng.korea.ac.kr/main/main.html)  
+[Korea University](https://www.korea.ac.kr/sites/ko/index.do)  
 
 <i class="fas fa-envelope"></i> <jseoplim@gmail.com>
 
-<!-- [![CV](https://img.shields.io/badge/CV-Download-green)](/pdf/cv.pdf)
-[![GitHub](https://img.shields.io/badge/GitHub-Profile-black?logo=github)](https://github.com/jseop-lim)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?logo=linkedin)](https://www.linkedin.com/in/jseop-lim) -->
+{{<button href="/pdf/cv.pdf" target="_blank" rel="noopener noreferrer">}}
+  <i class="fas fa-file-pdf" style="color: #FD0E02; font-size: 1.2em;"></i> CV
+{{</button>}}  
+{{<button href="https://github.com/jseop-lim" target="_blank" rel="noopener noreferrer">}}
+  <i class="fab fa-github" style="color: #1A1F25; font-size: 1.2em;"></i> GitHub
+{{</button>}}
+{{<button href="https://www.linkedin.com/in/jseop-lim" target="_blank" rel="noopener noreferrer">}}
+  <i class="fab fa-linkedin" style="color: #0B66C2; font-size: 1.2em;"></i> LinkedIn
+{{</button>}}
 
-<a href="/pdf/cv.pdf" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+<!-- <a href="/pdf/cv.pdf" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
   <i class="fas fa-file-pdf" style="color: #FD0E02; font-size: 1.2em;"></i> CV
 </a>
 <a href="https://github.com/jseop-lim" target="_blank" rel="noopener noreferrer" style="text-decoration: none; margin-left: 10px;">
@@ -29,7 +37,7 @@ Undergraduate Student at [Korea University](https://www.korea.ac.kr/sites/ko/ind
 </a>
 <a href="https://www.linkedin.com/in/jseop-lim" target="_blank" rel="noopener noreferrer" style="text-decoration: none; margin-left: 10px;">
   <i class="fab fa-linkedin" style="color: #0B66C2; font-size: 1.2em;"></i> LinkedIn
-</a>
+</a> -->
 
 {{% /columns %}}
 
