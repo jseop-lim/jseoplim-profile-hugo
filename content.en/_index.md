@@ -58,7 +58,7 @@ I am interested in programming languages, software engineering, machine learning
 
 ## Experience
 
-- **Backend Developer**, [8PERCENT, Inc.](https://8percent.kr/) (2022.08 - 2024.08)  
+- **Backend Developer**, [8PERCENT, Inc.](https://8percent.kr/) (2022.08. - 2024.08.)  
   Skilled Industrial Personnel (산업기능요원)
   - Established a onboarding program for backend developers
   - Redesigned a legacy loan application system
