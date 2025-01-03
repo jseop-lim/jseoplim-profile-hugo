@@ -49,14 +49,14 @@ I am interested in programming languages, software engineering, machine learning
 
 ## Education
 
-- **Bachelor of Science** in [Industrial and Management Engineering](https://ie.korea.ac.kr/ie/index.do) and [Computer Science and Engineering](https://cs.korea.ac.kr/cs/index.do), [Korea University](https://www.korea.ac.kr/sites/ko/index.do) (2020.03. - 2026.02.)
-- **[Daegu Science High School](https://dshs.dge.hs.kr/dshsh/main.do)** (2016.02. - 2019.02.)
+- **Bachelor of Science** in [Industrial and Management Engineering](https://ie.korea.ac.kr/ie/index.do) and [Computer Science and Engineering](https://cs.korea.ac.kr/cs/index.do), [Korea University](https://www.korea.ac.kr/sites/ko/index.do) (2020. 3.~2026. 2.)
+- **[Daegu Science High School](https://dshs.dge.hs.kr/dshsh/main.do)** (2016. 2.~2019. 2.)
 
 ---
 
 ## Experience
 
-- **Backend Developer**, [8PERCENT, Inc.](https://8percent.kr/) (2022.08. - 2024.08.)  
+- **Backend Developer**, [8PERCENT, Inc.](https://8percent.kr/) (2022. 8.~2024. 8.)  
   Skilled Industrial Personnel (산업기능요원)
   - Established a onboarding program for backend developers
   - Redesigned a legacy loan application system
@@ -76,5 +76,5 @@ I am interested in programming languages, software engineering, machine learning
 
 ## Honors & Awards
 
-- **The National Scholarship for Science and Engineering**, [Korea Student Aid Foundation](https://www.kosaf.go.kr/ko/main.do) (Spring 2022 - Fall 2025)
-- **Dean's List**, [Korea University College of Engineering](https://eng.korea.ac.kr/main/main.html) (2022.02.)
+- **The National Scholarship for Science and Engineering**, [Korea Student Aid Foundation](https://www.kosaf.go.kr/ko/main.do) (Spring 2022~Fall 2025)
+- **Dean's List**, [Korea University College of Engineering](https://eng.korea.ac.kr/main/main.html) (2022. 2.)
