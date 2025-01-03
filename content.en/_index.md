@@ -78,5 +78,5 @@ I am interested in programming languages, software engineering, machine learning
 
 ## Honors & Awards
 
-- **The National Scholarship for Science and Engineering**, [Korea Student Aid Foundation (KOSAF)](https://www.kosaf.go.kr/ko/main.do) (Spring 2022 - Fall 2025)  
+- **The National Scholarship for Science and Engineering**, [Korea Student Aid Foundation](https://www.kosaf.go.kr/ko/main.do) (Spring 2022 - Fall 2025)
 - **Dean's List**, [Korea University College of Engineering](https://eng.korea.ac.kr/main/main.html) (2022.02.)
