@@ -43,7 +43,7 @@ Undergraduate Student
 
 ## About Me
 
-I’m interested in programming languages, software engineering, machine learning, and numerical optimization. With experience as a Python backend developer in the financial industry, I focus on creating clean and efficient software. I’m preparing for graduate studies in programming languages and look forward to starting research in this field.
+I am interested in programming languages, software engineering, machine learning, and numerical optimization. I have worked as a Python backend developer in the financial industry, where I focused on building clean and maintainable software. Now, I am preparing for graduate studies in programming languages and look forward to starting research in this field.
 
 ---
 
