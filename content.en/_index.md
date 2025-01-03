@@ -49,10 +49,8 @@ I am interested in programming languages, software engineering, machine learning
 
 ## Education
 
-- **Bachelor of Science** (2020.03. - 2026.02.)  
-  in [Industrial and Management Engineering](https://ie.korea.ac.kr/ie/index.do) and [Computer Science and Engineering](https://cs.korea.ac.kr/cs/index.do),  
-  [Korea University](https://www.korea.ac.kr/sites/ko/index.do)
-- **[Daegu Science High School](https://dshs.dge.hs.kr/dshsh/main.do)** (2016.02 - 2019.02)
+- **Bachelor of Science** in [Industrial and Management Engineering](https://ie.korea.ac.kr/ie/index.do) and [Computer Science and Engineering](https://cs.korea.ac.kr/cs/index.do), [Korea University](https://www.korea.ac.kr/sites/ko/index.do) (2020.03. - 2026.02.)
+- **[Daegu Science High School](https://dshs.dge.hs.kr/dshsh/main.do)** (2016.02. - 2019.02.)
 
 ---
 
