@@ -4,6 +4,8 @@
 
 The website is built using [Hugo](https://gohugo.io/), created with the [Hugo Book Theme](https://github.com/jseop-lim/hugo-book/), and deployed via [Netlify](https://www.netlify.com/).
 
+:link: [about.jseoplim.com](https://about.jseoplim.com/)
+
 ## Installation
 
 1. Install [Hugo](https://gohugo.io/getting-started/installing/).
