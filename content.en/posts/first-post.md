@@ -1,5 +1,5 @@
 +++
-draft = true
+draft = false
 title = "First Post"
 date = 2025-01-07
 categories = ["기록"]
