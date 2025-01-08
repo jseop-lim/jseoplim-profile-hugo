@@ -1,7 +1,11 @@
 +++
 draft = false
-title = "Home"
+title = "About"
 type = "docs"
+
+[menu.before]
+name = "About"
+weight = 1
 +++
 
 # Jeongseop Lim (임정섭)
