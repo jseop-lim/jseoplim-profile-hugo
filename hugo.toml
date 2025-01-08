@@ -1,7 +1,7 @@
 baseURL = "https://about.jseoplim.com"
+languageCode = "en-US"
 title = "Jeongseop Lim"
 theme = "hugo-book"
-languageCode = "en-US"
 
 # Book configuration
 disablePathToLower = true
