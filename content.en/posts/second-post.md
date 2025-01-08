@@ -1,15 +1,15 @@
 +++
 draft = true
-title = "First Post"
-date = 2025-01-07
+title = "Second Post"
+date = 2025-01-08
 categories = ["기록"]
-tags = ["first"]
+tags = ["second"]
 description = "Hi!"
 
 menu = "main"
 bookComments = true
 +++
 
-## Hello world
+## Hello world (2)
 
-This is my first post.
+This is my second post. 
