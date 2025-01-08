@@ -1,7 +1,7 @@
 +++
 title = "Blog"
 
-# [menu.after]
-# name = "Blog"
-# weight = 5
+[menu.after]
+name = "Posts"
+weight = 5
 +++
