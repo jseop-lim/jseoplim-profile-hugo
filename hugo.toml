@@ -25,10 +25,12 @@ languageName = 'English'
 contentDir = 'content.en'
 weight = 1
 
-# [languages.ko]
-#   languageName = '한국어'
-#   contentDir = 'content.ko'
-#   weight = 2
+[languages.ko]
+disabled = true
+languageName = "한국어"
+languageCode = "ko-KR"
+contentDir = "content.ko"
+weight = 2
 
 [menu]
 # [[menu.before]]
