@@ -1,6 +1,4 @@
 +++
-# [menu.after]
-#   name = "blog"
-#   weight = 5
+draft = false
 title = "Blog"
 +++
