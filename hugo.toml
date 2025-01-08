@@ -1,6 +1,7 @@
 baseURL = "https://about.jseoplim.com"
 title = "Jeongseop Lim"
 theme = "hugo-book"
+languageCode = "en-US"
 
 # Book configuration
 disablePathToLower = true
@@ -33,7 +34,11 @@ contentDir = "content.ko"
 weight = 2
 
 [menu]
-# [[menu.before]]
+[[menu.before]]
+name = "Blog"
+pageRef = "/posts/_index.md"
+weight = 5
+
 [[menu.after]]
 name = "GitHub"
 url = "https://github.com/jseop-lim"
