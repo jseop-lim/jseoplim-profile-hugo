@@ -108,7 +108,7 @@ bundle = false
   paginate = 20
   # date format (month and day)
   # 日期格式 (月和日)
-  dateFormat = "01-02"
+  dateFormat = "Jan 02"
   # amount of RSS pages
   # RSS 文章数目
   rss = 10
@@ -128,7 +128,7 @@ bundle = false
   paginate = 20
   # date format (month and day)
   # 日期格式 (月和日)
-  dateFormat = "01-02"
+  dateFormat = "Jan 02"
   # amount of RSS pages
   # RSS 文章数目
   rss = 10
