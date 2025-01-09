@@ -1,10 +1,10 @@
-baseURL = "https://hugodoit.pages.dev"
+baseURL = "https://about.jseoplim.com"
 # [en, zh-cn, fr, pl, ...] determines default content language
 # [en, zh-cn, fr, pl, ...] 设置默认的语言
 defaultContentLanguage = "en"
 # website title
 # 网站标题
-title = "DoIt"
+title = "Jeongseop Lim's Site"
 
 # whether to use robots.txt
 # 是否使用 robots.txt
