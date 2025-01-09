@@ -179,7 +179,7 @@ bundle = false
   seriesNavigation = true
   # whether to enable last modified time
   # 是否启用最后修改时间
-  enableLastMod = true
+  enableLastMod = false
   # whether to enable word count
   # 是否启用字数统计
   enableWordCount = true
