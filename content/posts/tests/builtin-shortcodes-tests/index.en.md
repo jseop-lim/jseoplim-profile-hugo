@@ -26,9 +26,9 @@ hiddenFromSearch: true
 
 ## ref and relref
 
-[ref]({{< ref "about/index.en.md" >}})
+[ref]({{< ref "posts/about/index.en.md" >}})
 
-[relref]({{< relref "../../../about/index.en.md" >}})
+[relref]({{< relref "../../../posts/about/index.en.md" >}})
 
 ## tweet
 
