@@ -30,4 +30,4 @@ theme = "DoIt"
 # Or, when using theme as hugo module
 # [module]
 # [[module.imports]]
-# path = "github.com/HEIGE-PCloud/DoIt"
+# path = "github.com/jseop-lim/jseoplim-profile-hugo"
