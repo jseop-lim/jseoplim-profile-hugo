@@ -301,8 +301,8 @@ bundle = false
     Flipboard = false
     HackerNews = true
     Instapaper = false
-    Line = true
-    Linkedin = false
+    Line = false
+    Linkedin = true
     Mix = false
     Myspace = false
     Odnoklassniki = false
@@ -317,7 +317,7 @@ bundle = false
     Tumblr = false
     Twitter = true
     VK = false
-    Weibo = true
+    Weibo = false
     # Weixin API example: "https://tenapi.cn/qr/?txt="
     # https://docs.tenapi.cn/qrcode.html
     # https://www.free-api.com/doc/531
@@ -326,7 +326,7 @@ bundle = false
     Weixin = ""
     Whatsapp = false
     Xing = false
-    Mastodon = true
+    Mastodon = false
   # Comment config
   # 评论系统设置
   [page.comment]
@@ -416,7 +416,7 @@ bundle = false
     # Utterances comment config (https://utteranc.es/)
     # Utterances comment 评论系统设置 (https://utteranc.es/)
     [page.comment.utterances]
-      enable = true
+      enable = false
       # owner/repo
       repo = "Hugo-DoIt/utterances-comments"
       issueTerm = "pathname"
@@ -454,17 +454,17 @@ bundle = false
     # giscus comment config (https://giscus.app/)
     # giscus comment 评论系统设置 (https://giscus.app/)
     [page.comment.giscus]
-      enable = false
+      enable = true
       # owner/repo
-      dataRepo = ""
-      dataRepoId = ""
-      dataCategory = ""
-      dataCategoryId = ""
+      dataRepo = "jseop-lim/jseoplim-profile-hugo"
+      dataRepoId = "R_kgDONj35qw"
+      dataCategory = "Comments"
+      dataCategoryId = "DIC_kwDONj35q84Cl1wX"
       dataMapping = "pathname"
       dataStrict = "0"
       dataReactionsEnabled = "1"
       dataEmitMetadata = "0"
-      dataInputPosition = "bottom"
+      dataInputPosition = "top"
       lightTheme = "light"
       darkTheme = "dark"
       dataLang = "en"
