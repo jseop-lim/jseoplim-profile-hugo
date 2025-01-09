@@ -7,6 +7,11 @@ theme = "hugo-book"
 disablePathToLower = true
 enableGitInfo = true
 
+# Google Analytics
+[services]
+[services.googleAnalytics]
+id = "G-MH62K1GZSG"
+
 # Needed for mermaid/katex shortcodes
 [markup]
 [markup.goldmark.renderer]
