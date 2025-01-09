@@ -1,15 +1,29 @@
 # site description
 # 网站描述
-description = "The official documentation for the Hugo DoIt theme"
+description = "A personal website run by Jeongseop Lim"
 # site keywords
 # 网站关键词
-keywords = ["Theme", "Hugo"]
+keywords = [
+  "Jeongseop Lim",
+  "임정섭",
+  "Jeong Seop Lim",
+  "Jeongseop",
+  "Jeongseop",
+  "Lim",
+  "Blog",
+  "Website",
+  "CV",
+  "Resume",
+  "Portfolio",
+  "Projects",
+  "Hugo",
+]
 # App icon config
 # 应用图标配置
 [app]
   # optional site title override for the app when added to an iOS home screen or Android launcher
   # 当添加到 iOS 主屏幕或者 Android 启动器时的标题, 覆盖默认标题
-  title = "DoIt"
+  title = "Jeongseop's Site"
   # whether to omit favicon resource links
   # 是否隐藏网站图标资源链接
   noFavicon = false
@@ -84,10 +98,10 @@ keywords = ["Theme", "Hugo"]
     gravatarEmail = ""
     # URL of avatar shown in home page
     # 主页显示头像的 URL
-    avatarURL = "/images/avatar.webp"
+    avatarURL = "https://www.gravatar.com/avatar/bf58c456601a5a79921f60c3b62a41c2"
     # URL the avatar links to
     # 头像的链接指向的 URL
-    avatarLinkURL = ""
+    avatarLinkURL = ""  # TODO:
     # title shown in home page (HTML format is supported)
     # 主页显示的网站标题 (支持 HTML 格式)
     title = "Jeongseop Lim (임정섭)"
@@ -124,14 +138,14 @@ keywords = ["Theme", "Hugo"]
   Devto = ""
   Douban = ""
   Dribbble = ""
-  Email = "xxxx@xxxx.com"
-  Facebook = "xxxx"
+  Email = "jseoplim@gmail.com"
+  Facebook = ""
   Fivehundredpx = ""
   Flickr = ""
   Foursquare = ""
   FreeCodeCamp = ""
   Gitea = ""
-  GitHub = "xxxx"
+  GitHub = "jseop-lim"
   Gitlab = ""
   Goodreads = ""
   Googlescholar = ""
@@ -140,10 +154,10 @@ keywords = ["Theme", "Hugo"]
   Jsfiddle = ""
   Keybase = ""
   Kickstarter = ""
-  Ko-Fi = "xxx"
+  Ko-Fi = ""
   Lastfm = ""
-  Liberapay = "xxx"
-  Linkedin = ""
+  Liberapay = ""
+  Linkedin = "jseop-lim"
   Linktree = ""
   Matrix = ""
   Medium = ""
@@ -158,7 +172,7 @@ keywords = ["Theme", "Hugo"]
   Quora = ""
   Reddit = ""
   Researchgate = ""
-  RSS = true
+  RSS = false
   Skype = ""
   Slidershare = ""
   Snapchat = ""
@@ -167,11 +181,11 @@ keywords = ["Theme", "Hugo"]
   Stackoverflow = ""
   Steam = ""
   Strava = ""
-  Telegram = "xxxx"
+  Telegram = ""
   Thingiverse = ""
   Tumblr = ""
   Twitch = ""
-  Twitter = "xxxx"
+  Twitter = ""
   Vine = ""
   VK = ""
   Weibo = ""
@@ -181,19 +195,11 @@ keywords = ["Theme", "Hugo"]
   XMPP = ""
   Youtubechannel = ""
   Youtubecustom = ""
-  Youtubelegacy = "xxxx"
-  Zhihu = ""
-  Bluesky = "did:plc:z72i7hdynmk6r22z27h6tvur"
-  [social.Mastodon]
-    id = "@xxxx"
-    prefix = "https://mastodon.technology/"
-  [social.Diaspora]
-    id = "@xxxx"
-    prefix = "https://yyyy/"
+  Youtubelegacy = ""
 # Sponsor config
 # 赞助设置
 [sponsor]
-  enable = true
+  enable = false
   bio = "If you find this post helpful, please consider sponsoring."
   link = "https://github.com/sponsors/HEIGE-PCloud"
   # custom = "<a href=\"https://www.buymeacoffee.com/PCloud\" target=\"_blank\"><img src=\"https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png\" alt=\"Buy Me A Coffee\" style=\"height: 40px !important;width: 145 !important;\" ></a>"
