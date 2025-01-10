@@ -685,7 +685,7 @@ keywords = [
 # Search config
 # 搜索配置
 [search]
-  enable = false
+  enable = true
   # type of search engine ("algolia", "fuse", "pagefind")
   # 搜索引擎的类型 ("algolia", "fuse", "pagefind")
   type = "algolia"
