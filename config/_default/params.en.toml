@@ -63,7 +63,7 @@ keywords = [
   absoluteURL = false
   [search.algolia]
     index = "en_index"
-    appID = "5YGRNRQK1G"
+    appID = "5YGRNRQK1G"  # XXX: 나만의 algolia 앱 만들어야 함?
     searchKey = "0ff6874805de24b84aa1d5ebccad56cd"
   [search.fuse]
     # https://fusejs.io/api/options.html
@@ -95,19 +95,19 @@ keywords = [
     enable = true
     # Gravatar Email for preferred avatar in home page
     # Gravatar 邮箱，用于优先在主页显示的头像
-    gravatarEmail = ""
+    gravatarEmail = "jseoplim@gmail.com"
     # URL of avatar shown in home page
     # 主页显示头像的 URL
     avatarURL = "https://www.gravatar.com/avatar/bf58c456601a5a79921f60c3b62a41c2"
     # URL the avatar links to
     # 头像的链接指向的 URL
-    avatarLinkURL = ""  # TODO:
+    avatarLinkURL = ""  # TODO: 포스트 미리보기 페이지로 링크
     # title shown in home page (HTML format is supported)
     # 主页显示的网站标题 (支持 HTML 格式)
     title = "Jeongseop Lim (임정섭)"
     # subtitle shown in home page
     # 主页显示的网站副标题
-    subtitle = "A Clean, Elegant but Advanced Hugo Theme"
+    subtitle = ""  # TODO: 개행 알아보고 직책 작성
     # whether to use typeit animation for subtitle
     # 是否为副标题显示打字机动画
     typeit = false
@@ -196,6 +196,12 @@ keywords = [
   Youtubechannel = ""
   Youtubecustom = ""
   Youtubelegacy = ""
+  [social.CV]
+    id = "cv"
+    title = "CV"
+    url = "/pdf/cv.pdf"
+    [social.CV.icon]
+      src = "images/icons/cv.svg"
 # Sponsor config
 # 赞助设置
 [sponsor]
