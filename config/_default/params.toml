@@ -1,6 +1,9 @@
 # website title
 # 网站标题
 title = "Jeongseop's Site"
+# site description
+# 网站描述
+description = "A personal website run by Jeongseop Lim"
 # DoIt theme version
 # DoIt 主题版本
 version = "0.4.X"
@@ -28,6 +31,23 @@ enablePWA = false
 license = '<a rel="license external nofollow noopener noreffer" href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a>'
 # [Experimental] Bundle js
 bundle = false
+# site keywords
+# 网站关键词
+keywords = [
+  "Jeongseop Lim",
+  "임정섭",
+  "Jeong Seop Lim",
+  "Jeongseop",
+  "Jeongseop",
+  "Lim",
+  "Blog",
+  "Website",
+  "CV",
+  "Resume",
+  "Portfolio",
+  "Projects",
+  "Hugo",
+]
 
 [author]
   name = "Jeongseop Lim"
@@ -647,3 +667,188 @@ bundle = false
   # whether to use Polyfill.io to be compatible with older browsers
   # 是否使用 Polyfill.io 来兼容旧式浏览器
   polyfill = false
+
+# App icon config
+# 应用图标配置
+[app]
+  # optional site title override for the app when added to an iOS home screen or Android launcher
+  # 当添加到 iOS 主屏幕或者 Android 启动器时的标题, 覆盖默认标题
+  title = "Jeongseop's Site"
+  # whether to omit favicon resource links
+  # 是否隐藏网站图标资源链接
+  noFavicon = false
+  # modern SVG favicon to use in place of older style .png and .ico files
+  # 更现代的 SVG 网站图标, 可替代旧的 .png 和 .ico 文件
+  svgFavicon = ""
+  # Safari mask icon color
+  # Safari 图标颜色
+  iconColor = "#5bbad5"
+  # Windows v8-10 tile color
+  # Windows v8-10 磁贴颜色
+  tileColor = "#da532c"
+# Search config
+# 搜索配置
+[search]
+  enable = true
+  # type of search engine ("algolia", "fuse", "pagefind")
+  # 搜索引擎的类型 ("algolia", "fuse", "pagefind")
+  type = "algolia"
+  # max index length of the chunked content
+  # 文章内容最长索引长度
+  contentLength = 4000
+  # placeholder of the search bar
+  # 搜索框的占位提示语
+  placeholder = ""
+  # max number of results length
+  # 最大结果数目
+  maxResultLength = 10
+  # snippet length of the result
+  # 结果内容片段长度
+  snippetLength = 40
+  # HTML tag name of the highlight part in results
+  # 搜索结果中高亮部分的 HTML 标签
+  highlightTag = "em"
+  # whether to use the absolute URL based on the baseURL in search index
+  # 是否在搜索索引中使用基于 baseURL 的绝对路径
+  absoluteURL = false
+  [search.algolia]
+    index = "en_index"
+    appID = "5YGRNRQK1G"  # XXX: 나만의 algolia 앱 만들어야 함?
+    searchKey = "0ff6874805de24b84aa1d5ebccad56cd"
+  [search.fuse]
+    # https://fusejs.io/api/options.html
+    isCaseSensitive = false
+    minMatchCharLength = 2
+    findAllMatches = false
+    location = 0
+    threshold = 0.1
+    distance = 100
+    ignoreLocation = true
+    useExtendedSearch = false
+    ignoreFieldNorm = false
+  [search.pagefind]
+    # https://pagefind.app/docs/search-config/#available-options
+    # run `npx pagefind --site $YOUR_PUBLIC_DIR` after site build to create pagefind index
+    termFrequency = 1.0
+    pageLength = 0.75
+    termSimilarity = 1.0
+    termSaturation = 1.4
+# Home page config
+# 主页信息设置
+[home]
+  # amount of RSS pages
+  # RSS 文章数目
+  rss = 10
+  # Home page profile
+  # 主页个人信息
+  [home.profile]
+    enable = true
+    # Gravatar Email for preferred avatar in home page
+    # Gravatar 邮箱，用于优先在主页显示的头像
+    gravatarEmail = "jseoplim@gmail.com"
+    # URL of avatar shown in home page
+    # 主页显示头像的 URL
+    avatarURL = "https://www.gravatar.com/avatar/bf58c456601a5a79921f60c3b62a41c2"
+    # URL the avatar links to
+    # 头像的链接指向的 URL
+    avatarLinkURL = ""  # TODO: 포스트 미리보기 페이지로 링크
+    # title shown in home page (HTML format is supported)
+    # 主页显示的网站标题 (支持 HTML 格式)
+    title = "Jeongseop Lim (임정섭)"
+    # subtitle shown in home page
+    # 主页显示的网站副标题
+    subtitle = ""  # TODO: 개행 알아보고 직책 작성
+    # whether to use typeit animation for subtitle
+    # 是否为副标题显示打字机动画
+    typeit = false
+    # whether to show social links
+    # 是否显示社交账号
+    social = true
+    # disclaimer (HTML format is supported)
+    # 免责声明 (支持 HTML 格式)
+    disclaimer = ""
+  # Home page posts
+  # 主页文章列表
+  [home.posts]
+    enable = false
+    # special amount of posts in each home posts page
+    # 主页每页显示文章数量
+    paginate = 7
+# Social config in home page
+# 主页的社交信息设置
+[social]
+  Angellist = ""
+  Bandcamp = ""
+  Behance = ""
+  Bilibili = ""
+  Bitbucket = ""
+  BuyMeACoffee = ""
+  Codepen = ""
+  Deviantart = ""
+  Devto = ""
+  Douban = ""
+  Dribbble = ""
+  Email = "jseoplim@gmail.com"
+  Facebook = ""
+  Fivehundredpx = ""
+  Flickr = ""
+  Foursquare = ""
+  FreeCodeCamp = ""
+  Gitea = ""
+  GitHub = "jseop-lim"
+  Gitlab = ""
+  Goodreads = ""
+  Googlescholar = ""
+  Hackernews = ""
+  Instagram = ""
+  Jsfiddle = ""
+  Keybase = ""
+  Kickstarter = ""
+  Ko-Fi = ""
+  Lastfm = ""
+  Liberapay = ""
+  Linkedin = "jseop-lim"
+  Linktree = ""
+  Matrix = ""
+  Medium = ""
+  Mix = ""
+  Odnoklassniki = ""
+  ORCID = ""
+  Patreon = ""
+  Paypal = ""
+  Pinterest = ""
+  QQ = ""
+  QQGroup = ""
+  Quora = ""
+  Reddit = ""
+  Researchgate = ""
+  RSS = false
+  Skype = ""
+  Slidershare = ""
+  Snapchat = ""
+  Soundcloud = ""
+  Spotify = ""
+  Stackoverflow = ""
+  Steam = ""
+  Strava = ""
+  Telegram = ""
+  Thingiverse = ""
+  Tumblr = ""
+  Twitch = ""
+  Twitter = ""
+  Vine = ""
+  VK = ""
+  Weibo = ""
+  Whatsapp = ""
+  Wordpress = ""
+  Xing = ""
+  XMPP = ""
+  Youtubechannel = ""
+  Youtubecustom = ""
+  Youtubelegacy = ""
+  [social.CV]
+    id = "cv"
+    title = "CV"
+    url = "/pdf/cv.pdf"
+    [social.CV.icon]
+      src = "images/icons/cv.svg"
