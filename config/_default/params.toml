@@ -708,7 +708,7 @@ keywords = [
   # 是否在搜索索引中使用基于 baseURL 的绝对路径
   absoluteURL = false
   [search.algolia]
-    index = "en_index"  # TODO: Netlify 연동 시 이름 관찰 필요
+    index = "netlify_db81fa40-6297-411f-a24a-499a84859294_main_all"
     appID = "CIUENLVN56"
     searchKey = "729757e8444c96c60033c58a74236747"
   [search.fuse]

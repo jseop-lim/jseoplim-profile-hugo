@@ -1,4 +1,0 @@
-+++
-draft = false
-title = "Blog"
-+++

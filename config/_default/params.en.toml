@@ -5,11 +5,6 @@ description = "A personal website run by Jeongseop Lim"
 # 日期格式
 # dateFormat = "2006-01-02"
 dateFormat = "January 2, 2006"
-# Search config
-# 搜索配置
-[search]
-  [search.algolia]
-    index = "en_index"
 # Home page config
 # 主页信息设置
 [home]
