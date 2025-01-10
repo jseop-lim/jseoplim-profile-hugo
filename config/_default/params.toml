@@ -50,7 +50,7 @@ keywords = [
   name = "Jeongseop Lim"
   email = "jseoplim@gmail.com"
   link = "https://about.jseoplim.com"
-  avatar = "https://www.gravatar.com/avatar/bf58c456601a5a79921f60c3b62a41c2?s=512"
+  # avatar = ""
   gravatarEmail = "jseoplim@gmail.com"
 
 [image]
@@ -745,7 +745,7 @@ keywords = [
     gravatarEmail = "jseoplim@gmail.com"
     # URL of avatar shown in home page
     # 主页显示头像的 URL
-    avatarURL = "https://www.gravatar.com/avatar/bf58c456601a5a79921f60c3b62a41c2?s=512"
+    avatarURL = ""  # NOTE: gravatarEmail에 의해 무시됨
     # URL the avatar links to
     # 头像的链接指向的 URL
     avatarLinkURL = ""  # TODO: 포스트 미리보기 페이지로 링크
