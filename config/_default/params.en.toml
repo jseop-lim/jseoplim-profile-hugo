@@ -1,6 +1,10 @@
 # site description
 # 网站描述
 description = "A personal website run by Jeongseop Lim"
+# date format
+# 日期格式
+# dateFormat = "2006-01-02"
+dateFormat = "January 2, 2006"
 # Search config
 # 搜索配置
 [search]
