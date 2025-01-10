@@ -1,6 +1,6 @@
 +++
-title = "About"
-date = 2025-01-01T00:00:00Z  # XXX: 시각 지워보기
+title = "소개"
+date = 2025-01-08T20:19:09+09:00
 draft = false
 
 [params.header.number]
