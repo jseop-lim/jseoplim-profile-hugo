@@ -21,4 +21,4 @@ dateFormat = "2006년 1월 2일"
     title = "임정섭"
     # subtitle shown in home page
     # 主页显示的网站副标题
-    subtitle = ""  # TODO: 개행 알아보고 직책 작성
+    subtitle = ""
