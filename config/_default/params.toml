@@ -708,9 +708,9 @@ keywords = [
   # 是否在搜索索引中使用基于 baseURL 的绝对路径
   absoluteURL = false
   [search.algolia]
-    index = "en_index"
-    appID = "5YGRNRQK1G"  # XXX: 나만의 algolia 앱 만들어야 함?
-    searchKey = "0ff6874805de24b84aa1d5ebccad56cd"
+    index = "en_index"  # TODO: Netlify 연동 시 이름 관찰 필요
+    appID = "CIUENLVN56"
+    searchKey = "729757e8444c96c60033c58a74236747"
   [search.fuse]
     # https://fusejs.io/api/options.html
     isCaseSensitive = false
