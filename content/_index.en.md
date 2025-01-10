@@ -24,3 +24,15 @@ I am interested in programming languages, software engineering, machine learning
   - Redesigned a legacy loan application system
   - Upgraded the backend framework from Django 3.2 to 4.1
   - Developed and managed a push notification system using Firebase Cloud Messaging
+
+## Publications
+
+- **"에잇퍼센트 백엔드 개발자로 합류할 당신에게"**, 8PERCENT Tech Blog (2024).  
+  Explored onboarding strategies for backend developers and shared insights on setting up efficient development workflows.
+  
+  [{{< fa-icon solid link >}}Link](https://8percent.github.io/2024-07-14/%EB%B0%B1%EC%97%94%EB%93%9C-%EC%98%A8%EB%B3%B4%EB%94%A9-%EC%88%98%EB%A6%BD/)
+
+## Honors & Awards
+
+- **The National Scholarship for Science and Engineering**, [Korea Student Aid Foundation](https://www.kosaf.go.kr/ko/main.do) (Spring 2022~Fall 2025)
+- **Dean's List**, [Korea University College of Engineering](https://eng.korea.ac.kr/main/main.html) (2022. 2.)
