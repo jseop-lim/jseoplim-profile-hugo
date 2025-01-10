@@ -1,9 +1,6 @@
 # website title
 # 网站标题
 title = "Jeongseop's Site"
-# site description
-# 网站描述
-description = "A personal website run by Jeongseop Lim"
 # DoIt theme version
 # DoIt 主题版本
 version = "0.4.X"
