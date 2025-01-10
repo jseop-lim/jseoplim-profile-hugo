@@ -3,7 +3,7 @@ title: "How to create diagrams in DoIt"
 subtitle: "Create SVG diagrams using GoAT or Mermaid in DoIt"
 date: 2022-02-28T14:27:14Z
 lastmod: 2022-02-28T14:27:14Z
-draft: false
+draft: true
 authors: [PCloud]
 description: "This post explains how you can create custom SVG diagrams in DoIt using GoAT or Mermaid."
 

@@ -3,7 +3,7 @@ title: "如何在 DoIt 中创建图表"
 subtitle: "使用 GoAT 与 Mermaid 在 DoIt 中创建 SVG 图表"
 date: 2022-02-28T14:27:14Z
 lastmod: 2022-02-28T14:27:14Z
-draft: false
+draft: true
 authors: [PCloud]
 description: "这篇文档将展示如何在 DoIt 中使用 GoAT 和 Mermaid 创建 SVG 图表。"
 

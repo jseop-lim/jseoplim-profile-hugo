@@ -3,7 +3,7 @@ weight: 7
 title: "PWA 支持"
 date: 2021-05-10T16:21:41+01:00
 lastmod: 2021-05-10T16:21:41+01:00
-draft: false
+draft: true
 authors: ["PCloud"]
 description: "Guide to setup PWA in DoIt"
 featuredImage: "featured-image.webp"

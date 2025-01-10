@@ -3,7 +3,7 @@ weight: 1
 title: "主题文档 - 基本概念"
 date: 2020-03-03T21:40:32+08:00
 lastmod: 2020-03-06T21:40:32+08:00
-draft: false
+draft: true
 authors: ["Dillon", "PCloud"]
 description: "探索 Hugo - DoIt 主题的全部内容和背后的核心概念."
 featuredImage: "featured-image.webp"
