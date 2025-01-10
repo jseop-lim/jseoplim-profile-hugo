@@ -15,6 +15,7 @@ Thumbs.db
 *.swo
 .idea/
 .vscode/
+jsconfig.json
 
 # 운영 체제 별 임시 파일
 desktop.ini

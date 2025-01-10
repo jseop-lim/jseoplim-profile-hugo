@@ -1,0 +1,24 @@
+# site description
+# 网站描述
+description = "A personal website run by Jeongseop Lim"
+# date format
+# 日期格式
+# dateFormat = "2006-01-02"
+dateFormat = "January 2, 2006"
+# Search config
+# 搜索配置
+[search]
+  [search.algolia]
+    index = "en_index"
+# Home page config
+# 主页信息设置
+[home]
+  # Home page profile
+  # 主页个人信息
+  [home.profile]
+    # title shown in home page (HTML format is supported)
+    # 主页显示的网站标题 (支持 HTML 格式)
+    title = "Jeongseop Lim (임정섭)"
+    # subtitle shown in home page
+    # 主页显示的网站副标题
+    subtitle = ""  # TODO: 개행 알아보고 직책 작성
