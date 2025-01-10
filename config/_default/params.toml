@@ -753,7 +753,7 @@ keywords = [
     title = "Jeongseop Lim (임정섭)"
     # subtitle shown in home page
     # 主页显示的网站副标题
-    subtitle = ""  # TODO: 개행 알아보고 직책 작성
+    subtitle = ""
     # whether to use typeit animation for subtitle
     # 是否为副标题显示打字机动画
     typeit = false

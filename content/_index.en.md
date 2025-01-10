@@ -7,6 +7,15 @@ draft = false
 enable = false
 +++
 
+
+{{< style "text-align:center;" >}}
+Undergraduate Student  
+
+[School of Industrial and Management Engineering](https://ie.korea.ac.kr/ie/index.do)  
+[College of Engineering](https://eng.korea.ac.kr/main/main.html)  
+[Korea University](https://www.korea.ac.kr/sites/ko/index.do)
+{{< /style >}}
+
 ## About Me
 
 I am interested in programming languages, software engineering, machine learning, and numerical optimization. I have worked as a Python backend developer in the financial industry, where I focused on building clean and maintainable software. Now, I am preparing for graduate studies in programming languages and look forward to starting research in this field.
