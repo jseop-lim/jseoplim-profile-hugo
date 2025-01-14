@@ -18,11 +18,11 @@ Undergraduate Student
 
 ## About Me
 
-I am interested in programming languages, software engineering, machine learning, and numerical optimization. I have worked as a Python backend developer in the financial industry, where I focused on building clean and maintainable software. Now, I am preparing for graduate studies in programming languages and look forward to starting research in this field.
+I am a senior undergraduate student interested in programming languages, software engineering, machine learning, and numerical engineering. I have worked as a Python backend developer in the financial industry, where I focused on building clean and maintainable software. Now, I am preparing for graduate studies in programming languages and look forward to starting research in this field.
 
 ## Education
 
-- **Bachelor of Science** in [Industrial and Management Engineering](https://ie.korea.ac.kr/ie/index.do) and [Computer Science and Engineering](https://cs.korea.ac.kr/cs/index.do), [Korea University](https://www.korea.ac.kr/sites/ko/index.do) (2020. 3.~2026. 2.)
+- **Bachelor of Science** in [Industrial and Management Engineering](https://ie.korea.ac.kr/ie/index.do) and [Computer Science and Engineering](https://cs.korea.ac.kr/cs/index.do), [Korea University](https://www.korea.ac.kr/sites/ko/index.do) (2020. 3.~present)
 - **[Daegu Science High School](https://dshs.dge.hs.kr/dshsh/main.do)** (2016. 2.~2019. 2.)
 
 ## Experience
