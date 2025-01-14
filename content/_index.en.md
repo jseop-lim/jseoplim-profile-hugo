@@ -27,6 +27,8 @@ I am interested in programming languages, software engineering, machine learning
 
 ## Experience
 
+- **Undergraduate Researcher**, [Software Analysis Lab](https://prl.korea.ac.kr) (2025. 1.~present)  
+
 - **Backend Developer**, [8PERCENT, Inc.](https://8percent.kr/) (2022. 8.~2024. 8.)  
   Skilled Industrial Personnel (산업기능요원)
   - Established a onboarding program for backend developers
