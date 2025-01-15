@@ -9,11 +9,12 @@ enable = false
 
 
 {{< style "text-align:center;" >}}
-Undergraduate Student  
+Undergraduate Researcher  
 
-[School of Industrial and Management Engineering](https://ie.korea.ac.kr)  
-[College of Engineering](https://eng.korea.ac.kr)  
-[Korea University](https://korea.ac.kr)
+[Software Analysis Laboratory](https://prl.korea.ac.kr)  
+[Dept. of Computer Science and Engineering](https://cs.korea.ac.kr)  
+[College of Informatics](https://info.korea.ac.kr)  
+[Korea University](http://www.korea.ac.kr)
 {{< /style >}}
 
 ## About Me
@@ -27,7 +28,7 @@ I am a senior undergraduate student interested in programming languages, softwar
 
 ## Experience
 
-- **Undergraduate Researcher**, [Software Analysis Lab](https://prl.korea.ac.kr) (2025. 1.~present)  
+- **Undergraduate Researcher**, [Software Analysis Labatory](https://prl.korea.ac.kr), [Korea University](https://korea.ac.kr) (2025. 1.~present)  
 
 - **Backend Developer**, [8PERCENT, Inc.](https://8percent.kr) (2022. 8.~2024. 8.)  
   Skilled Industrial Personnel (산업기능요원)
