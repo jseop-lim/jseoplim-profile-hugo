@@ -7,14 +7,13 @@ draft = false
 enable = false
 +++
 
-
 {{< style "text-align:center;" >}}
 Undergraduate Researcher  
 
 [Software Analysis Laboratory](https://prl.korea.ac.kr)  
 [Dept. of Computer Science and Engineering](https://cs.korea.ac.kr)  
 [College of Informatics](https://info.korea.ac.kr)  
-[Korea University](http://www.korea.ac.kr)
+[Korea University](https://korea.ac.kr)
 {{< /style >}}
 
 ## About Me
@@ -47,4 +46,4 @@ I am a senior undergraduate student interested in programming languages, softwar
 ## Honors & Awards
 
 - **The National Scholarship for Science and Engineering**, [Korea Student Aid Foundation](https://www.kosaf.go.kr) (Spring 2022~Fall 2025)
-- **Dean's List**, [Korea University College of Engineering](https://eng.korea.ac.kr) (2022. 2.)
+- **Academic Excellence Award**, [Korea University College of Engineering](https://eng.korea.ac.kr) (2022. 2.)
