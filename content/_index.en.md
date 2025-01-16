@@ -46,6 +46,7 @@ I am a senior undergraduate student interested in programming languages, softwar
 
 ## Honors & Awards
 
-- **The National Scholarship for Science and Engineering**, [Korea Student Aid Foundation](https://www.kosaf.go.kr) (Spring 2022~Fall 2025)
+- **The National Scholarship for Science and Engineering**, [Korea Student Aid Foundation](https://www.kosaf.go.kr) (Spring 2022~Fall 2025)  
 
-- **Academic Excellence Award**, [Korea University College of Engineering](https://eng.korea.ac.kr) (2022. 2.)
+- **Academic Excellence Award**, [Korea University College of Engineering](https://eng.korea.ac.kr) (2022. 2.)  
+  Spring 2021
