@@ -23,6 +23,7 @@ I am a senior undergraduate student interested in programming languages, softwar
 ## Education
 
 - **Bachelor of Science** in [Industrial and Management Engineering](https://ie.korea.ac.kr) and [Computer Science and Engineering](https://cs.korea.ac.kr), [Korea University](https://korea.ac.kr) (2020. 3.~present)
+
 - **[Daegu Science High School](https://dshs.dge.hs.kr)** (2016. 2.~2019. 2.)
 
 ## Experience
@@ -46,4 +47,5 @@ I am a senior undergraduate student interested in programming languages, softwar
 ## Honors & Awards
 
 - **The National Scholarship for Science and Engineering**, [Korea Student Aid Foundation](https://www.kosaf.go.kr) (Spring 2022~Fall 2025)
+
 - **Academic Excellence Award**, [Korea University College of Engineering](https://eng.korea.ac.kr) (2022. 2.)
