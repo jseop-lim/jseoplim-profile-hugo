@@ -1,11 +1,11 @@
 ---
 weight: 2
-title: "主题文档 - 内容"
-date: 2020-03-04T16:30:05+08:00
-lastmod: 2020-03-04T16:30:05+08:00
+title: "Theme Documentation - Content"
+date: 2020-03-04T15:58:26+08:00
+lastmod: 2020-03-04T15:58:26+08:00
 draft: true
 authors: ["Dillon", "PCloud"]
-description: "了解如何在 DoIt 主题中快速, 直观地创建和组织内容."
+description: "Find out how to create and organize your content quickly and intuitively in DoIt theme."
 featuredImage: "featured-image.webp"
 
 tags: ["content", "Markdown"]
@@ -20,44 +20,45 @@ math:
   enable: true
 ---
 
-了解如何在 **DoIt** 主题中快速, 直观地创建和组织内容.
+Find out how to create and organize your content quickly and intuitively in **DoIt** theme.
 
 <!--more-->
 
-## 内容组织 {#contents-organization}
+## Contents Organization {#contents-organization}
 
-以下是一些方便你清晰管理和生成文章的目录结构建议:
+A few suggestions to help you get a good looking site quickly:
 
-* 保持博客文章存放在 `content/posts` 目录, 例如: `content/posts/我的第一篇文章.md`
-* 保持简单的静态页面存放在 `content` 目录, 例如: `content/about.md`
-* 本地资源组织
+* Keep post pages in the `content/posts` directory, for example: `content/posts/my-first-post.md`
+* Keep other pages in the `content` directory, for example: `content/about.md`
+* Local resources organization
 
-{{< admonition note "本地资源引用" >}}
+{{< admonition note "Local Resource Reference" >}}
 {{< version 0.2.10 >}}
 
-有三种方法来引用**图片**和**音乐**等本地资源:
+There are three ways to reference local resources such as **images** and **music**:
 
-1. 使用[页面包](https://gohugo.io/content-management/page-bundles/)中的[页面资源](https://gohugo.io/content-management/page-resources/).
-   你可以使用适用于 `Resources.GetMatch` 的值或者直接使用相对于当前页面目录的文件路径来引用页面资源.
-2. 将本地资源放在 **assets** 目录中, 默认路径是 `/assets`.
-   引用资源的文件路径是相对于 assets 目录的.
-3. 将本地资源放在 **static** 目录中, 默认路径是 `/static`.
-   引用资源的文件路径是相对于 static 目录的.
+1. Using [page resources](https://gohugo.io/content-management/page-resources/) in [page bundles](https://gohugo.io/content-management/page-bundles/).
+   You can reference page resources by the value for `Resources.GetMatch` or the filepath of the resource relative to the page directory directly.
+2. Store resources in the **assets** directory, which is `/assets` by default.
+   The filepath of the resource to reference in the post is relative to the assets directory.
+3. Store resources in the **static** directory, which is `/static` by default.
+   The filepath of the resource to reference in the post is relative to the static directory.
 
-引用的**优先级**符合以上的顺序.
+The **priority** of references is also in the above order.
 
-在这个主题中的很多地方可以使用上面的本地资源引用,
-例如 **链接**, **图片**, `image` shortcode, `music` shortcode 和**前置参数**中的部分参数.
+There are many places in the theme where the above local resource references can be used,
+such as **links**, **images**, `image` shortcode, `music` shortcode and some params in the **front matter**.
 
-页面资源或者 **assets** 目录中的[图片处理](https://gohugo.io/content-management/image-processing/)会在未来的版本中得到支持.
-非常酷的功能! {{< fa-icon regular grin-squint >}}
+Images in page resources or assets directory [processing](https://gohugo.io/content-management/image-processing/)
+will be supported in the future.
+It's really cool! {{< fa-icon regular grin-squint >}}
 {{< /admonition >}}
 
-## 作者配置 {#author-setup}
+## Author Settings {#author-setup}
 
-我们鼓励你在 `mysite/data/authors` 下创建你的作者个人资料 `author_name.toml`. 在你的资料中, 你可以添加个人链接, 邮箱, 以及支持 i18n 的姓名.
+You are encouraged to create your author profile under `mysite/data/authors` as `author_name.toml`. In your profile, you can specify the link, email and name with i18n support.
 
-以下是 `Alice.toml` 的示例:
+Here is an example for `Alice.toml`:
 
 ```toml
 link = "https://alice.example.com"
@@ -67,7 +68,7 @@ name = "Alice"
     name = "爱丽丝"
 ```
 
-在创建作者个人资料后, 您可以在文章的前置参数中指定您的姓名. 之后, 该文章将自动著上你的名字, 并可以根据作者进行分类.
+After creating your author profile, you can specify your name in the front matter of your posts. After that, the post will be automatically signed with your name and link, and will be classified according to its author.
 
 ```yaml
 ---
@@ -75,7 +76,7 @@ authors: [Alice]
 ---
 ```
 
-您也可以为一篇文章注明多个作者.
+You can also specify multiple authors for one post.
 
 ```yaml
 ---
@@ -83,20 +84,20 @@ authors: [Alice, Bob, Catherine]
 ---
 ```
 
-## 前置参数 {#front-matter}
+## Front Matter {#front-matter}
 
-**Hugo** 允许你在文章内容前面添加 `yaml`, `toml` 或者 `json` 格式的前置参数.
+**Hugo** allows you to add front matter in `yaml`, `toml` or `json` to your content files.
 
 {{< admonition >}}
-**不是所有**的以下前置参数都必须在你的每篇文章中设置.
-只有在文章的参数和你的 [网站设置](../theme-documentation-basics#site-configuration) 中的 `page` 部分不一致时才有必要这么做.
+**Not all** of the below front matters need to be set in each of your posts.
+It is necessary only if the front matters and the `page` part in your [site configuration](../theme-documentation-basics#site-configuration) are inconsistent.
 {{< /admonition >}}
 
-这是一个前置参数例子:
+Here is a front matter example:
 
 ```yaml
 ---
-title: "我的第一篇文章"
+title: "My First Post"
 subtitle: ""
 date: 2020-03-04T15:58:26+08:00
 lastmod: 2020-03-04T15:58:26+08:00
@@ -151,13 +152,13 @@ comment:
 library:
   css:
     # someCSS = "some.css"
-    # 位于 "assets/"
-    # 或者
+    # located in "assets/"
+    # Or
     # someCSS = "https://cdn.example.com/some.css"
   js:
     # someJS = "some.js"
-    # 位于 "assets/"
-    # 或者
+    # located in "assets/"
+    # Or
     # someJS = "https://cdn.example.com/some.js"
 seo:
   images: []
@@ -174,60 +175,60 @@ related:
 ---
 ```
 
-* **title**: 文章标题.
-* **subtitle**: {{< version 0.2.0 >}} 文章副标题.
-* **date**: 这篇文章创建的日期时间. 它通常是从文章的前置参数中的 `date` 字段获取的, 但是也可以在 [网站配置](../theme-documentation-basics#site-configuration) 中设置.
-* **lastmod**: 上次修改内容的日期时间.
-* **draft**: 如果设为 `true`, 除非 `hugo` 命令使用了 `--buildDrafts`/`-D` 参数, 这篇文章不会被渲染.
-* **authors**: {{< version 0.2.12 changed >}} 文章作者.
-* **description**: 文章内容的描述.
-* **license**: 这篇文章特殊的许可.
-* **images**: 页面图片, 用于 Open Graph 和 Twitter Cards.
+* **title**: the title for the content.
+* **subtitle**: {{< version 0.2.0 >}} the subtitle for the content.
+* **date**: the datetime assigned to this page, which is usually fetched from the `date` field in front matter, but this behaviour is configurabl in the [site configuration](../theme-documentation-basics#site-configuration).
+* **lastmod**: the datetime at which the content was last modified.
+* **draft**: if `true`, the content will not be rendered unless the `--buildDrafts`/`-D` flag is passed to the `hugo` command.
+* **authors**: {{< version 0.2.12 changed >}} the list of authors for the content.
+* **description**: the description for the content.
+* **license**: the special license for this content.
+* **images**: page images for Open Graph and Twitter Cards.
 
-* **tags**: 文章的标签.
-* **categories**: 文章所属的类别.
-* **series**: {{< version 0.2.12 >}} 文章所属的系列.
-* **series_weight**: {{< version 0.2.13 >}} 自定义文章在系列中的[位置](https://gohugo.io/content-management/taxonomies/#order-taxonomies).
-* **seriesNavigation**: {{< version 0.2.13 >}} 是否使用系列导航.
-* **featuredImage**: 文章的特色图片.
-* **featuredImagePreview**: 用在主页预览的文章特色图片.
+* **tags**: the tags for the content.
+* **categories**: the categories for the content.
+* **series**: {{< version 0.2.12 >}} the series for the content.
+* **series_weight**: {{< version 0.2.13 >}} define the [position](https://gohugo.io/content-management/taxonomies/#order-taxonomies) of the post in the series.
+* **seriesNavigation**: {{< version 0.2.13 >}} whether to enable series navigation.
+* **featuredImage**: the featured image for the content.
+* **featuredImagePreview**: the featured image for the content preview in the home page.
 
-* **hiddenFromHomePage**: 如果设为 `true`, 这篇文章将不会显示在主页上.
-* **hiddenFromSearch**: {{< version 0.2.0 >}} 如果设为 `true`, 这篇文章将不会显示在搜索结果中.
-* **twemoji**: {{< version 0.2.0 >}} 如果设为 `true`, 这篇文章会使用 twemoji.
-* **lightgallery**: 如果设为 `true`, 文章中的图片将可以按照画廊形式呈现.
-* **ruby**: {{< version 0.2.0 >}} 如果设为 `true`, 这篇文章会使用 [上标注释扩展语法](#ruby).
-* **fraction**: {{< version 0.2.0 >}} 如果设为 `true`, 这篇文章会使用 [分数扩展语法](#fraction).
-* **linkToMarkdown**: 如果设为 `true`, 内容的页脚将显示指向原始 Markdown 文件的链接.
-* **linkToSource**: {{< version 0.2.14 >}} 如果设为 `false`, 则关闭页脚 **view source** 的链接. 你可以将其设置为一个指向文章原始文件的链接. 使用魔法变量 `{path}` 来获取文章的相对路径, 这篇文章的 `{path}` 是 `posts/theme-documentation-content/index.en.md`.
-* **linkToEdit**:{{< version 0.2.13 >}} 如果设为 `false`, 则关闭页脚 **编辑此页** 的链接. 你可以将其设置为一个用于编辑这个页面的链接. 使用魔法变量 `{path}` 来获取这篇文章的相对路径, 这篇文章的 `{path}` 是 `posts/theme-documentation-content/index.ko.md`.
-* **linkToReport**: {{< version 0.2.14 >}} 如果设为 `false`, 则关闭页脚 **报告问题** 的链接. 你可以将其设置为一个用于报告此页面中错误的链接. 使用魔法变量 `{path}` 来获取文章的相对路径, 这篇文章的 `{path}` 是 `posts/theme-documentation-content/index.en.md`, 使用 `{title}` 来获取文章的标题, 这篇文章的 `{title}` 为 `Theme Documentation - Content`, 使用 `{url}` 来获取文章的链接, 这篇文章的 `{url}` 为 `https://hugodoit.pages.dev/theme-documentation-content/`.
-* **rssFullText**: {{< version 0.2.4 >}} 如果设为 `true`, 在 RSS 中将会显示全文内容.
-* **enableLastMod**: 如果设为 `true`，在文章的顶部将会显示上次修改内容的日期时间.
-* **enableWordCount**: 如果设为 `true`, 在文章的顶部将会显示文章的字数.
-* **enableReadingTime**: 如果设为 `true`, 在文章的顶部将会显示文章的阅读时间.
-* **license**: {{< version 0.2.14 >}} 许可协议信息 (支持 HTML 格式).
+* **hiddenFromHomePage**: if `true`, the content will not be shown in the home page.
+* **hiddenFromSearch**: {{< version 0.2.0 >}} if `true`, the content will not be shown in the search results.
+* **twemoji**: {{< version 0.2.0 >}} if `true`, the content will enable the twemoji.
+* **lightgallery**: if `true`, images in the content will be shown as the gallery.
+* **ruby**: {{< version 0.2.0 >}} if `true`, the content will enable the [ruby extended syntax](#ruby).
+* **fraction**: {{< version 0.2.0 >}} if `true`, the content will enable the [fraction extended syntax](#fraction).
+* **linkToMarkdown**: if `true`, the footer of the content will be shown the link to the original Markdown file.
+* **linkToSource**: {{< version 0.2.14 >}} if `false`, turn off the **view source** link in the footer. You can set it to the link to the source file of the post. Use the magic variable `{path}` to specify the relative path of the post, for example, the `{path}` for this post is `posts/theme-documentation-content/index.en.md`.
+* **linkToEdit**: {{< version 0.2.13 >}} if `false`, turn off the **edit this page** link in the footer. You can set it to the link to edit the page. Use the magic variable `{path}` to specify the relative path of the post, for example, the `{path}` for this post is `posts/theme-documentation-content/index.en.md`.
+* **linkToReport**: {{< version 0.2.14 >}} if `false`, turn off the **report issue** link in the footer. You can set it to the link to report issues about the page. Use the magic variables: `{path}` to specify the relative path of the post, for example, the `{path}` for this post is `posts/theme-documentation-content/index.en.md`, `{title}` to specify the title of the post, for example, the `{title}` for this post is `Theme Documentation - Content` and `{url}` to specify the url of the post, for example, the `{url}` for this post is `https://hugodoit.pages.dev/theme-documentation-content/`.
+* **rssFullText**: {{< version 0.2.4 >}} if `true`, the full text content will be shown in RSS.
+* **enableLastMod**: if `true`, the last modified time will be shown in the header.
+* **enableWordCount**: if `true`, the word count will be shown in the header.
+* **enableReadingTime**: if `true`, the reading time will be shown in the header.
+* **license**: {{< version 0.2.14 >}} set the license info (HTML format is supported).
 
-* **toc**: {{< version 0.2.9 changed >}} 和 [网站配置](../theme-documentation-basics#site-configuration) 中的 `params.page.toc` 部分相同.
-* **code**: {{< version 0.2.0 >}} 和 [网站配置](../theme-documentation-basics#site-configuration) 中的 `params.page.code` 部分相同.
-* **table**: {{< version 0.2.14 >}} 和 [网站配置](../theme-documentation-basics#site-configuration) 中的 `params.page.table` 部分相同.
-* **math**: {{< version 0.2.0 changed >}} 和 [网站配置](../theme-documentation-basics#site-configuration) 中的 `params.page.math` 部分相同.
-* **mapbox**: {{< version 0.2.0 >}} 和 [网站配置](../theme-documentation-basics#site-configuration) 中的 `params.page.mapbox` 部分相同.
-* **share**: 和 [网站配置](../theme-documentation-basics#site-configuration) 中的 `params.page.share` 部分相同.
-* **comment**: {{< version 0.2.0 changed >}} 和 [网站配置](../theme-documentation-basics#site-configuration) 中的 `params.page.comment` 部分相同.
-* **library**: {{< version 0.2.7 >}} 和 [网站配置](../theme-documentation-basics#site-configuration) 中的 `params.page.library` 部分相同.
-* **seo**: {{< version 0.2.10 >}} 和 [网站配置](../theme-documentation-basics#site-configuration) 中的 `params.page.seo` 部分相同.
-* **outdatedArticleReminder**: {{< version 0.2.13 >}} 和 [网站配置](../theme-documentation-basics#site-configuration) 中的 `params.page.outdatedArticleReminder` 部分相同.
-* **sponsor**: {{< version 0.2.13 >}} 和 [网站配置](../theme-documentation-basics#site-configuration) 中的 `params.sponsor` 部分相同.
-* **related**: {{< version 0.2.14 >}} 和 [网站配置](../theme-documentation-basics#site-configuration) 中的 `params.page.related` 部分相同.
+* **toc**: {{< version 0.2.9 changed >}} the same as the `params.page.toc` part in the [site configuration](../theme-documentation-basics#site-configuration).
+* **code**: {{< version 0.2.0 >}} the same as the `params.page.code` part in the [site configuration](../theme-documentation-basics#site-configuration).
+* **table**: {{< version 0.2.14 >}} the same as the `params.page.table` part in the [site configuration](../theme-documentation-basics#site-configuration).
+* **math**: {{< version 0.2.0 changed >}} the same as the `params.page.math` part in the [site configuration](../theme-documentation-basics#site-configuration).
+* **mapbox**: {{< version 0.2.0 >}} the same as the `params.page.mapbox` part in the [site configuration](../theme-documentation-basics#site-configuration).
+* **share**: the same as the `params.page.share` part in the [site configuration](../theme-documentation-basics#site-configuration).
+* **comment**: {{< version 0.2.0 changed >}} the same as the `params.page.comment` part in the [site configuration](../theme-documentation-basics#site-configuration).
+* **library**: {{< version 0.2.7 >}} the same as the `params.page.library` part in the [site configuration](../theme-documentation-basics#site-configuration).
+* **seo**: {{< version 0.2.10 >}} the same as the `params.page.seo` part in the [site configuration](../theme-documentation-basics#site-configuration).
+* **outdatedArticleReminder**: {{< version 0.2.13 >}} the same as the `params.page.outdatedArticleReminder` part in the [site configuration](../theme-documentation-basics#site-configuration).
+* **sponsor**: {{< version 0.2.13 >}} the same as the `params.sponsor` part in the [site configuration](../theme-documentation-basics#site-configuration).
+* **related**: {{< version 0.2.14 >}} the same as the `params.page.related` part in the [site configuration](../theme-documentation-basics#site-configuration).
 
 {{< admonition tip >}}
 {{< version 0.2.10 >}}
 
-**featuredImage** 和 **featuredImagePreview** 支持[本地资源引用](#contents-organization)的完整用法.
+**featuredImage** and **featuredImagePreview** support the complete usage of [local resource references](#contents-organization).
 
-如果带有在前置参数中设置了 `name: featured-image` 或 `name: featured-image-preview` 属性的页面资源,
-没有必要在设置 `featuredImage` 或 `featuredImagePreview`:
+If the page resource with `name: featured-image` or `name: featured-image-preview` is set in the front matter,
+it is not necessary to set the parameter `featuredImage` or `featuredImagePreview`:
 
 ```yaml
 resources:
@@ -238,70 +239,70 @@ resources:
 ```
 {{< /admonition >}}
 
-## 内容摘要
+## Content Summaries
 
-**DoIt** 主题使用内容摘要在主页中显示大致文章信息. Hugo 支持生成文章的摘要.
+**DoIt** theme uses the summary of the content to display abstract information in the home page. Hugo can generate summaries of your content.
 
-{{< image src="summary.zh-cn.webp" caption="文章摘要预览" width="1740" height="870" >}}
+{{< image src="summary.webp" caption="Summary Preview" width="1740" height="862" >}}
 
-### 自动摘要拆分
+### Automatic Summary Splitting
 
-默认情况下, Hugo 自动将内容的前 70 个单词作为摘要.
+By default, Hugo automatically takes the first 70 words of your content as its summary.
 
-你可以通过在 [网站配置](../theme-documentation-basics#site-configuration) 中设置 `summaryLength` 来自定义摘要长度.
+You may customize the summary length by setting `summaryLength` in the [site configuration](../theme-documentation-basics#site-configuration).
 
-如果您要使用 [CJK]^(中文/日语/韩语) 语言创建内容, 并且想使用 Hugo 的自动摘要拆分功能, 请在 [网站配置](../theme-documentation-basics#site-configuration) 中将 `hasCJKLanguage` 设置为 `true`.
+If you are creating content in a [CJK]^(Chinese/Japanese/Korean) language and want to use Hugo’s automatic summary splitting, set `hasCJKLanguage` to `true` in your [site configuration](../theme-documentation-basics#site-configuration).
 
-### 手动摘要拆分
+### Manual Summary Splitting
 
-另外, 你也可以添加 `<!--more-->` 摘要分割符来拆分文章生成摘要.
+Alternatively, you may add the `<!--more-->` summary divider where you want to split the article.
 
-摘要分隔符之前的内容将用作该文章的摘要.
-
-{{< admonition >}}
-请小心输入`<!--more-->` ; 即全部为小写且没有空格.
-{{< /admonition >}}
-
-### 前置参数摘要
-
-你可能希望摘要不是文章开头的文字. 在这种情况下, 你可以在文章前置参数的 `summary` 变量中设置单独的摘要.
-
-### 使用文章描述作为摘要
-
-你可能希望将文章前置参数中的 `description` 变量的内容作为摘要.
-
-你仍然需要在文章开头添加 `<!--more-->` 摘要分割符. 将摘要分隔符之前的内容保留为空. 然后 **DoIt** 主题会将你的文章描述作为摘要.
-
-### 摘要选择的优先级顺序
-
-由于可以通过多种方式指定摘要, 因此了解顺序很有用. 如下:
-
-1. 如果文章中有 `<!--more-->` 摘要分隔符, 但分隔符之前没有内容, 则使用描述作为摘要.
-2. 如果文章中有 `<!--more-->` 摘要分隔符, 则将按照手动摘要拆分的方法获得摘要.
-3. 如果文章前置参数中有摘要变量, 那么将以该值作为摘要.
-4. 按照自动摘要拆分方法.
+Content that comes before the summary divider will be used as that content’s summary.
 
 {{< admonition >}}
-不建议在摘要内容中包含富文本块元素, 这会导致渲染错误. 例如代码块, 图片, 表格等.
+Be careful to enter `<!--more-->` exactly; i.e., all lowercase and with no whitespace.
 {{< /admonition >}}
 
-## Markdown 基本语法
+### Front Matter Summary
 
-这部分内容在 [Markdown 基本语法页面](../basic-markdown-syntax/) 中介绍.
+You might want your summary to be something other than the text that starts the article. In this case you can provide a separate summary in the `summary` variable of the article front matter.
 
-## Markdown 扩展语法 {#extended-markdown-syntax}
+### Use Description as Summary
 
-**DoIt** 主题提供了一些扩展的语法便于你撰写文章.
+You might want your description in the `description` variable of the article front matter as the summary.
 
-### Emoji 支持
+You may add the `<!--more-->` summary divider at the start of the article. Keep content that comes before the summary divider empty. Then **DoIt** theme will use your description as the summary.
 
-这部分内容在 [Emoji 支持页面](../emoji-support/) 中介绍.
+### Priority Order of Summary Selection
 
-### 数学公式
+Because there are multiple ways in which a summary can be specified it is useful to understand the order. It is as follows:
 
-**DoIt** 基于 [$ \KaTeX $](https://katex.org/) 提供数学公式的支持.
+1. If there is a `<!--more-->` summary divider present in the article but no content is before the divider, the description will be used as the summary.
+2. If there is a `<!--more-->` summary divider present in the article the text up to the divider will be provided as per the manual summary split method.
+3. If there is a summary variable in the article front matter the value of the variable will be provided as per the front matter summary method.
+4. The text at the start of the article will be provided as per the automatic summary split method.
 
-在你的 [网站配置](../theme-documentation-basics#site-configuration) 中添加如下设置来启用数学公式支持：
+{{< admonition >}}
+It is not recommended to include rich text block elements in the summary, which will cause typographic errors. Such as code blocks, pictures, tables, etc.
+{{< /admonition >}}
+
+## Basic Markdown Syntax
+
+This part is shown in the [basic markdown syntax page](../basic-markdown-syntax/).
+
+## Extended Markdown Syntax {#extended-markdown-syntax}
+
+**DoIt** theme has some extended syntax elements for you to write articles.
+
+### Emoji Support
+
+This part is shown in the [emoji support page](../emoji-support/).
+
+### Mathematical Formula
+
+**DoIt** theme supports mathematical formulas based on [$ \KaTeX $](https://katex.org/).
+
+Set the followings in your [site configuration](../theme-documentation-basics#site-configuration) to enable mathematical formulas.
 
 ```toml {title="hugo.toml"}
 [markup]
@@ -325,12 +326,12 @@ resources:
 ```
 
 {{< admonition tip >}}
-这是一份 [$ \KaTeX $ 中支持的 $ \TeX $ 函数](https://katex.org/docs/supported.html) 列表。
+Here is a list of [$ \TeX $ functions supported by $ \KaTeX $](https://katex.org/docs/supported.html).
 {{< /admonition >}}
 
-#### 公式块
+#### Block Formula
 
-默认的公式块分割符是 `\[ \]`：
+The default block delimiters is `\[ \]`:
 
 ```markdown {linenos=false}
 \[ c = \pm\sqrt{a^2 + b^2} \]
@@ -338,41 +339,41 @@ resources:
 \[ f(x)=\int_{-\infty}^{\infty} \hat{f}(\xi) e^{2 \pi i \xi x} d \xi \]
 ```
 
-呈现的输出效果如下：
+The rendered output looks like this:
 
 \[ c = \pm\sqrt{a^2 + b^2} \]
 
 \[ f(x)=\int_{-\infty}^{\infty} \hat{f}(\xi) e^{2 \pi i \xi x} d \xi \]
 
-#### 行内公式
+#### Inline Formula
 
-默认的行内公式分割符是 `\( \)`：
+The default inline delimiters is `\( \)`:
 
 ```markdown
 \( c = \pm\sqrt{a^2 + b^2} \) and \( f(x)=\int_{-\infty}^{\infty} \hat{f}(\xi) e^{2 \pi i \xi x} d \xi \)
 ```
 
-呈现的输出效果如下:
+The rendered output looks like this:
 
 \( c = \pm\sqrt{a^2 + b^2} \) and \( f(x)=\int_{-\infty}^{\infty} \hat{f}(\xi) e^{2 \pi i \xi x} d \xi \)
 
 #### Copy-tex
 
-**[Copy-tex](https://github.com/Khan/KaTeX/tree/master/contrib/copy-tex)** 是一个 **$ \KaTeX $** 的插件.
+**[Copy-tex](https://github.com/Khan/KaTeX/tree/master/contrib/copy-tex)** is an extension for **$ \KaTeX $**.
 
-通过这个扩展, 在选择并复制 $ \KaTeX $ 渲染的公式时, 会将其 $ \LaTeX $ 源代码复制到剪贴板.
+By the extension, when selecting and copying $ \KaTeX $ rendered elements, copies their $ \LaTeX $ source to the clipboard.
 
-在你的 [网站配置](../theme-documentation-basics#site-configuration) 中的 `[params.math]` 下面设置属性 `copyTex = true` 来启用 Copy-tex.
+Set the property `copyTex = true` under `[params.math]` in your [site configuration](../theme-documentation-basics#site-configuration) to enable Copy-tex.
 
-选择并复制上一节中渲染的公式, 可以发现复制的内容为 LaTeX 源代码.
+Select and copy the formula rendered in the previous section, and you can find that the copied content is the LaTeX source code.
 
 #### mhchem
 
-**[mhchem](https://github.com/Khan/KaTeX/tree/master/contrib/mhchem)** 是一个 **$ \KaTeX $** 的插件.
+**[mhchem](https://github.com/Khan/KaTeX/tree/master/contrib/mhchem)** is an extension for **$ \KaTeX $**.
 
-通过这个扩展, 你可以在文章中轻松编写漂亮的化学方程式.
+By the extension, you can write beautiful chemical equations easily in the article.
 
-在你的 [网站配置](../theme-documentation-basics#site-configuration) 中的 `[params.math]` 下面设置属性 `mhchem = true` 来启用 mhchem.
+Set the property `mhchem = true` under `[params.math]` in your [site configuration](../theme-documentation-basics#site-configuration) to enable mhchem.
 
 ```markdown
 \[ \ce{CO2 + C -> 2 CO} \]
@@ -380,45 +381,45 @@ resources:
 \[ \ce{Hg^2+ ->[I-] HgI2 ->[I-] [Hg^{II}I4]^2-} \]
 ```
 
-呈现的输出效果如下:
+The rendered output looks like this:
 
 \[ \ce{CO2 + C -> 2 CO} \]
 
 \[ \ce{Hg^2+ ->[I-] HgI2 ->[I-] [Hg^{II}I4]^2-} \]
 
-### 字符注音或者注释 {#ruby}
+### Ruby Annotation {#ruby}
 
-**DoIt** 主题支持一种 **字符注音或者注释** Markdown 扩展语法:
+An extended Markdown syntax for **ruby annotation** is supported in **DoIt** theme:
 
 ```markdown
-[Hugo]{?^}(一个开源的静态网站生成工具)
+[Hugo]{?^}(An open-source static site generator)
 ```
 
-呈现的输出效果如下:
+The rendered output looks like this:
 
-[Hugo]^(一个开源的静态网站生成工具)
+[Hugo]^(An open-source static site generator)
 
-### 分数 {#fraction}
+### Fraction {#fraction}
 
 {{< version 0.2.0 >}}
 
-**DoIt** 主题支持一种 **分数** Markdown 扩展语法:
+An extended Markdown syntax for **fraction** is supported in **DoIt** theme:
 
 ```markdown
-[浅色]{?/}[深色]
+[Light]{?/}[Dark]
 
 [99]{?/}[100]
 ```
 
-呈现的输出效果如下:
+The rendered output looks like this:
 
-[浅色]/[深色]
+[Light]/[Dark]
 
 [90]/[100]
 
-### Blockquotes
+### Blockquote
 
-**DoIt** 支持 GitHub 风格的引用块：
+**DoIt** supports GitHub-style blockquotes:
 
 ```markdown {open=true}
 > [!NOTE]
@@ -437,7 +438,7 @@ resources:
 > Advises about risks or negative outcomes of certain actions.
 ```
 
-呈现的输出效果如下：
+The rendered output looks like this:
 
 > [!NOTE]
 > Useful information that users should know, even when skimming content.

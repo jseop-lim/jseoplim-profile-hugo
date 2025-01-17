@@ -1,11 +1,11 @@
 ---
-title: "如何在 DoIt 中创建图表"
-subtitle: "使用 GoAT 与 Mermaid 在 DoIt 中创建 SVG 图表"
+title: "How to create diagrams in DoIt"
+subtitle: "Create SVG diagrams using GoAT or Mermaid in DoIt"
 date: 2022-02-28T14:27:14Z
 lastmod: 2022-02-28T14:27:14Z
 draft: true
 authors: [PCloud]
-description: "这篇文档将展示如何在 DoIt 中使用 GoAT 和 Mermaid 创建 SVG 图表。"
+description: "This post explains how you can create custom SVG diagrams in DoIt using GoAT or Mermaid."
 
 tags: ["diagram", "markdown"]
 categories: ["Documentation"]
@@ -28,16 +28,16 @@ code:
 <!--more-->
 
 {{< admonition type=note title="Note" open=true >}}
-你需要使用 Hugo [**v0.93.0**](https://github.com/gohugoio/hugo/releases/tag/v0.93.0) 或更新的版本来创建自定义图表。
+Hugo [**v0.93.0**](https://github.com/gohugoio/hugo/releases/tag/v0.93.0) or later is required for drawing custom diagrams.
 
-如果你不得不使用旧版的 Hugo，你可以使用 [`mermaid` shortcode]({{< relref "../../theme-documentation-extended-shortcodes/index.ko.md#mermaid" >}})。
+Check out the [`mermaid` shortcode]({{< relref "../../theme-documentation-extended-shortcodes/index.en.md#mermaid" >}}) if you have to use an older version of Hugo.
 {{< /admonition >}}
 
 ## GoAT
 
-[[GoAT](https://github.com/bep/goat)]^(Go ASCII Tool) 是 [markdeep.mini.js](https://casual-effects.com/markdeep/) 图像生成器的 Go 语言实现。
+[[GoAT](https://github.com/bep/goat)]^(Go ASCII Tool) is a Go implementation of [markdeep.mini.js](https://casual-effects.com/markdeep/)'s ASCII diagram generator.
 
-要使用 GoAT，只需将 ASCII 输入放在代码块中，并将语言设置为 `goat`。
+To use GoAT, simply place the ASCII input inside a code block with the language set to `goat`.
 
 ````markdown
 ```goat
@@ -45,11 +45,11 @@ code:
 ```
 ````
 
-以下是使用 GoAT 生成 SVG 的一些示例。
+Here are some examples of generated SVGs using GoAT.
 
-查看更多[示例](https://github.com/bep/goat/tree/master/examples) 。
+More [examples](https://github.com/bep/goat/tree/master/examples) are available.
 
-### 树
+### Trees
 
 ````markdown
 ```goat
@@ -73,7 +73,7 @@ code:
      1   2 3   4    1   2   3   4    1   2   3   4         '--- 4          '-- 4     \ 4
 ```
 
-### 重叠
+### Overlaps
 
 ````markdown
 ```goat
@@ -97,7 +97,7 @@ code:
            '-'           '-'           '-'           '-'           '-'           '-'
 ```
 
-### 线条装饰
+### Line Decorations
 
 ````markdown
 ```goat
@@ -121,7 +121,7 @@ code:
           /\                                                               *---------------'
 ```
 
-### 线端
+### Line Ends
 
 ````markdown
 ```goat
@@ -151,7 +151,7 @@ code:
    <--o   <--*   <-->   <---      ---o   ---*   --->   ----      *<--   o<--   -->o   -->*
 ```
 
-### 点网格
+### Dot Grids
 
 ````markdown
 ```goat
@@ -171,7 +171,7 @@ code:
   o o o o o  * * * * *  * * * * o    o o o      * * *      o * o     · · · · ·     · · *
 ```
 
-### 大节点
+### Large Nodes
 
 ````markdown
 ```goat
@@ -197,7 +197,7 @@ code:
                           '-'      '---'        '-'      '---'      '-'       '-'       '---'
 ```
 
-### 小网格
+### Small Grids
 
 ````markdown
 ```goat
@@ -221,7 +221,7 @@ code:
       \___/   \___/     '---+---+---+---+---'   '---+---+---+---'    '---'   '---'
 ```
 
-### 大网格
+### Big Grids
 
 ````markdown
 ```goat
@@ -253,7 +253,7 @@ code:
            '----'        '----'      '-----+-----+-----'  '-----+-----+-----+-----+
 ```
 
-### 复杂图表
+### Complicated
 
 ````markdown
 ```goat
@@ -313,9 +313,9 @@ code:
 
 ## Mermaid
 
-[Mermaid](https://mermaid-js.github.io/) 是一个基于 JavaScript 的图表工具，它允许您使用文本和代码创建图表和可视化。
+[Mermaid](https://mermaid-js.github.io/) is a JavaScript-based diagramming and charting tool that renders Markdown-inspired text definitions to create and modify diagrams dynamically. It lets you create diagrams and visualizations using text and code.
 
-要使用 Mermaid，只需将 Mermaid 的代码输入放在代码块中，并将语言设置为 `mermaid`。
+To use Mermaid, simply place the mermaid code inside a code block with the language set to `mermaid`.
 
 ````markdown
 ```mermaid
@@ -323,9 +323,9 @@ code:
 ```
 ````
 
-下面是一些使用 Mermaid 生成的 SVG 图表示例。
+Here are some examples of generated SVGs using Mermaid.
 
-### 流程图
+### Flowchart
 
 All [Flowcharts](https://mermaid-js.github.io/mermaid/#/./flowchart?id=flowcharts-basic-syntax
 ) are composed of nodes, geometric shapes and edges, the arrows or lines. The mermaid code defines the way that these nodes and edges are made and interact.
@@ -348,7 +348,7 @@ graph TD;
     C-->D;
 ```
 
-### 序列图
+### Sequence diagram
 
 A [Sequence diagram](https://mermaid-js.github.io/mermaid/#/./sequenceDiagram
 ) is an interaction diagram that shows how processes operate with one another and in what order.
@@ -383,7 +383,7 @@ sequenceDiagram
     Bob-->>John: Jolly good!
 ```
 
-### 甘特图
+### Gantt diagram
 
 A [Gantt chart](https://mermaid-js.github.io/mermaid/#/./gantt) is a type of bar chart, first developed by Karol Adamiecki in 1896, and independently by Henry Gantt in the 1910s, that illustrates a project schedule and the amount of time it would take for any one project to finish. Gantt charts illustrate numbers of days between the start and finish dates of the terminal elements and summary elements of a project.
 
@@ -415,7 +415,7 @@ Future task               :         des3, after des2, 5d
 Future task2               :         des4, after des3, 5d
 ```
 
-### 类图
+### Class diagram
 
 The [class diagram](https://mermaid-js.github.io/mermaid/#/./classDiagram) is the main building block of object-oriented modelling. It is used for general conceptual modelling of the structure of the application, and detailed modelling translating the models into programming code. Class diagrams can also be used for data modelling. The classes in a class diagram represent both the main elements, interactions in the application, and the classes to be programmed.
 
@@ -455,7 +455,7 @@ Class01 : int gorilla
 Class08 <--> C2: Cool label
 ```
 
-### Git 图
+### Git graph
 
 ````markdown
 ```mermaid
@@ -549,7 +549,7 @@ gitGraph
     merge release
 ```
 
-### 实体关系图 - 实验性
+### Entity Relationship Diagram - experimental
 
 An [entity–relationship diagram](https://mermaid-js.github.io/mermaid/#/./entityRelationshipDiagram) (or ER diagram) describes interrelated things of interest in a specific domain of knowledge. A basic ER diagram is composed of entity types (which classify the things of interest) and specifies relationships that can exist between entities (instances of those entity types).
 
@@ -569,7 +569,7 @@ erDiagram
     CUSTOMER }|..|{ DELIVERY-ADDRESS : uses
 ```
 
-### 用户旅程图
+### User Journey Diagram
 
 [User journey diagrams](https://mermaid-js.github.io/mermaid/#/./user-journey) describe at a high level of detail exactly what steps different users take to complete a specific task within a system, application or website. This technique shows the current (as-is) user workflow, and reveals areas of improvement for the to-be workflow.
 

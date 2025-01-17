@@ -1,11 +1,11 @@
 ---
 weight: 5
-title: "Emoji 支持"
+title: "Emoji Support"
 date: 2019-10-01T17:55:28+08:00
 lastmod: 2019-10-01T17:55:28+08:00
 draft: true
 authors: ["Dillon"]
-description: "Hugo 和 DoIt 中的 Emoji 的用法指南."
+description: "Guide to emoji usage in Hugo and DoIt."
 featuredImage: "featured-image.webp"
 
 tags: ["emoji"]
@@ -14,36 +14,35 @@ categories: ["documentation"]
 lightgallery: true
 ---
 
-Emoji 可以通过多种方式在 Hugo 项目中启用.
+Emoji can be enabled in a Hugo project in a number of ways.
 
 <!--more-->
 
-[`emojify`](https://gohugo.io/functions/emojify/) 方法可以直接在模板中调用, 或者使用[行内 Shortcodes](https://gohugo.io/templates/shortcode-templates#inline-shortcodes).
+The [`emojify`](https://gohugo.io/functions/emojify/) function can be called directly in templates or [Inline Shortcodes](https://gohugo.io/templates/shortcode-templates#inline-shortcodes).
 
-要全局使用 emoji, 需要在你的[网站配置](https://gohugo.io/getting-started/configuration/)中设置 `enableEmoji` 为 `true`,
-然后你就可以直接在文章中输入 emoji 的代码.
+To enable emoji globally, set `enableEmoji` to `true` in your [site configuration](https://gohugo.io/getting-started/configuration/) and then you can type emoji shorthand codes directly in content files.
 
-它们以**冒号**开头和结尾, 并且包含 emoji 的 **代码**:
+These begin and end with a **colon** and include the **code** of an emoji:
 
 ```markdown
-去露营啦! {?:}tent: 很快就回来.
+Gone camping! {?:}tent: Be back soon.
 
-真开心! {?:}joy:
+That is so funny! {?:}joy:
 ```
 
-呈现的输出效果如下:
+The rendered output looks like this:
 
-去露营啦! :tent: 很快就回来.
+Gone camping! :tent: Be back soon.
 
-真开心! :joy:
+That is so funny! :joy:
 
-以下**符号清单**是 emoji 代码的非常有用的参考.
+The following **cheat sheet** is a useful reference for emoji shorthand codes.
 
-## 表情与情感
+## Smileys & Emotion
 
-### 笑脸表情
+### Face Smiling
 
-| 图标 | 代码 | 图标 | 代码 |
+| icon | code | icon | code |
 | :-: | - | :-: | - |
 | :grinning: | `grinning` | :smiley: | `smiley` |
 | :smile: | `smile` | :grin: | `grin` |
@@ -53,31 +52,31 @@ Emoji 可以通过多种方式在 Hugo 项目中启用.
 | :wink: | `wink` | :blush: | `blush` |
 | :innocent: | `innocent` | | |
 
-### 爱意表情
+### Face Affection
 
-| 图标 | 代码 | 图标 | 代码 |
+| icon | code | icon | code |
 | :-: | - | :-: | - |
 | :heart_eyes: | `heart_eyes` | :kissing_heart: | `kissing_heart` |
 | :kissing: | `kissing` | :relaxed: | `relaxed` |
 | :kissing_closed_eyes: | `kissing_closed_eyes` | :kissing_smiling_eyes: | `kissing_smiling_eyes` |
 
-### 吐舌头表情
+### Face Tongue
 
-| 图标 | 代码 | 图标 | 代码 |
+| icon | code | icon | code |
 | :-: | - | :-: | - |
 | :yum: | `yum` | :stuck_out_tongue: | `stuck_out_tongue` |
 | :stuck_out_tongue_winking_eye: | `stuck_out_tongue_winking_eye` | :stuck_out_tongue_closed_eyes: | `stuck_out_tongue_closed_eyes` |
 | :money_mouth_face: | `money_mouth_face` | | |
 
-### 带手的表情
+### Face Hand
 
-| 图标 | 代码 | 图标 | 代码 |
+| icon | code | icon | code |
 | :-: | - | :-: | - |
 | :hugs: | `hugs` | :thinking: | `thinking` |
 
-### 中性表情
+### Face Neutral Skeptical
 
-| 图标 | 代码 | 图标 | 代码 |
+| icon | code | icon | code |
 | :-: | - | :-: | - |
 | :zipper_mouth_face: | `zipper_mouth_face` | :neutral_face: | `neutral_face` |
 | :expressionless: | `expressionless` | :no_mouth: | `no_mouth` |
@@ -85,37 +84,37 @@ Emoji 可以通过多种方式在 Hugo 项目中启用.
 | :roll_eyes: | `roll_eyes` | :grimacing: | `grimacing` |
 | :lying_face: | `lying_face` | | |
 
-### 困倦的表情
+### Face Sleepy
 
-| 图标 | 代码 | 图标 | 代码 |
+| icon | code | icon | code |
 | :-: | - | :-: | - |
 | :relieved: | `relieved` | :pensive: | `pensive` |
 | :sleepy: | `sleepy` | :drooling_face: | `drooling_face` |
 | :sleeping: | `sleeping` | | |
 
-### 不适的表情
+### Face Unwell
 
-| 图标 | 代码 | 图标 | 代码 |
+| icon | code | icon | code |
 | :-: | - | :-: | - |
 | :mask: | `mask` | :face_with_thermometer: | `face_with_thermometer` |
 | :face_with_head_bandage: | `face_with_head_bandage` | :nauseated_face: | `nauseated_face` |
 | :sneezing_face: | `sneezing_face` | :dizzy_face: | `dizzy_face` |
 
-### 戴帽子的表情
+### Face Hat
 
-| 图标 | 代码 | 图标 | 代码 |
+| icon | code | icon | code |
 | :-: | - | :-: | - |
 | :cowboy_hat_face: | `cowboy_hat_face` | | |
 
-### 戴眼镜的表情
+### Face Glasses
 
-| 图标 | 代码 | 图标 | 代码 |
+| icon | code | icon | code |
 | :-: | - | :-: | - |
 | :sunglasses: | `sunglasses` | :nerd_face: | `nerd_face` |
 
-### 担心的表情
+### Face Concerned
 
-| 图标 | 代码 | 图标 | 代码 |
+| icon | code | icon | code |
 | :-: | - | :-: | - |
 | :confused: | `confused` | :worried: | `worried` |
 | :slightly_frowning_face: | `slightly_frowning_face` | :frowning_face: | `frowning_face` |
@@ -129,27 +128,27 @@ Emoji 可以通过多种方式在 Hugo 项目中启用.
 | :disappointed: | `disappointed` | :sweat: | `sweat` |
 | :weary: | `weary` | :tired_face: | `tired_face` |
 
-### 否定的表情
+### Face Negative
 
-| 图标 | 代码 | 图标 | 代码 |
+| icon | code | icon | code |
 | :-: | - | :-: | - |
 | :triumph: | `triumph` | :pout: | `pout` <br /> `rage` |
 | :angry: | `angry` | :smiling_imp: | `smiling_imp` |
 | :imp: | `imp` | :skull: | `skull` |
 | :skull_and_crossbones: | `skull_and_crossbones` | | |
 
-### 特殊打扮的表情
+### Face Costume
 
-| 图标 | 代码 | 图标 | 代码 |
+| icon | code | icon | code |
 | :-: | - | :-: | - |
 | :hankey: | `hankey` <br /> `poop` <br /> `shit` | :clown_face: | `clown_face` |
 | :japanese_ogre: | `japanese_ogre` | :japanese_goblin: | `japanese_goblin` |
 | :ghost: | `ghost` | :alien: | `alien` |
 | :space_invader: | `space_invader` | :robot: | `robot` |
 
-### 猫脸表情
+### Cat Face
 
-| 图标 | 代码 | 图标 | 代码 |
+| icon | code | icon | code |
 | :-: | - | :-: | - |
 | :smiley_cat: | `smiley_cat` | :smile_cat: | `smile_cat` |
 | :joy_cat: | `joy_cat` | :heart_eyes_cat: | `heart_eyes_cat` |
@@ -157,16 +156,16 @@ Emoji 可以通过多种方式在 Hugo 项目中启用.
 | :scream_cat: | `scream_cat` | :crying_cat_face: | `crying_cat_face` |
 | :pouting_cat: | `pouting_cat` | | |
 
-### 猴脸表情
+### Monkey Face
 
-| 图标 | 代码 | 图标 | 代码 |
+| icon | code | icon | code |
 | :-: | - | :-: | - |
 | :see_no_evil: | `see_no_evil` | :hear_no_evil: | `hear_no_evil` |
 | :speak_no_evil: | `speak_no_evil` | | |
 
-### 情感
+### Emotion
 
-| 图标 | 代码 | 图标 | 代码 |
+| icon | code | icon | code |
 | :-: | - | :-: | - |
 | :kiss: | `kiss` | :love_letter: | `love_letter` |
 | :cupid: | `cupid` | :gift_heart: | `gift_heart` |
@@ -185,67 +184,67 @@ Emoji 可以通过多种方式在 Hugo 项目中启用.
 | :right_anger_bubble: | `right_anger_bubble` | :thought_balloon: | `thought_balloon` |
 | :zzz: | `zzz` | | |
 
-## 人与身体
+## People & Body
 
-### 张开手掌的手势
+### Hand Fingers Open
 
-| 图标 | 代码 | 图标 | 代码 |
+| icon | code | icon | code |
 | :-: | - | :-: | - |
 | :wave: | `wave` | :raised_back_of_hand: | `raised_back_of_hand` |
 | :raised_hand_with_fingers_splayed: | `raised_hand_with_fingers_splayed` | :hand: | `hand` <br /> `raised_hand` |
 | :vulcan_salute: | `vulcan_salute` | | |
 
-### 部分手指的手势
+### Hand Fingers Partial
 
-| 图标 | 代码 | 图标 | 代码 |
+| icon | code | icon | code |
 | :-: | - | :-: | - |
 | :ok_hand: | `ok_hand` | :v: | `v` |
 | :crossed_fingers: | `crossed_fingers` | :metal: | `metal` |
 | :call_me_hand: | `call_me_hand` | | |
 
-### 一根手指的手势
+### Hand Single Finger
 
-| 图标 | 代码 | 图标 | 代码 |
+| icon | code | icon | code |
 | :-: | - | :-: | - |
 | :point_left: | `point_left` | :point_right: | `point_right` |
 | :point_up_2: | `point_up_2` | :fu: | `fu` <br /> `middle_finger` |
 | :point_down: | `point_down` | :point_up: | `point_up` |
 
-### 握紧的手势
+### Hand Fingers Closed
 
-| 图标 | 代码 | 图标 | 代码 |
+| icon | code | icon | code |
 | :-: | - | :-: | - |
 | :+1: | `+1` <br /> `thumbsup` | :-1: | `-1` <br /> `thumbsdown` |
 | :fist: | `fist` <br /> `fist_raised` | :facepunch: | `facepunch` <br /> `fist_oncoming` <br /> `punch` |
 | :fist_left: | `fist_left` | :fist_right: | `fist_right` |
 
-### 两只手
+### Hands
 
-| 图标 | 代码 | 图标 | 代码 |
+| icon | code | icon | code |
 | :-: | - | :-: | - |
 | :clap: | `clap` | :raised_hands: | `raised_hands` |
 | :open_hands: | `open_hands` | :handshake: | `handshake` |
 | :pray: | `pray` | | |
 
-### 握住东西的手势
+### Hand Prop
 
-| 图标 | 代码 | 图标 | 代码 |
+| icon | code | icon | code |
 | :-: | - | :-: | - |
 | :writing_hand: | `writing_hand` | :nail_care: | `nail_care` |
 | :selfie: | `selfie` | | |
 
-### 身体部位
+### Body Parts
 
-| 图标 | 代码 | 图标 | 代码 |
+| icon | code | icon | code |
 | :-: | - | :-: | - |
 | :muscle: | `muscle` | :ear: | `ear` |
 | :nose: | `nose` | :eyes: | `eyes` |
 | :eye: | `eye` | :tongue: | `tongue` |
 | :lips: | `lips` | | |
 
-### 人
+### Person
 
-| 图标 | 代码 | 图标 | 代码 |
+| icon | code | icon | code |
 | :-: | - | :-: | - |
 | :baby: | `baby` | :boy: | `boy` |
 | :girl: | `girl` | :blonde_man: | `blonde_man` <br /> `person_with_blond_hair` |
@@ -253,9 +252,9 @@ Emoji 可以通过多种方式在 Hugo 项目中启用.
 | :blonde_woman: | `blonde_woman` | :older_man: | `older_man` |
 | :older_woman: | `older_woman` | | |
 
-### 身体动作
+### Person Gesture
 
-| 图标 | 代码 | 图标 | 代码 |
+| icon | code | icon | code |
 | :-: | - | :-: | - |
 | :frowning_woman: | `frowning_woman` <br /> `person_frowning` | :frowning_man: | `frowning_man` |
 | :person_with_pouting_face: | `person_with_pouting_face` <br /> `pouting_woman` | :pouting_man: | `pouting_man` |
@@ -267,9 +266,9 @@ Emoji 可以通过多种方式在 Hugo 项目中启用.
 | :man_facepalming: | `man_facepalming` | :woman_facepalming: | `woman_facepalming` |
 | :man_shrugging: | `man_shrugging` | :woman_shrugging: | `woman_shrugging` |
 
-### 人物角色
+### Person Role
 
-| 图标 | 代码 | 图标 | 代码 |
+| icon | code | icon | code |
 | :-: | - | :-: | - |
 | :man_health_worker: | `man_health_worker` | :woman_health_worker: | `woman_health_worker` |
 | :man_student: | `man_student` | :woman_student: | `woman_student` |
@@ -296,16 +295,16 @@ Emoji 可以通过多种方式在 Hugo 项目中启用.
 | :man_with_gua_pi_mao: | `man_with_gua_pi_mao` | :man_in_tuxedo: | `man_in_tuxedo` |
 | :bride_with_veil: | `bride_with_veil` | :pregnant_woman: | `pregnant_woman` |
 
-### 幻想的人物
+### Person Fantasy
 
-| 图标 | 代码 | 图标 | 代码 |
+| icon | code | icon | code |
 | :-: | - | :-: | - |
 | :angel: | `angel` | :santa: | `santa` |
 | :mrs_claus: | `mrs_claus` | | |
 
-### 人物活动
+### Person Activity
 
-| 图标 | 代码 | 图标 | 代码 |
+| icon | code | icon | code |
 | :-: | - | :-: | - |
 | :massage: | `massage` <br /> `massage_woman` | :massage_man: | `massage_man` |
 | :haircut: | `haircut` <br /> `haircut_woman` | :haircut_man: | `haircut_man` |
@@ -315,9 +314,9 @@ Emoji 可以通过多种方式在 Hugo 项目中启用.
 | :business_suit_levitating: | `business_suit_levitating` | :dancers: | `dancers` <br /> `dancing_women` |
 | :dancing_men: | `dancing_men` | | |
 
-### 体育
+### Person Sport
 
-| 图标 | 代码 | 图标 | 代码 |
+| icon | code | icon | code |
 | :-: | - | :-: | - |
 | :person_fencing: | `person_fencing` | :horse_racing: | `horse_racing` |
 | :skier: | `skier` | :snowboarder: | `snowboarder` |
@@ -335,15 +334,15 @@ Emoji 可以通过多种方式在 Hugo 项目中启用.
 | :man_playing_handball: | `man_playing_handball` | :woman_playing_handball: | `woman_playing_handball` |
 | :man_juggling: | `man_juggling` | :woman_juggling: | `woman_juggling` |
 
-### 休息
+### Person Resting
 
-| 图标 | 代码 | 图标 | 代码 |
+| icon | code | icon | code |
 | :-: | - | :-: | - |
 | :bath: | `bath` | :sleeping_bed: | `sleeping_bed` |
 
-### 家庭
+### Family
 
-| 图标 | 代码 | 图标 | 代码 |
+| icon | code | icon | code |
 | :-: | - | :-: | - |
 | :two_women_holding_hands: | `two_women_holding_hands` | :couple: | `couple` |
 | :two_men_holding_hands: | `two_men_holding_hands` | :couplekiss_man_woman: | `couplekiss_man_woman` |
@@ -363,18 +362,18 @@ Emoji 可以通过多种方式在 Hugo 项目中启用.
 | :family_woman_boy_boy: | `family_woman_boy_boy` | :family_woman_girl: | `family_woman_girl` |
 | :family_woman_girl_boy: | `family_woman_girl_boy` | :family_woman_girl_girl: | `family_woman_girl_girl` |
 
-### 人物符号
+### Person Symbol
 
-| 图标 | 代码 | 图标 | 代码 |
+| icon | code | icon | code |
 | :-: | - | :-: | - |
 | :speaking_head: | `speaking_head` | :bust_in_silhouette: | `bust_in_silhouette` |
 | :busts_in_silhouette: | `busts_in_silhouette` | :footprints: | `footprints` |
 
-## 动物与自然
+## Animals & Nature
 
-### 哺乳动物
+### Animal Mammal
 
-| 图标 | 代码 | 图标 | 代码 |
+| icon | code | icon | code |
 | :-: | - | :-: | - |
 | :monkey_face: | `monkey_face` | :monkey: | `monkey` |
 | :gorilla: | `gorilla` | :dog: | `dog` |
@@ -400,9 +399,9 @@ Emoji 可以通过多种方式在 Hugo 项目中启用.
 | :koala: | `koala` | :panda_face: | `panda_face` |
 | :feet: | `feet` <br /> `paw_prints` | | |
 
-### 鸟类
+### Animal Bird
 
-| 图标 | 代码 | 图标 | 代码 |
+| icon | code | icon | code |
 | :-: | - | :-: | - |
 | :turkey: | `turkey` | :chicken: | `chicken` |
 | :rooster: | `rooster` | :hatching_chick: | `hatching_chick` |
@@ -411,23 +410,23 @@ Emoji 可以通过多种方式在 Hugo 项目中启用.
 | :dove: | `dove` | :eagle: | `eagle` |
 | :duck: | `duck` | :owl: | `owl` |
 
-### 两栖动物
+### Animal Amphibian
 
 | icon | code | icon | code |
 | :-: | - | :-: | - |
 | :frog: | `frog` |
 
-### 爬虫类
+### Animal Reptile
 
-| 图标 | 代码 | 图标 | 代码 |
+| icon | code | icon | code |
 | :-: | - | :-: | - |
 | :crocodile: | `crocodile` | :turtle: | `turtle` |
 | :lizard: | `lizard` | :snake: | `snake` |
 | :dragon_face: | `dragon_face` | :dragon: | `dragon` |
 
-### 海洋动物
+### Animal Marine
 
-| 图标 | 代码 | 图标 | 代码 |
+| icon | code | icon | code |
 | :-: | - | :-: | - |
 | :whale: | `whale` | :whale2: | `whale2` |
 | :dolphin: | `dolphin` <br /> `flipper` | :fish: | `fish` |
@@ -435,9 +434,9 @@ Emoji 可以通过多种方式在 Hugo 项目中启用.
 | :shark: | `shark` | :octopus: | `octopus` |
 | :shell: | `shell` | | |
 
-### 虫类
+### Animal Bug
 
-| 图标 | 代码 | 图标 | 代码 |
+| icon | code | icon | code |
 | :-: | - | :-: | - |
 | :snail: | `snail` | :butterfly: | `butterfly` |
 | :bug: | `bug` | :ant: | `ant` |
@@ -445,9 +444,9 @@ Emoji 可以通过多种方式在 Hugo 项目中启用.
 | :spider: | `spider` | :spider_web: | `spider_web` |
 | :scorpion: | `scorpion` | | |
 
-### 花类植物
+### Plant Flower
 
-| 图标 | 代码 | 图标 | 代码 |
+| icon | code | icon | code |
 | :-: | - | :-: | - |
 | :bouquet: | `bouquet` | :cherry_blossom: | `cherry_blossom` |
 | :white_flower: | `white_flower` | :rosette: | `rosette` |
@@ -455,9 +454,9 @@ Emoji 可以通过多种方式在 Hugo 项目中启用.
 | :hibiscus: | `hibiscus` | :sunflower: | `sunflower` |
 | :blossom: | `blossom` | :tulip: | `tulip` |
 
-### 其它植物
+### Plant Other
 
-| 图标 | 代码 | 图标 | 代码 |
+| icon | code | icon | code |
 | :-: | - | :-: | - |
 | :seedling: | `seedling` | :evergreen_tree: | `evergreen_tree` |
 | :deciduous_tree: | `deciduous_tree` | :palm_tree: | `palm_tree` |
@@ -466,11 +465,11 @@ Emoji 可以通过多种方式在 Hugo 项目中启用.
 | :four_leaf_clover: | `four_leaf_clover` | :maple_leaf: | `maple_leaf` |
 | :fallen_leaf: | `fallen_leaf` | :leaves: | `leaves` |
 
-## 食物与饮料
+## Food & Drink
 
-### 水果
+### Food Fruit
 
-| 图标 | 代码 | 图标 | 代码 |
+| icon | code | icon | code |
 | :-: | - | :-: | - |
 | :grapes: | `grapes` | :melon: | `melon` |
 | :watermelon: | `watermelon` | :mandarin: | `mandarin` <br /> `orange` <br /> `tangerine` |
@@ -481,9 +480,9 @@ Emoji 可以通过多种方式在 Hugo 项目中启用.
 | :strawberry: | `strawberry` | :kiwi_fruit: | `kiwi_fruit` |
 | :tomato: | `tomato` | | |
 
-### 蔬菜
+### Food Vegetable
 
-| 图标 | 代码 | 图标 | 代码 |
+| icon | code | icon | code |
 | :-: | - | :-: | - |
 | :avocado: | `avocado` | :eggplant: | `eggplant` |
 | :potato: | `potato` | :carrot: | `carrot` |
@@ -491,9 +490,9 @@ Emoji 可以通过多种方式在 Hugo 项目中启用.
 | :cucumber: | `cucumber` | :mushroom: | `mushroom` |
 | :peanuts: | `peanuts` | :chestnut: | `chestnut` |
 
-### 快餐
+### Food Prepared
 
-| 图标 | 代码 | 图标 | 代码 |
+| icon | code | icon | code |
 | :-: | - | :-: | - |
 | :bread: | `bread` | :croissant: | `croissant` |
 | :baguette_bread: | `baguette_bread` | :pancakes: | `pancakes` |
@@ -507,9 +506,9 @@ Emoji 可以通过多种方式在 Hugo 项目中启用.
 | :stew: | `stew` | :green_salad: | `green_salad` |
 | :popcorn: | `popcorn` | | |
 
-### 亚洲食物
+### Food Asian
 
-| 图标 | 代码 | 图标 | 代码 |
+| icon | code | icon | code |
 | :-: | - | :-: | - |
 | :bento: | `bento` | :rice_cracker: | `rice_cracker` |
 | :rice_ball: | `rice_ball` | :rice: | `rice` |
@@ -519,16 +518,16 @@ Emoji 可以通过多种方式在 Hugo 项目中启用.
 | :fried_shrimp: | `fried_shrimp` | :fish_cake: | `fish_cake` |
 | :dango: | `dango` | | |
 
-### 海鲜
+### Food Marine
 
-| 图标 | 代码 | 图标 | 代码 |
+| icon | code | icon | code |
 | :-: | - | :-: | - |
 | :crab: | `crab` | :shrimp: | `shrimp` |
 | :squid: | `squid` | | |
 
-### 甜点
+### Food Sweet
 
-| 图标 | 代码 | 图标 | 代码 |
+| icon | code | icon | code |
 | :-: | - | :-: | - |
 | :icecream: | `icecream` | :shaved_ice: | `shaved_ice` |
 | :ice_cream: | `ice_cream` | :doughnut: | `doughnut` |
@@ -537,9 +536,9 @@ Emoji 可以通过多种方式在 Hugo 项目中启用.
 | :candy: | `candy` | :lollipop: | `lollipop` |
 | :custard: | `custard` | :honey_pot: | `honey_pot` |
 
-### 饮料
+### Drink
 
-| 图标 | 代码 | 图标 | 代码 |
+| icon | code | icon | code |
 | :-: | - | :-: | - |
 | :baby_bottle: | `baby_bottle` | :milk_glass: | `milk_glass` |
 | :coffee: | `coffee` | :tea: | `tea` |
@@ -549,27 +548,27 @@ Emoji 可以通过多种方式在 Hugo 项目中启用.
 | :beers: | `beers` | :clinking_glasses: | `clinking_glasses` |
 | :tumbler_glass: | `tumbler_glass` | | |
 
-### 餐具
+### Dishware
 
-| 图标 | 代码 | 图标 | 代码 |
+| icon | code | icon | code |
 | :-: | - | :-: | - |
 | :plate_with_cutlery: | `plate_with_cutlery` | :fork_and_knife: | `fork_and_knife` |
 | :spoon: | `spoon` | :hocho: | `hocho` <br /> `knife` |
 | :amphora: | `amphora` | | |
 
-## 旅游与地理
+## Travel & Places
 
-### 地图
+### Place Map
 
-| 图标 | 代码 | 图标 | 代码 |
+| icon | code | icon | code |
 | :-: | - | :-: | - |
 | :earth_africa: | `earth_africa` | :earth_americas: | `earth_americas` |
 | :earth_asia: | `earth_asia` | :globe_with_meridians: | `globe_with_meridians` |
 | :world_map: | `world_map` | :japan: | `japan` |
 
-### 地理现象
+### Place Geographic
 
-| 图标 | 代码 | 图标 | 代码 |
+| icon | code | icon | code |
 | :-: | - | :-: | - |
 | :mountain_snow: | `mountain_snow` | :mountain: | `mountain` |
 | :volcano: | `volcano` | :mount_fuji: | `mount_fuji` |
@@ -577,9 +576,9 @@ Emoji 可以通过多种方式在 Hugo 项目中启用.
 | :desert: | `desert` | :desert_island: | `desert_island` |
 | :national_park: | `national_park` | | |
 
-### 建筑物
+### Place Building
 
-| 图标 | 代码 | 图标 | 代码 |
+| icon | code | icon | code |
 | :-: | - | :-: | - |
 | :stadium: | `stadium` | :classical_building: | `classical_building` |
 | :building_construction: | `building_construction` | :houses: | `houses` |
@@ -594,17 +593,17 @@ Emoji 可以通过多种方式在 Hugo 项目中启用.
 | :wedding: | `wedding` | :tokyo_tower: | `tokyo_tower` |
 | :statue_of_liberty: | `statue_of_liberty` | | |
 
-### 宗教建筑
+### Place Religious
 
-| 图标 | 代码 | 图标 | 代码 |
+| icon | code | icon | code |
 | :-: | - | :-: | - |
 | :church: | `church` | :mosque: | `mosque` |
 | :synagogue: | `synagogue` | :shinto_shrine: | `shinto_shrine` |
 | :kaaba: | `kaaba` | | |
 
-### 其它地点
+### Place Other
 
-| 图标 | 代码 | 图标 | 代码 |
+| icon | code | icon | code |
 | :-: | - | :-: | - |
 | :fountain: | `fountain` | :tent: | `tent` |
 | :foggy: | `foggy` | :night_with_stars: | `night_with_stars` |
@@ -615,9 +614,9 @@ Emoji 可以通过多种方式在 Hugo 项目中启用.
 | :ferris_wheel: | `ferris_wheel` | :roller_coaster: | `roller_coaster` |
 | :barber: | `barber` | :circus_tent: | `circus_tent` |
 
-### 陆路运输
+### Transport Ground
 
-| 图标 | 代码 | 图标 | 代码 |
+| icon | code | icon | code |
 | :-: | - | :-: | - |
 | :steam_locomotive: | `steam_locomotive` | :railway_car: | `railway_car` |
 | :bullettrain_side: | `bullettrain_side` | :bullettrain_front: | `bullettrain_front` |
@@ -642,18 +641,18 @@ Emoji 可以通过多种方式在 Hugo 项目中启用.
 | :vertical_traffic_light: | `vertical_traffic_light` | :stop_sign: | `stop_sign` |
 | :construction: | `construction` | | |
 
-### 水路运输
+### Transport Water
 
-| 图标 | 代码 | 图标 | 代码 |
+| icon | code | icon | code |
 | :-: | - | :-: | - |
 | :anchor: | `anchor` | :boat: | `boat` <br /> `sailboat` |
 | :canoe: | `canoe` | :speedboat: | `speedboat` |
 | :passenger_ship: | `passenger_ship` | :ferry: | `ferry` |
 | :motor_boat: | `motor_boat` | :ship: | `ship` |
 
-### 空中运输
+### Transport Air
 
-| 图标 | 代码 | 图标 | 代码 |
+| icon | code | icon | code |
 | :-: | - | :-: | - |
 | :airplane: | `airplane` | :small_airplane: | `small_airplane` |
 | :flight_departure: | `flight_departure` | :flight_arrival: | `flight_arrival` |
@@ -662,15 +661,15 @@ Emoji 可以通过多种方式在 Hugo 项目中启用.
 | :aerial_tramway: | `aerial_tramway` | :artificial_satellite: | `artificial_satellite` |
 | :rocket: | `rocket` | | |
 
-### 旅馆
+### Hotel
 
 | icon | code | icon | code |
 | :-: | - | :-: | - |
 | :bellhop_bell: | `bellhop_bell` |
 
-### 时间
+### Time
 
-| 图标 | 代码 | 图标 | 代码 |
+| icon | code | icon | code |
 | :-: | - | :-: | - |
 | :hourglass: | `hourglass` | :hourglass_flowing_sand: | `hourglass_flowing_sand` |
 | :watch: | `watch` | :alarm_clock: | `alarm_clock` |
@@ -689,9 +688,9 @@ Emoji 可以通过多种方式在 Hugo 项目中启用.
 | :clock1030: | `clock1030` | :clock11: | `clock11` |
 | :clock1130: | `clock1130` | | |
 
-### 天空与天气
+### Sky & Weather
 
-| 图标 | 代码 | 图标 | 代码 |
+| icon | code | icon | code |
 | :-: | - | :-: | - |
 | :new_moon: | `new_moon` | :waxing_crescent_moon: | `waxing_crescent_moon` |
 | :first_quarter_moon: | `first_quarter_moon` | :moon: | `moon` <br /> `waxing_gibbous_moon` |
@@ -717,11 +716,11 @@ Emoji 可以通过多种方式在 Hugo 项目中启用.
 | :comet: | `comet` | :fire: | `fire` |
 | :droplet: | `droplet` | :ocean: | `ocean` |
 
-## 活动
+## Activities
 
-### 事件
+### Event
 
-| 图标 | 代码 | 图标 | 代码 |
+| icon | code | icon | code |
 | :-: | - | :-: | - |
 | :jack_o_lantern: | `jack_o_lantern` | :christmas_tree: | `christmas_tree` |
 | :fireworks: | `fireworks` | :sparkler: | `sparkler` |
@@ -734,17 +733,17 @@ Emoji 可以通过多种方式在 Hugo 项目中启用.
 | :reminder_ribbon: | `reminder_ribbon` | :tickets: | `tickets` |
 | :ticket: | `ticket` | | |
 
-### 奖杯与奖牌
+### Award Medal
 
-| 图标 | 代码 | 图标 | 代码 |
+| icon | code | icon | code |
 | :-: | - | :-: | - |
 | :medal_military: | `medal_military` | :trophy: | `trophy` |
 | :medal_sports: | `medal_sports` | :1st_place_medal: | `1st_place_medal` |
 | :2nd_place_medal: | `2nd_place_medal` | :3rd_place_medal: | `3rd_place_medal` |
 
-### 体育运动
+### Sport
 
-| 图标 | 代码 | 图标 | 代码 |
+| icon | code | icon | code |
 | :-: | - | :-: | - |
 | :soccer: | `soccer` | :baseball: | `baseball` |
 | :basketball: | `basketball` | :volleyball: | `volleyball` |
@@ -758,9 +757,9 @@ Emoji 可以通过多种方式在 Hugo 项目中启用.
 | :fishing_pole_and_fish: | `fishing_pole_and_fish` | :running_shirt_with_sash: | `running_shirt_with_sash` |
 | :ski: | `ski` | | |
 
-### 游戏
+### Game
 
-| 图标 | 代码 | 图标 | 代码 |
+| icon | code | icon | code |
 | :-: | - | :-: | - |
 | :dart: | `dart` | :8ball: | `8ball` |
 | :crystal_ball: | `crystal_ball` | :video_game: | `video_game` |
@@ -770,18 +769,18 @@ Emoji 可以通过多种方式在 Hugo 项目中启用.
 | :clubs: | `clubs` | :black_joker: | `black_joker` |
 | :mahjong: | `mahjong` | :flower_playing_cards: | `flower_playing_cards` |
 
-### 艺术与工艺
+### Arts & Crafts
 
-| 图标 | 代码 | 图标 | 代码 |
+| icon | code | icon | code |
 | :-: | - | :-: | - |
 | :performing_arts: | `performing_arts` | :framed_picture: | `framed_picture` |
 | :art: | `art` | | |
 
-## 物品
+## Objects
 
-### 服装
+### Clothing
 
-| 图标 | 代码 | 图标 | 代码 |
+| icon | code | icon | code |
 | :-: | - | :-: | - |
 | :eyeglasses: | `eyeglasses` | :dark_sunglasses: | `dark_sunglasses` |
 | :necktie: | `necktie` | :shirt: | `shirt` <br /> `tshirt` |
@@ -798,9 +797,9 @@ Emoji 可以通过多种方式在 Hugo 项目中启用.
 | :prayer_beads: | `prayer_beads` | :lipstick: | `lipstick` |
 | :ring: | `ring` | :gem: | `gem` |
 
-### 声音
+### Sound
 
-| 图标 | 代码 | 图标 | 代码 |
+| icon | code | icon | code |
 | :-: | - | :-: | - |
 | :mute: | `mute` | :speaker: | `speaker` |
 | :sound: | `sound` | :loud_sound: | `loud_sound` |
@@ -808,9 +807,9 @@ Emoji 可以通过多种方式在 Hugo 项目中启用.
 | :postal_horn: | `postal_horn` | :bell: | `bell` |
 | :no_bell: | `no_bell` | | |
 
-### 音乐
+### Music
 
-| 图标 | 代码 | 图标 | 代码 |
+| icon | code | icon | code |
 | :-: | - | :-: | - |
 | :musical_score: | `musical_score` | :musical_note: | `musical_note` |
 | :notes: | `notes` | :studio_microphone: | `studio_microphone` |
@@ -818,25 +817,25 @@ Emoji 可以通过多种方式在 Hugo 项目中启用.
 | :microphone: | `microphone` | :headphones: | `headphones` |
 | :radio: | `radio` | | |
 
-### 乐器
+### Musical Instrument
 
-| 图标 | 代码 | 图标 | 代码 |
+| icon | code | icon | code |
 | :-: | - | :-: | - |
 | :saxophone: | `saxophone` | :guitar: | `guitar` |
 | :musical_keyboard: | `musical_keyboard` | :trumpet: | `trumpet` |
 | :violin: | `violin` | :drum: | `drum` |
 
-### 电话
+### Phone
 
-| 图标 | 代码 | 图标 | 代码 |
+| icon | code | icon | code |
 | :-: | - | :-: | - |
 | :iphone: | `iphone` | :calling: | `calling` |
 | :phone: | `phone` <br /> `telephone` | :telephone_receiver: | `telephone_receiver` |
 | :pager: | `pager` | :fax: | `fax` |
 
-### 电脑
+### Computer
 
-| 图标 | 代码 | 图标 | 代码 |
+| icon | code | icon | code |
 | :-: | - | :-: | - |
 | :battery: | `battery` | :electric_plug: | `electric_plug` |
 | :computer: | `computer` | :desktop_computer: | `desktop_computer` |
@@ -845,9 +844,9 @@ Emoji 可以通过多种方式在 Hugo 项目中启用.
 | :minidisc: | `minidisc` | :floppy_disk: | `floppy_disk` |
 | :cd: | `cd` | :dvd: | `dvd` |
 
-### 灯光与影像
+### Light & Video
 
-| 图标 | 代码 | 图标 | 代码 |
+| icon | code | icon | code |
 | :-: | - | :-: | - |
 | :movie_camera: | `movie_camera` | :film_strip: | `film_strip` |
 | :film_projector: | `film_projector` | :clapper: | `clapper` |
@@ -858,9 +857,9 @@ Emoji 可以通过多种方式在 Hugo 项目中启用.
 | :bulb: | `bulb` | :flashlight: | `flashlight` |
 | :izakaya_lantern: | `izakaya_lantern` <br /> `lantern` | | |
 
-### 书与纸张
+### Book Paper
 
-| 图标 | 代码 | 图标 | 代码 |
+| icon | code | icon | code |
 | :-: | - | :-: | - |
 | :notebook_with_decorative_cover: | `notebook_with_decorative_cover` | :closed_book: | `closed_book` |
 | :book: | `book` <br /> `open_book` | :green_book: | `green_book` |
@@ -872,18 +871,18 @@ Emoji 可以通过多种方式在 Hugo 项目中启用.
 | :bookmark_tabs: | `bookmark_tabs` | :bookmark: | `bookmark` |
 | :label: | `label` | | |
 
-### 钱
+### Money
 
-| 图标 | 代码 | 图标 | 代码 |
+| icon | code | icon | code |
 | :-: | - | :-: | - |
 | :moneybag: | `moneybag` | :yen: | `yen` |
 | :dollar: | `dollar` | :euro: | `euro` |
 | :pound: | `pound` | :money_with_wings: | `money_with_wings` |
 | :credit_card: | `credit_card` | :chart: | `chart` |
 
-### 邮件
+### Mail
 
-| 图标 | 代码 | 图标 | 代码 |
+| icon | code | icon | code |
 | :-: | - | :-: | - |
 | :email: | `email` <br /> `envelope` | :e-mail: | `:e-mail:` |
 | :incoming_envelope: | `incoming_envelope` | :envelope_with_arrow: | `envelope_with_arrow` |
@@ -893,18 +892,18 @@ Emoji 可以通过多种方式在 Hugo 项目中启用.
 | :mailbox_with_no_mail: | `mailbox_with_no_mail` | :postbox: | `postbox` |
 | :ballot_box: | `ballot_box` | | |
 
-### 书写
+### Writing
 
-| 图标 | 代码 | 图标 | 代码 |
+| icon | code | icon | code |
 | :-: | - | :-: | - |
 | :pencil2: | `pencil2` | :black_nib: | `black_nib` |
 | :fountain_pen: | `fountain_pen` | :pen: | `pen` |
 | :paintbrush: | `paintbrush` | :crayon: | `crayon` |
 | :memo: | `memo` <br /> `pencil` | | |
 
-### 办公
+### Office
 
-| 图标 | 代码 | 图标 | 代码 |
+| icon | code | icon | code |
 | :-: | - | :-: | - |
 | :briefcase: | `briefcase` | :file_folder: | `file_folder` |
 | :open_file_folder: | `open_file_folder` | :card_index_dividers: | `card_index_dividers` |
@@ -919,17 +918,17 @@ Emoji 可以通过多种方式在 Hugo 项目中启用.
 | :card_file_box: | `card_file_box` | :file_cabinet: | `file_cabinet` |
 | :wastebasket: | `wastebasket` | | |
 
-### 锁
+### Lock
 
-| 图标 | 代码 | 图标 | 代码 |
+| icon | code | icon | code |
 | :-: | - | :-: | - |
 | :lock: | `lock` | :unlock: | `unlock` |
 | :lock_with_ink_pen: | `lock_with_ink_pen` | :closed_lock_with_key: | `closed_lock_with_key` |
 | :key: | `key` | :old_key: | `old_key` |
 
-### 工具
+### Tool
 
-| 图标 | 代码 | 图标 | 代码 |
+| icon | code | icon | code |
 | :-: | - | :-: | - |
 | :hammer: | `hammer` | :pick: | `pick` |
 | :hammer_and_pick: | `hammer_and_pick` | :hammer_and_wrench: | `hammer_and_wrench` |
@@ -940,40 +939,40 @@ Emoji 可以通过多种方式在 Hugo 项目中启用.
 | :clamp: | `clamp` | :balance_scale: | `balance_scale` |
 | :link: | `link` | :chains: | `chains` |
 
-### 科学
+### Science
 
-| 图标 | 代码 | 图标 | 代码 |
+| icon | code | icon | code |
 | :-: | - | :-: | - |
 | :alembic: | `alembic` | :microscope: | `microscope` |
 | :telescope: | `telescope` | :satellite: | `satellite` |
 
-### 医疗
+### Medical
 
-| 图标 | 代码 | 图标 | 代码 |
+| icon | code | icon | code |
 | :-: | - | :-: | - |
 | :syringe: | `syringe` | :pill: | `pill` |
 
-### 生活用品
+### Household
 
-| 图标 | 代码 | 图标 | 代码 |
+| icon | code | icon | code |
 | :-: | - | :-: | - |
 | :door: | `door` | :bed: | `bed` |
 | :couch_and_lamp: | `couch_and_lamp` | :toilet: | `toilet` |
 | :shower: | `shower` | :bathtub: | `bathtub` |
 | :shopping_cart: | `shopping_cart` | | |
 
-### 其它物品
+### Other Object
 
-| 图标 | 代码 | 图标 | 代码 |
+| icon | code | icon | code |
 | :-: | - | :-: | - |
 | :smoking: | `smoking` | :coffin: | `coffin` |
 | :funeral_urn: | `funeral_urn` | :moyai: | `moyai` |
 
-## 符号
+## Symbols
 
-### 交通标识
+### Transport Sign
 
-| 图标 | 代码 | 图标 | 代码 |
+| icon | code | icon | code |
 | :-: | - | :-: | - |
 | :atm: | `atm` | :put_litter_in_its_place: | `put_litter_in_its_place` |
 | :potable_water: | `potable_water` | :wheelchair: | `wheelchair` |
@@ -983,9 +982,9 @@ Emoji 可以通过多种方式在 Hugo 项目中启用.
 | :customs: | `customs` | :baggage_claim: | `baggage_claim` |
 | :left_luggage: | `left_luggage` | | |
 
-### 警告
+### Warning
 
-| 图标 | 代码 | 图标 | 代码 |
+| icon | code | icon | code |
 | :-: | - | :-: | - |
 | :warning: | `warning` | :children_crossing: | `children_crossing` |
 | :no_entry: | `no_entry` | :no_entry_sign: | `no_entry_sign` |
@@ -995,9 +994,9 @@ Emoji 可以通过多种方式在 Hugo 项目中启用.
 | :underage: | `underage` | :radioactive: | `radioactive` |
 | :biohazard: | `biohazard` | | |
 
-### 箭头
+### Arrow
 
-| 图标 | 代码 | 图标 | 代码 |
+| icon | code | icon | code |
 | :-: | - | :-: | - |
 | :arrow_up: | `arrow_up` | :arrow_upper_right: | `arrow_upper_right` |
 | :arrow_right: | `arrow_right` | :arrow_lower_right: | `arrow_lower_right` |
@@ -1011,9 +1010,9 @@ Emoji 可以通过多种方式在 Hugo 项目中启用.
 | :on: | `on` | :soon: | `soon` |
 | :top: | `top` | | |
 
-### 宗教
+### Religion
 
-| 图标 | 代码 | 图标 | 代码 |
+| icon | code | icon | code |
 | :-: | - | :-: | - |
 | :place_of_worship: | `place_of_worship` | :atom_symbol: | `atom_symbol` |
 | :om: | `om` | :star_of_david: | `star_of_david` |
@@ -1022,9 +1021,9 @@ Emoji 可以通过多种方式在 Hugo 项目中启用.
 | :star_and_crescent: | `star_and_crescent` | :peace_symbol: | `peace_symbol` |
 | :menorah: | `menorah` | :six_pointed_star: | `six_pointed_star` |
 
-### 生肖
+### Zodiac
 
-| 图标 | 代码 | 图标 | 代码 |
+| icon | code | icon | code |
 | :-: | - | :-: | - |
 | :aries: | `aries` | :taurus: | `taurus` |
 | :gemini: | `gemini` | :cancer: | `cancer` |
@@ -1034,9 +1033,9 @@ Emoji 可以通过多种方式在 Hugo 项目中启用.
 | :aquarius: | `aquarius` | :pisces: | `pisces` |
 | :ophiuchus: | `ophiuchus` | | |
 
-### 影像符号
+### Av Symbol
 
-| 图标 | 代码 | 图标 | 代码 |
+| icon | code | icon | code |
 | :-: | - | :-: | - |
 | :twisted_rightwards_arrows: | `twisted_rightwards_arrows` | :repeat: | `repeat` |
 | :repeat_one: | `repeat_one` | :arrow_forward: | `arrow_forward` |
@@ -1051,31 +1050,31 @@ Emoji 可以通过多种方式在 Hugo 项目中启用.
 | :signal_strength: | `signal_strength` | :vibration_mode: | `vibration_mode` |
 | :mobile_phone_off: | `mobile_phone_off` | | |
 
-### 数学
+### Math
 
-| 图标 | 代码 | 图标 | 代码 |
+| icon | code | icon | code |
 | :-: | - | :-: | - |
 | :heavy_multiplication_x: | `heavy_multiplication_x` | :heavy_plus_sign: | `heavy_plus_sign` |
 | :heavy_minus_sign: | `heavy_minus_sign` | :heavy_division_sign: | `heavy_division_sign` |
 
-### 标点符号
+### Punctuation
 
-| 图标 | 代码 | 图标 | 代码 |
+| icon | code | icon | code |
 | :-: | - | :-: | - |
 | :bangbang: | `bangbang` | :interrobang: | `interrobang` |
 | :question: | `question` | :grey_question: | `grey_question` |
 | :grey_exclamation: | `grey_exclamation` | :exclamation: | `exclamation` <br /> `heavy_exclamation_mark` |
 | :wavy_dash: | `wavy_dash` | | |
 
-### 货币
+### Currency
 
-| 图标 | 代码 | 图标 | 代码 |
+| icon | code | icon | code |
 | :-: | - | :-: | - |
 | :currency_exchange: | `currency_exchange` | :heavy_dollar_sign: | `heavy_dollar_sign` |
 
-### 按键符号
+### Keycap
 
-| 图标 | 代码 | 图标 | 代码 |
+| icon | code | icon | code |
 | :-: | - | :-: | - |
 | :hash: | `hash` | :asterisk: | `asterisk` |
 | :zero: | `zero` | :one: | `one` |
@@ -1085,9 +1084,9 @@ Emoji 可以通过多种方式在 Hugo 项目中启用.
 | :eight: | `eight` | :nine: | `nine` |
 | :keycap_ten: | `keycap_ten` | | |
 
-### 字母符号
+### Alphabet
 
-| 图标 | 代码 | 图标 | 代码 |
+| icon | code | icon | code |
 | :-: | - | :-: | - |
 | :capital_abcd: | `capital_abcd` | :abcd: | `abcd` |
 | :1234: | `1234` | :symbols: | `symbols` |
@@ -1110,9 +1109,9 @@ Emoji 可以通过多种方式在 Hugo 项目中启用.
 | :secret: | `secret` | :u55b6: | `u55b6` |
 | :u6e80: | `u6e80` | | |
 
-### 几何符号
+### Geometric
 
-| 图标 | 代码 | 图标 | 代码 |
+| icon | code | icon | code |
 | :-: | - | :-: | - |
 | :red_circle: | `red_circle` | :large_blue_circle: | `large_blue_circle` |
 | :black_circle: | `black_circle` | :white_circle: | `white_circle` |
@@ -1126,9 +1125,9 @@ Emoji 可以通过多种方式在 Hugo 项目中启用.
 | :diamond_shape_with_a_dot_inside: | `diamond_shape_with_a_dot_inside` | :radio_button: | `radio_button` |
 | :white_square_button: | `white_square_button` | :black_square_button: | `black_square_button` |
 
-### 其它符合
+### Other Symbol
 
-| 图标 | 代码 | 图标 | 代码 |
+| icon | code | icon | code |
 | :-: | - | :-: | - |
 | :recycle: | `recycle` | :fleur_de_lis: | `fleur_de_lis` |
 | :trident: | `trident` | :name_badge: | `name_badge` |
@@ -1141,19 +1140,19 @@ Emoji 可以通过多种方式在 Hugo 项目中启用.
 | :sparkle: | `sparkle` | :copyright: | `copyright` |
 | :registered: | `registered` | :tm: | `tm` |
 
-## 旗帜
+## Flags
 
-### 常用旗帜
+### Common Flags
 
-| 图标 | 代码 | 图标 | 代码 |
+| icon | code | icon | code |
 | :-: | - | :-: | - |
 | :checkered_flag: | `checkered_flag` | :triangular_flag_on_post: | `triangular_flag_on_post` |
 | :crossed_flags: | `crossed_flags` | :black_flag: | `black_flag` |
 | :white_flag: | `white_flag` | :rainbow_flag: | `rainbow_flag` |
 
-### 国家和地区旗帜
+### Country and Region Flags
 
-| 图标 | 代码 | 图标 | 代码 |
+| icon | code | icon | code |
 | :-: | - | :-: | - |
 | :andorra: | `andorra` | :united_arab_emirates: | `united_arab_emirates` |
 | :afghanistan: | `afghanistan` | :antigua_barbuda: | `antigua_barbuda` |

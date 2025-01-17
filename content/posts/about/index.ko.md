@@ -1,7 +1,8 @@
 ---
-title: "关于 DoIt"
+title: "About DoIt"
 date: 2019-08-02T11:04:49+08:00
 draft: true
+authors: ["Jeongseop Lim"]
 
 lightgallery: true
 
@@ -9,84 +10,84 @@ math:
   enable: true
 ---
 
-> [{{< fa-icon regular edit >}} DoIt](https://github.com/HEIGE-PCloud/DoIt) 是一个由 [HEIGE-PCloud](https://github.com/HEIGE-PCloud) 开发的**简洁**、**优雅**且**高效**的 [Hugo](https://gohugo.io/) 博客主题。
+> [{{< fa-icon regular edit >}} DoIt](https://github.com/HEIGE-PCloud/DoIt) is a **clean**, **elegant** but **advanced** blog theme for [Hugo](https://gohugo.io/) developed by [HEIGE-PCloud](https://github.com/HEIGE-PCloud).
 >
-> 它的原型基于 [LoveIt 主题](https://github.com/dillonzq/LoveIt)， [LeaveIt 主题](https://github.com/liuzc/LeaveIt) 和 [KeepIt 主题](https://github.com/Fastbyte01/KeepIt)。
+> It is based on the [LoveIt Theme](https://github.com/dillonzq/LoveIt), [LeaveIt Theme](https://github.com/liuzc/LeaveIt) and [KeepIt Theme](https://github.com/Fastbyte01/KeepIt).
 
-## 特性
+## Features
 
-### 性能和 SEO
+### Performance and SEO
 
-* {{< fa-icon solid rocket >}} **性能**优化：在 [Google PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights) 中， [99]/[100] 的移动设备得分和 [100]/[100] 的桌面设备得分
-* {{< fa-icon brands searchengin >}} 使用基于 JSON-LD 格式 的 **SEO SCHEMA** 文件进行 SEO 优化
-* {{< fa-icon brands google >}} 支持 **[Google Analytics](https://analytics.google.com/analytics)**
-* {{< fa-icon regular chart-bar >}} 支持 **[Fathom Analytics](https://usefathom.com/)**
-* {{< fa-icon regular chart-bar >}} 支持 **[百度统计](https://tongji.baidu.com/)**
-* {{< fa-icon regular chart-bar >}} 支持 **[Umami Analytics](https://umami.is/)**
-* {{< fa-icon regular chart-bar >}} 支持 **[Plausible Analytics](https://plausible.io/)**
-* {{< fa-icon solid search >}} 支持搜索引擎的**网站验证** (Google, Bind, Yandex and Baidu)
-* {{< fa-icon solid tachometer-alt >}} 支持所有第三方库的 **CDN**
+* {{< fa-icon solid rocket >}} Optimized for **performance**: [99]/[100] on mobile and [100]/[100] on desktop in [Google PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights)
+* {{< fa-icon brands searchengin >}} Optimized SEO performance with a correct **SEO SCHEMA** based on JSON-LD
+* {{< fa-icon brands google >}} **[Google Analytics](https://analytics.google.com/analytics)** supported
+* {{< fa-icon regular chart-bar >}} **[Fathom Analytics](https://usefathom.com/)** supported
+* {{< fa-icon regular chart-bar >}} **[Baidu Analytics](https://tongji.baidu.com/)** supported
+* {{< fa-icon regular chart-bar >}} **[Umami Analytics](https://umami.is/)** supported
+* {{< fa-icon regular chart-bar >}} **[Plausible Analytics](https://plausible.io/)** supported
+* {{< fa-icon solid search >}} Search engine **verification** supported (Google, Bind, Yandex and Baidu)
+* {{< fa-icon solid tachometer-alt >}} **CDN** for third-party libraries supported
 
-### 外观和布局
+### Appearance and Layout
 
-* [{{< fa-icon solid desktop >}}]/[{{< fa-icon solid mobile >}}] **响应式**布局
-* [{{< fa-icon solid sun >}}]/[{{< fa-icon solid moon >}}] **[浅色]/[深色]** 主题模式
-* {{< fa-icon solid layer-group >}} 全局一致的**设计语言**
-* {{< fa-icon solid ellipsis-h >}} 支持**分页**
-* {{< fa-icon regular list-alt >}} 易用和自动展开的**文章目录**
-* {{< fa-icon solid language >}} 支持**多语言**和国际化
-* {{< fa-icon brands css3-alt >}} 美观的 **CSS 动画**
+* [{{< fa-icon solid desktop >}}]/[{{< fa-icon solid mobile >}}] **Responsive** layout
+* [{{< fa-icon solid sun >}}]/[{{< fa-icon solid moon >}}] **[Light]/[Dark]** mode
+* {{< fa-icon solid layer-group >}} Globally consistent **design language**
+* {{< fa-icon solid ellipsis-h >}} **Pagination** supported
+* {{< fa-icon regular list-alt >}} Easy-to-use and self-expanding **table of contents**
+* {{< fa-icon solid language >}} **Multilanguage** supported and i18n ready
+* {{< fa-icon brands css3-alt >}} Beautiful **CSS animation**
 
-### 社交和评论系统
+### Social and Comment Systems
 
-* {{< fa-icon regular user >}} 支持 **[Gravatar](https://gravatar.com)** 头像
-* {{< fa-icon solid user-circle >}} 支持本地**头像**
-* {{< fa-icon regular id-card >}} 支持多达 **64** 种社交链接
-* {{< fa-icon solid share-square >}} 支持多达 **28** 种网站分享
-* {{< fa-icon regular comment >}} 支持 **[Disqus](https://disqus.com)** 评论系统
-* {{< fa-icon regular comment-dots >}} 支持 **[Gitalk](https://github.com/gitalk/gitalk)** 评论系统
-* {{< fa-icon regular comment-alt >}} 支持 **[Valine](https://valine.js.org/)** 评论系统
-* {{< fa-icon regular comment-alt >}} 支持 **[Waline](https://waline.js.org/)** 评论系统
-* {{< fa-icon regular comments >}} 支持 **[Facebook](https://developers.facebook.com/docs/plugins/comments/) 评论**系统
-* {{< fa-icon regular comment >}} 支持 **[Telegram comments](https://comments.app/) 评论**系统
-* {{< fa-icon regular comment-dots >}} 支持 **[Commento](https://commento.io/)** 评论系统
-* {{< fa-icon regular comment-alt >}} 支持 **[Utterances](https://utteranc.es/)** 评论系统
-* {{< fa-icon regular comment-alt >}} 支持 **[Twikoo](https://twikoo.js.org/)** 评论系统
-* {{< fa-icon regular comment-alt >}} 支持 **[Vssue](https://vssue.js.org/)** 评论系统
-* {{< fa-icon regular comment-alt >}} 支持 **[Remark42](https://remark42.com/)** 评论系统
-* {{< fa-icon regular comment-alt >}} 支持 **[giscus](https://giscus.app/)** 评论系统
-* {{< fa-icon regular comment-alt >}} 支持 **[Artalk](https://artalk.js.org/)** 评论系统
+* {{< fa-icon regular user >}} **Gravatar** supported by [Gravatar](https://gravatar.com)
+* {{< fa-icon solid user-circle >}} Local **Avatar** supported
+* {{< fa-icon regular id-card >}} Up to **64** social links supported
+* {{< fa-icon solid share-square >}} Up to **28** share sites supported
+* {{< fa-icon regular comment >}} **Disqus** comment system supported by [Disqus](https://disqus.com)
+* {{< fa-icon regular comment-dots >}} **Gitalk** comment system supported by [Gitalk](https://github.com/gitalk/gitalk)
+* {{< fa-icon regular comment-alt >}} **Valine** comment system supported by [Valine](https://valine.js.org/)
+* {{< fa-icon regular comment-alt >}} **Waline** comment system supported by [Waline](https://waline.js.org/)
+* {{< fa-icon regular comments >}} **Facebook comments** system supported by [Facebook](https://developers.facebook.com/docs/plugins/comments/)
+* {{< fa-icon regular comment >}} **Telegram comments** system supported by [Comments](https://comments.app/)
+* {{< fa-icon regular comment-dots >}} **Commento** comment system supported by [Commento](https://commento.io/)
+* {{< fa-icon regular comment-alt >}} **Utterances** comment system supported by [Utterances](https://utteranc.es/)
+* {{< fa-icon regular comment-alt >}} **Twikoo** comment system supported by [Twikoo](https://twikoo.js.org/)
+* {{< fa-icon regular comment-alt >}} **Vssue** comment system supported by [Vssue](https://vssue.js.org/)
+* {{< fa-icon regular comment-alt >}} **Remark42** comment system supported by [Remark42](https://remark42.com/)
+* {{< fa-icon regular gem >}} **giscus** comment system supported by [giscus](https://giscus.app/)
+* {{< fa-icon regular comment-alt >}} **Artalk** comment system supported by [Artalk](https://artalk.js.org/)
 
-### 扩展功能
+### Extended Features
 
-* {{< fa-icon solid search >}} 支持基于 [algolia](https://www.algolia.com/) 或 [Fuse.js](https://fusejs.io/) 的**搜索**
-* {{< fa-icon regular grin-tongue-wink >}} 支持 **Twemoji**
-* {{< fa-icon solid code >}} 支持**代码高亮**
-* {{< fa-icon regular copy >}} 一键**复制代码**到剪贴板
-* {{< fa-icon regular images >}} 支持基于 [lightgallery.js](https://github.com/sachinchoolur/lightgallery.js) 的**图片画廊**
-* {{< fa-icon brands font-awesome >}} 支持 **[Font Awesome](https://fontawesome.com/) 图标**的扩展 Markdown 语法
-* {{< fa-icon regular sticky-note >}} 支持**上标注释**的扩展 Markdown 语法
-* {{< fa-icon solid percentage >}} 支持**分数**的扩展 Markdown 语法
-* {{< fa-icon solid square-root-alt >}} 支持基于 [$ \KaTeX $](https://katex.org/) 的**数学公式**
-* {{< fa-icon solid project-diagram >}} 支持基于 [mermaid](https://github.com/knsv/mermaid) 的**图表** shortcode
-* {{< fa-icon solid chart-pie >}} 支持基于 [ECharts](https://echarts.apache.org/) 的**交互式数据可视化** shortcode
-* {{< fa-icon solid map-marked-alt >}} 支持基于 [Mapbox GL JS](https://docs.mapbox.com/mapbox-gl-js) 的 **Mapbox** shortcode
-* {{< fa-icon solid music >}} 支持基于 [APlayer](https://github.com/MoePlayer/APlayer) 和 [MetingJS](https://github.com/metowolf/MetingJS) 的**音乐播放器** shortcode
-* {{< fa-icon solid video >}} 支持 **Bilibili 视频** shortcode
-* {{< fa-icon regular bell >}} 支持多种**注释**的 shortcode
-* {{< fa-icon solid align-left >}} 支持**自定义样式**的 shortcode
-* {{< fa-icon brands js-square >}} 支持**自定义脚本**的 shortcode
-* {{< fa-icon solid i-cursor >}} 支持基于 [TypeIt](https://typeitjs.com/) 的**打字动画** shortcode
-* {{< fa-icon solid cookie-bite >}} 支持基于 [cookieconsent](https://github.com/osano/cookieconsent) 的 **Cookie 许可横幅**
+* {{< fa-icon solid search >}} **Search** supported by [algolia](https://www.algolia.com/) or [Fuse.js](https://fusejs.io/)
+* {{< fa-icon regular grin-tongue-wink >}} **Twemoji** supported
+* {{< fa-icon solid code >}} Automatically **highlighting** code
+* {{< fa-icon regular copy >}} **Copy code** to clipboard with one click
+* {{< fa-icon regular images >}} **Images gallery** supported by [lightgallery.js](https://github.com/sachinchoolur/lightgallery.js)
+* {{< fa-icon brands font-awesome >}} Extended Markdown syntax for **[Font Awesome](https://fontawesome.com/) icons**
+* {{< fa-icon regular sticky-note >}} Extended Markdown syntax for **ruby annotation**
+* {{< fa-icon solid percentage >}} Extended Markdown syntax for **fraction**
+* {{< fa-icon solid square-root-alt >}} **Mathematical formula** supported by [$ \KaTeX $](https://katex.org/)
+* {{< fa-icon solid project-diagram >}} **Diagrams** shortcode supported by [mermaid](https://github.com/knsv/mermaid)
+* {{< fa-icon solid chart-pie >}} **Interactive data visualization** shortcode supported by [ECharts](https://echarts.apache.org/)
+* {{< fa-icon solid map-marked-alt >}} **Mapbox** shortcode supported by [Mapbox GL JS](https://docs.mapbox.com/mapbox-gl-js)
+* {{< fa-icon solid music >}} **Music player** shortcode supported by [APlayer](https://github.com/MoePlayer/APlayer) and [MetingJS](https://github.com/metowolf/MetingJS)
+* {{< fa-icon solid video >}} **Bilibili player** shortcode
+* {{< fa-icon regular bell >}} Kinds of **admonitions** shortcode
+* {{< fa-icon solid align-left >}} **Custom style** shortcode
+* {{< fa-icon brands js-square >}} **Custom script** shortcode
+* {{< fa-icon solid i-cursor >}} **Animated typing** supported by [TypeIt](https://typeitjs.com/)
+* {{< fa-icon solid cookie-bite >}} **Cookie consent banner** supported by [cookieconsent](https://github.com/osano/cookieconsent)
 * ...
 
-## 许可协议
+## License
 
-DoIt 根据 **MIT** 许可协议授权。
+DoIt is licensed under the **MIT** license.
 
-更多信息请查看 [LICENSE 文件](https://github.com/HEIGE-PCloud/DoIt/blob/main/LICENSE)。
+Check the [LICENSE file](https://github.com/HEIGE-PCloud/DoIt/blob/main/LICENSE) for details.
 
-DoIt 主题中用到了以下项目，感谢它们的作者：
+Thanks to the authors of following resources included in the theme:
 
 * [Font Awesome](https://fontawesome.com/)
 * [Simple Icons](https://github.com/simple-icons/simple-icons)

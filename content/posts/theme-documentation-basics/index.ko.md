@@ -1,11 +1,11 @@
 ---
 weight: 1
-title: "主题文档 - 基本概念"
-date: 2020-03-03T21:40:32+08:00
-lastmod: 2020-03-06T21:40:32+08:00
+title: "Theme Documentation - Basics"
+date: 2020-03-03T21:29:01+08:00
+lastmod: 2020-03-06T21:29:01+08:00
 draft: true
 authors: ["Dillon", "PCloud"]
-description: "探索 Hugo - DoIt 主题的全部内容和背后的核心概念."
+description: "Discover what the Hugo - DoIt theme is all about and the core-concepts behind it."
 featuredImage: "featured-image.webp"
 
 tags: ["installation", "configuration"]
@@ -13,100 +13,97 @@ categories: ["documentation"]
 series: ["getting-start"]
 series_weight: 1
 lightgallery: true
-
+license: '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
 toc:
   auto: false
 ---
 
-探索 Hugo - **DoIt** 主题的全部内容和背后的核心概念.
+Discover what the Hugo - **DoIt** theme is all about and the core-concepts behind it.
 
 <!--more-->
 
-## 准备
+## Requirements
 
-由于 Hugo 提供的便利性, [Hugo](https://gohugo.io/) 本身是这个主题唯一的依赖.
+Thanks to the simplicity of Hugo, [Hugo](https://gohugo.io/) is the only dependency of this theme.
 
-直接安装满足你操作系统 (**Windows**, **Linux**, **macOS**) 的最新版本 [{{< fa-icon regular file-archive >}} Hugo (> 0.122.0)](https://gohugo.io/getting-started/installing/).
+Just install latest version of [{{< fa-icon regular file-archive >}} Hugo (> 0.122.0)](https://gohugo.io/getting-started/installing/) for your OS (**Windows**, **Linux**, **macOS**).
 
-{{< admonition note "为什么不支持早期版本的 Hugo?" >}}
-由于 [WebP 图像处理](https://gohugo.io/content-management/image-processing/#jpeg-and-webp-quality) 在 [Hugo 0.122.0版本](https://gohugo.io/news/0.122.0-relnotes/) 中被引入, 本主题只支持高于 **0.122.0** 的 Hugo 版本.
+{{< admonition note "Why not support earlier versions of Hugo?" >}}
+Since [WebP Image Processing](https://gohugo.io/content-management/image-processing/#jpeg-and-webp-quality) was introduced in the [Hugo 0.122.0](https://gohugo.io/news/0.122.0-relnotes/), this theme only supports Hugo versions above **0.122.0**.
 {{< /admonition >}}
 
-{{< admonition tip "推荐使用 Hugo extended 版本" >}}
-由于这个主题的一些特性需要将 {{< fa-icon brands sass >}} SCSS 转换为 {{< fa-icon brands css3 >}} CSS, 推荐使用 Hugo **extended** 版本来获得更好的使用体验.
+{{< admonition tip "Hugo extended version is recommended" >}}
+Since some features of this theme need to processes {{< fa-icon brands sass >}} SCSS to {{< fa-icon brands css3 >}} CSS, it is recommended to use Hugo **extended** version for better experience.
 {{< /admonition >}}
 
-## 安装
+## Installation
 
-以下步骤可帮助你初始化新网站. 如果你根本不了解 Hugo, 我们强烈建议你按照此 [快速入门文档](https://gohugo.io/getting-started/quick-start/) 进一步了解它.
+The following steps are here to help you initialize your new website. If you don’t know Hugo at all, we strongly suggest you learn more about it by following this [great documentation for beginners](https://gohugo.io/getting-started/quick-start/).
 
-### 创建你的项目
+### Create Your Project
 
-Hugo 提供了一个 `new` 命令来创建一个新的网站:
+Hugo provides a `new` command to create a new website:
 
 ```bash
 hugo new site my_website
 cd my_website
 ```
 
-### 安装主题
+### Install the Theme
 
-**DoIt** 主题的仓库是: [https://github.com/HEIGE-PCloud/DoIt](https://github.com/HEIGE-PCloud/DoIt).
+The **DoIt** theme’s repository is: [https://github.com/HEIGE-PCloud/DoIt](https://github.com/HEIGE-PCloud/DoIt).
 
-你可以下载主题的 [最新版本 {{< fa-icon regular file-archive >}} .zip 文件](https://github.com/HEIGE-PCloud/DoIt/releases) 并且解压放到 `themes` 目录.
+You can download the [latest release {{< fa-icon regular file-archive >}} .zip file](https://github.com/HEIGE-PCloud/DoIt/releases) of the theme and extract it in the `themes` directory.
 
-另外, 也可以直接把这个主题克隆到 `themes` 目录:
+Alternatively, clone this repository to the `themes` directory:
 
 ```bash
 git clone https://github.com/HEIGE-PCloud/DoIt.git themes/DoIt
 ```
 
-或者, 初始化你的项目目录为 git 仓库, 并且把主题仓库作为你的网站目录的子模块:
+Or, create an empty git repository and make this repository a submodule of your site directory:
 
 ```bash
 git init
 git submodule add https://github.com/HEIGE-PCloud/DoIt.git themes/DoIt
 ```
 
-### 基础配置 {#basic-configuration}
+### Basic Configuration {#basic-configuration}
 
-以下是 DoIt 主题的基本配置:
+The following is a basic configuration for the DoIt theme:
 
 ```toml
 baseURL = "http://example.org/"
-# [en, zh-cn, fr, ...] 设置默认的语言
-defaultContentLanguage = "zh-cn"
-# 网站语言, 仅在这里 CN 大写
-languageCode = "zh-CN"
-# 是否包括中日韩文字
-hasCJKLanguage = true
-# 网站标题
-title = "我的全新 Hugo 网站"
+# [en, zh-cn, fr, ...] determines default content language
+defaultContentLanguage = "en"
+# language code
+languageCode = "en"
+title = "My New Hugo Site"
 
-# 更改使用 Hugo 构建网站时使用的默认主题
+# Change the default theme to be use when building the site with Hugo
 theme = "DoIt"
 
 [params]
-  # DoIt 主题版本
+  # DoIt theme version
   version = "0.2.X"
 
 [menu]
   [[menu.main]]
     identifier = "posts"
-    # 你可以在名称 (允许 HTML 格式) 之前添加其他信息, 例如图标
+    # you can add extra information before the name (HTML format is supported), such as icons
     pre = ""
-    # 你可以在名称 (允许 HTML 格式) 之后添加其他信息, 例如图标
+    # you can add extra information after the name (HTML format is supported), such as icons
     post = ""
-    name = "文章"
+    name = "Posts"
     url = "/posts/"
-    # 当你将鼠标悬停在此菜单链接上时, 将显示的标题
+    # title will be shown when you hover on this menu link
     title = ""
     weight = 1
   [[menu.main]]
     identifier = "tags"
     pre = ""
     post = ""
-    name = "标签"
+    name = "Tags"
     url = "/tags/"
     title = ""
     weight = 2
@@ -114,56 +111,56 @@ theme = "DoIt"
     identifier = "categories"
     pre = ""
     post = ""
-    name = "分类"
+    name = "Categories"
     url = "/categories/"
     title = ""
     weight = 3
 
-# Hugo 解析文档的配置
+# Markup related configuration in Hugo
 [markup]
-  # 语法高亮设置 (https://gohugo.io/content-management/syntax-highlighting)
+  # Syntax Highlighting (https://gohugo.io/content-management/syntax-highlighting)
   [markup.highlight]
-    # false 是必要的设置 (https://github.com/dillonzq/LoveIt/issues/158)
+    # false is a necessary configuration (https://github.com/dillonzq/LoveIt/issues/158)
     noClasses = false
 ```
 
 {{< admonition >}}
-在构建网站时, 你可以使用 `--theme` 选项设置主题. 但是, 我建议你修改配置文件 (**config.toml**) 将本主题设置为默认主题.
+When building the website, you can set a theme by using `--theme` option. However, we suggest you modify the configuration file (**config.toml**) and set the theme as the default.
 {{< /admonition >}}
 
-### 创建你的第一篇文章
+### Create Your First Post
 
-以下是创建第一篇文章的方法:
+Here is the way to create your first post:
 
 ```bash
 hugo new posts/first_post.md
 ```
 
-通过添加一些示例内容并替换文件开头的标题, 你可以随意编辑文章.
+Feel free to edit the post file by adding some sample content and replacing the title value in the beginning of the file.
 
 {{< admonition >}}
-默认情况下, 所有文章和页面均作为草稿创建. 如果想要渲染这些页面, 请从元数据中删除属性 `draft: true`, 设置属性 `draft: false` 或者为 `hugo` 命令添加 `-D`/`--buildDrafts` 参数.
+By default all posts and pages are created as a draft. If you want to render these pages, remove the property `draft: true` from the metadata, set the property `draft: false` or add `-D`/`--buildDrafts` parameter to `hugo` command.
 {{< /admonition >}}
 
-### 在本地启动网站
+### Launching the Website Locally
 
-使用以下命令启动网站:
+Launch by using the following command:
 
 ```bash
 hugo serve
 ```
 
-去查看 `http://localhost:1313`.
+Go to `http://localhost:1313`.
 
-{{< image src="basic-configuration-preview.zh-cn.webp" caption="基本配置下的预览" width="2450" height="1562" >}}
+{{< image src="basic-configuration-preview.webp" caption="Basic configuration preview" height="1562" width="2400">}}
 
 {{< admonition tip >}}
-当你运行 `hugo serve` 时, 当文件内容更改时, 页面会随着更改自动刷新.
+When you run `hugo serve`, when the contents of the files change, the page automatically refreshes with the changes.
 {{< /admonition >}}
 
 {{< admonition >}}
-由于本主题使用了 Hugo 中的 `.Scratch` 来实现一些特性,
-非常建议你为 `hugo server` 命令添加 `--disableFastRender` 参数来实时预览你正在编辑的文章页面.
+Since the theme use `.Scratch` in Hugo to implement some features,
+it is highly recommended that you add `--disableFastRender` parameter to `hugo server` command for the live preview of the page you are editing.
 
 ```bash
 hugo serve --disableFastRender
@@ -171,98 +168,98 @@ hugo serve --disableFastRender
 
 {{< /admonition >}}
 
-### 构建网站
+### Build the Website
 
-当你准备好部署你的网站时, 运行以下命令:
+When your site is ready to deploy, run the following command:
 
 ```bash
 hugo
 ```
 
-会生成一个 `public` 目录, 其中包含你网站的所有静态内容和资源. 现在可以将其部署在任何 Web 服务器上.
+A `public` folder will be generated, containing all static content and assets for your website. It can now be deployed on any web server.
 
 {{< admonition tip >}}
-网站内容可以通过 [Netlify](https://www.netlify.com/) 自动发布和托管 (了解有关[通过 Netlify 进行 HUGO 自动化部署](https://www.netlify.com/blog/2015/07/30/hosting-hugo-on-netlifyinsanely-fast-deploys/) 的更多信息).
-或者, 您可以使用 [AWS Amplify](https://gohugo.io/hosting-and-deployment/hosting-on-aws-amplify/), [Github pages](https://gohugo.io/hosting-and-deployment/hosting-on-github/), [Render](https://gohugo.io/hosting-and-deployment/hosting-on-render/) 以及更多...
+The website can be automatically published and hosted with [Netlify](https://www.netlify.com/) (Read more about [Automated HUGO deployments with Netlify](https://www.netlify.com/blog/2015/07/30/hosting-hugo-on-netlifyinsanely-fast-deploys/)).
+Alternatively, you can use [AWS Amplify](https://gohugo.io/hosting-and-deployment/hosting-on-aws-amplify/), [Github pages](https://gohugo.io/hosting-and-deployment/hosting-on-github/), [Render](https://gohugo.io/hosting-and-deployment/hosting-on-render/) and more...
 {{< /admonition >}}
 
-## 配置
+## Configuration
 
-### 网站配置 {#site-configuration}
+### Site Configuration {#site-configuration}
 
-除了 [Hugo 全局配置](https://gohugo.io/overview/configuration/) 和 [菜单配置](#basic-configuration) 之外, **DoIt** 主题还允许您在网站配置中定义以下参数 (这是一个示例 `config.toml`, 其内容为默认值).
+In addition to [Hugo global configuration](https://gohugo.io/overview/configuration/) and [menu configuration](#basic-configuration), **DoIt** lets you define the following parameters in your site configuration (here is a `config.toml`, whose values are default).
 
-请打开下面的代码块查看完整的示例配置 {{< fa-icon regular hand-point-down >}}:
+Please open the code block below to view the complete sample configuration {{< fa-icon regular hand-point-down >}}:
 
 ```toml
 [params]
-  # {{< version 0.2.0 changed >}} DoIt 主题版本
+  # {{< version 0.2.0 changed >}} DoIt theme version
   version = "0.3.X"
-  # 网站名称
-  title = "我的全新 Hugo 网站"
-  # 网站描述
-  description = "这是我的全新 Hugo 网站"
-  # 网站关键词
+  # website title
+  title = "My New Hugo Site"
+  # site description
+  description = "This is My New Hugo Site"
+  # site keywords
   keywords = ["Theme", "Hugo"]
-  # {{< version 0.2.11 changed >}} 网站默认主题样式 ("light", "dark", "black", "auto")
+  # {{< version 0.2.11 changed >}} site default theme ("light", "dark", "black", "auto")
   defaultTheme = "auto"
-  # 公共 git 仓库路径, 仅在 enableGitInfo 设为 true 时有效
+  # public git repo url only then enableGitInfo is true
   gitRepo = ""
-  # {{< version 0.1.1 >}} 哪种哈希函数用来 SRI, 为空时表示不使用 SRI
+  # {{< version 0.1.1 >}} which hash function used for SRI, when empty, no SRI is used
   # ("sha256", "sha384", "sha512", "md5")
   fingerprint = ""
-  # {{< version 0.2.0 >}} 日期格式
+  # {{< version 0.2.0 >}} date format
   dateFormat = "2006-01-02"
-  # 网站图片, 用于 Open Graph 和 Twitter Cards
+  # website images for Open Graph and Twitter Cards
   images = ["/logo.png"]
-  # {{< version 0.2.11 >}} 开启 PWA 支持
+  # {{< version 0.2.11 >}} enable PWA support
   enablePWA = false
-  # [试验性功能] 缓存markdown中的图片链接到本地，详情请见：https://github.com/HEIGE-PCloud/DoIt/pull/860#issue-1574342372
+  # [Experimental] cache remote images in markdown, more info: https://github.com/HEIGE-PCloud/DoIt/pull/860#issue-1574342372
   cacheRemoteImages = true
-  # [试验性功能] 使用 hugo 自带的图片处理功能生成 srcset 属性
-optimizeImages = true
-  # [实验性功能] optimizeImages 中 srcset 属性的缩放方法, 详情请见：https://gohugo.io/content-management/image-processing/#image-processing-options
+  # [Experimental] generate image srcset attribute with hugo image processing feature.
+  optimizeImages = true
+  # [Experimental] resize method for srcset attribute in optimizeImages, more info: https://gohugo.io/content-management/image-processing/#image-processing-options
   srcsetSmallResizeMethod = "700x webp Lanczos q75"
   srcsetDefaultResizeMethod = "1200x webp Lanczos q75"
   srcsetLargeResizeMethod = "2000x webp Lanczos q75"
-  # {{< version 0.2.14 >}} 版权信息
+  # {{< version 0.2.14 >}} License information
   license = '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
-  # 作者配置
+  # Author config
   [params.author]
     name = "xxxx"
     email = ""
     link = ""
     avatar = ""
     gravatarEmail = ""
-  # {{< version 0.2.0 >}} 应用图标配置
+  # {{< version 0.2.0 >}} App icon config
   [params.app]
-    # 当添加到 iOS 主屏幕或者 Android 启动器时的标题, 覆盖默认标题
+    # optional site title override for the app when added to an iOS home screen or Android launcher
     title = "DoIt"
-    # 是否隐藏网站图标资源链接
+    # whether to omit favicon resource links
     noFavicon = false
-    # 更现代的 SVG 网站图标, 可替代旧的 .png 和 .ico 文件
+    # modern SVG favicon to use in place of older style .png and .ico files
     svgFavicon = ""
-    # Safari 图标颜色
+    # Safari mask icon color
     iconColor = "#5bbad5"
-    # Windows v8-10磁贴颜色
+    # Windows v8-10 tile color
     tileColor = "#da532c"
 
-  # {{< version 0.2.0 >}} 搜索配置
+  # {{< version 0.2.0 >}} Search config
   [params.search]
     enable = true
-    # 搜索引擎的类型 ("algolia", "fuse")
+    # type of search engine ("algolia", "fuse")
     type = "fuse"
-    # 文章内容最长索引长度
+    # max index length of the chunked content
     contentLength = 4000
-    # 搜索框的占位提示语
+    # placeholder of the search bar
     placeholder = ""
-    # {{< version 0.2.1 >}} 最大结果数目
+    # {{< version 0.2.1 >}} max number of results length
     maxResultLength = 10
-    # {{< version 0.2.3 >}} 结果内容片段长度
-    snippetLength = 50
-    # {{< version 0.2.1 >}} 搜索结果中高亮部分的 HTML 标签
+    # {{< version 0.2.3 >}} snippet length of the result
+    snippetLength = 30
+    # {{< version 0.2.1 >}} HTML tag name of the highlight part in results
     highlightTag = "em"
-    # {{< version 0.2.4 >}} 是否在搜索索引中使用基于 baseURL 的绝对路径
+    # {{< version 0.2.4 >}} whether to use the absolute URL based on the baseURL in search index
     absoluteURL = false
     [params.search.algolia]
       index = ""
@@ -281,108 +278,108 @@ optimizeImages = true
       ignoreFieldNorm = false
 
   [params.image]
-    # 缓存图片链接到本地
+    # cache remote images for better optimisations
     cacheRemote = true
-    # 图片缩放和优化
+    # Image resizing and optimisation
     optimise = true
-  # 页面头部导航栏配置
+  # Header config
   [params.header]
-    # {{< version 0.2.11 >}} 主题切换模式
-    # 主题切换模式 ("switch", "select")
+    # {{< version 0.2.11 >}} Theme change mode
+    # theme change mode ("switch", "select")
     themeChangeMode = "select"
-    # {{< version 0.2.0 >}} 页面头部导航栏标题配置
+    # {{< version 0.2.0 >}} Header title config
     [params.header.title]
-      # LOGO 的 URL
+      # URL of the LOGO
       logo = ""
-      # 标题名称
+      # title name
       name = ""
-      # 你可以在名称 (允许 HTML 格式) 之前添加其他信息, 例如图标
+      # you can add extra information before the name (HTML format is supported), such as icons
       pre = ""
-      # 你可以在名称 (允许 HTML 格式) 之后添加其他信息, 例如图标
+      # you can add extra information after the name (HTML format is supported), such as icons
       post = ""
-      # {{< version 0.2.5 >}} 是否为标题显示打字机动画
+      # {{< version 0.2.5 >}} whether to use typeit animation for title name
       typeit = false
 
-  # 页面底部信息配置
+  # Footer config
   [params.footer]
     enable = true
-    # {{< version 0.2.0 >}} 自定义内容 (支持 HTML 格式)
+    # {{< version 0.2.0 >}} Custom content (HTML format is supported)
     custom = ''
-    # {{< version 0.2.0 >}} 是否显示 Hugo 和主题信息
+    # {{< version 0.2.0 >}} whether to show Hugo and theme info
     hugo = true
-    # {{< version 0.2.14 >}} 托管服务信息 (支持 HTML 格式)
+    # {{< version 0.2.14 >}} Hosted on (HTML format is supported)
     # <a title="Github Pages" href="https://docs.github.com/en/pages/" target="_blank" rel="noopener noreffer">GitHub Pages</a>
     hostedOn = ''
-    # {{< version 0.2.0 >}} 是否显示版权信息
+    # {{< version 0.2.0 >}} whether to show copyright info
     copyright = true
-    # {{< version 0.2.0 >}} 是否显示作者
+    # {{< version 0.2.0 >}} whether to show the author
     author = true
-    # 网站创立年份
+    # Site creation time
     since = 2019
-    # ICP 备案信息, 仅在中国使用 (支持 HTML 格式)
+    # ICP info only in China (HTML format is supported)
     icp = ""
-    # 许可协议信息 (支持 HTML 格式)
+    # license info (HTML format is supported)
     license = '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
 
-  # {{< version 0.2.0 >}} Section (所有文章) 页面配置
+  # {{< version 0.2.0 >}} Section (all posts) page config
   [params.section]
-    # section 页面每页显示文章数量
+    # special amount of posts in each section page
     paginate = 20
-    # 日期格式 (月和日)
+    # date format (month and day)
     dateFormat = "01-02"
-    # RSS 文章数目
+    # amount of RSS pages
     rss = 10
-    # {{< version 0.2.13 >}} 最近更新文章设置
+    # {{< version 0.2.13 >}} recently updated posts settings
     [params.section.recentlyUpdated]
       enable = false
       rss = false
       days = 30
       maxCount = 10
 
-  # {{< version 0.2.0 >}} List (目录或标签) 页面配置
+  # {{< version 0.2.0 >}} List (category or tag) page config
   [params.list]
-    # list 页面每页显示文章数量
+    # special amount of posts in each list page
     paginate = 20
-    # 日期格式 (月和日)
+    # date format (month and day)
     dateFormat = "01-02"
-    # RSS 文章数目
+    # amount of RSS pages
     rss = 10
 
-  # 主页配置
+  # Home page config
   [params.home]
-    # {{< version 0.2.0 >}} RSS 文章数目
+    # {{< version 0.2.0 >}} amount of RSS pages
     rss = 10
-    # 主页个人信息
+    # Home page profile
     [params.home.profile]
       enable = true
-      # Gravatar 邮箱, 用于优先在主页显示的头像
+      # Gravatar Email for preferred avatar in home page
       gravatarEmail = ""
-      # 主页显示头像的 URL
-      # 将你的头像文件放置于 static 或者 assets 目录下
-      # 文件路径是相对于 static 或者 assets 目录的
+      # URL of avatar shown in home page
+      # Place your avatar file under static or assets directory
+      # The filepath is relative to the static or assets directory
       avatarURL = "/images/avatar.webp"
-      # 头像的链接指向的 URL
+      # URL the avatar links to
       avatarLinkURL = ""
-      # {{< version 0.2.7 changed >}} 主页显示的网站标题 (支持 HTML 格式)
+      # {{< version 0.2.7 changed >}} title shown in home page (HTML format is supported)
       title = ""
-      # 主页显示的网站副标题
-      subtitle = "这是我的全新 Hugo 网站"
-      # 是否为副标题显示打字机动画
+      # subtitle shown in home page
+      subtitle = "This is My New Hugo Site"
+      # whether to use typeit animation for subtitle
       typeit = true
-      # 是否显示社交账号
+      # whether to show social links
       social = true
-      # {{< version 0.2.0 >}} 免责声明 (支持 HTML 格式)
+      # {{< version 0.2.0 >}} disclaimer (HTML format is supported)
       disclaimer = ""
-    # 主页文章列表
+    # Home page posts
     [params.home.posts]
       enable = true
-      # 主页每页显示文章数量
+      # special amount of posts in each home posts page
       paginate = 6
-      # {{< version 0.2.0 deleted >}} 被 params.page 中的 hiddenFromHomePage 替代
-      # 当你没有在文章前置参数中设置 "hiddenFromHomePage" 时的默认行为
+      # {{< version 0.2.0 deleted >}} replaced with hiddenFromHomePage in params.page
+      # default behavior when you don't set "hiddenFromHomePage" in front matter
       defaultHiddenFromHomePage = false
 
-  # 作者的社交信息设置
+  # Social config about the author
   [params.social]
     GitHub = "xxxx"
     Linkedin = ""
@@ -456,104 +453,104 @@ optimizeImages = true
     Email = "xxxx@xxxx.com"
     RSS = true # {{< version 0.2.0 >}}
 
-  # {{< version 0.2.0 changed >}} 文章页面配置
+  # {{< version 0.2.0 changed >}} Page config
   [params.page]
-    # {{< version 0.2.0 >}} 是否在主页隐藏一篇文章
+    # {{< version 0.2.0 >}} whether to hide a page from home page
     hiddenFromHomePage = false
-    # {{< version 0.2.0 >}} 是否在搜索结果中隐藏一篇文章
+    # {{< version 0.2.0 >}} whether to hide a page from search results
     hiddenFromSearch = false
-    # {{< version 0.2.0 >}} 是否使用 twemoji
+    # {{< version 0.2.0 >}} whether to enable twemoji
     twemoji = false
-    # 是否使用 lightgallery
+    # whether to enable lightgallery
     lightgallery = false
-    # {{< version 0.2.0 >}} 是否使用 ruby 扩展语法
+    # {{< version 0.2.0 >}} whether to enable the ruby extended syntax
     ruby = true
-    # {{< version 0.2.0 >}} 是否使用 fraction 扩展语法
+    # {{< version 0.2.0 >}} whether to enable the fraction extended syntax
     fraction = true
-    # 是否在文章页面显示原始 Markdown 文档链接
+    # whether to show link to Raw Markdown content of the content
     linkToMarkdown = true
-    # {{< version 0.2.14 >}} 配置文章原始文件的链接
+    # {{< version 0.2.14 >}} configure the link to the source file of the post
     linkToSource = false
     # "https://github.com/user/repo/blob/main/{path}"
-    # {{< version 0.2.13 >}} 配置编辑文章的链接
+    # {{< version 0.2.13 >}} configure the link to edit the post
     linkToEdit = false
     # "https://github.com/user/repo/edit/main/{path}"
     # "https://gitlab.com/user/repo/-/edit/main/{path}"
     # "https://bitbucket.org/user/repo/src/main/{path}?mode=edit"
-    # {{< version 0.2.14 >}} 配置提交错误的链接
+    # {{< version 0.2.14 >}} configure the link to report issue for the post
     linkToReport = false
     # "https://github.com/user/repo/issues/new?title=[bug]%20{title}&body=|Field|Value|%0A|-|-|%0A|Title|{title}|%0A|Url|{url}|%0A|Filename|https://github.com/user/repo/blob/main/{path}|"
-    # {{< version 0.2.4 >}} 是否在 RSS 中显示全文内容
+    # {{< version 0.2.4 >}} whether to show the full text content in RSS
     rssFullText = false
-    # {{< version 0.2.13 >}} 是否在文章开头显示系列导航
+    # {{< version 0.2.13 >}} whether to enable series navigation
     seriesNavigation = true
-    # 是否启用最后修改时间
+    # whether to enable last modified time
     enableLastMod = true
-    # 是否启用字数统计
+    # whether to enable word count
     enableWordCount = true
-    # 是否启用阅读时间估计
+    # whether to enable reading time estimation
     enableReadingTime = true
-    # {{< version 0.2.13 >}} 过时文章提示
+    # {{< version 0.2.13 >}} outdated article reminder config
     [params.page.outdatedArticleReminder]
-      enable = true
-      # 如果文章最后更新于 90 天之前，显示提醒
+      enable = false
+      # Display the reminder if the last modified time is more than 90 days ago.
       reminder = 90
-      # 如果文章最后更新于 180 天之前，显示警告
+      # Display warning if the last modified time is more than 180 days ago.
       warning = 180
-    # {{< version 0.2.0 >}} 目录配置
+    # {{< version 0.2.0 >}} Table of the contents config
     [params.page.toc]
-      # 是否使用目录
+      # whether to enable the table of the contents
       enable = true
-      # {{< version 0.2.9 >}} 是否保持使用文章前面的静态目录
+      # {{< version 0.2.9 >}} whether to keep the static table of the contents in front of the post
       keepStatic = true
-      # 是否使侧边目录自动折叠展开
+      # whether to make the table of the contents in the sidebar automatically collapsed
       auto = true
-    # {{< version 0.2.0 >}} 代码配置
-    [params.page.code]
-      # 默认展开显示的代码行数
-      maxShownLines = 10
-      # 是否显示代码行号
-      lineNos = true
-      # 是否开启代码换行
-      wrap = false
-      # 是否显示代码块标题
-      header = true
-    # {{< version 0.2.14 >}} 表格配置
-    [params.page.table]
-      # 是否开启表格排序
-      sort = true
-    # {{< version 0.2.0 changed >}} {{< link "https://katex.org/" KaTeX >}} 数学公式
+    # {{< version 0.2.0 changed >}} {{< link "https://katex.org/" KaTeX >}} mathematical formulas
     [params.page.math]
       enable = true
-      # 默认块定界符是 $$ ... $$ 和 \\[ ... \\]
+      # default block delimiter is $$ ... $$ and \\[ ... \\]
       blockLeftDelimiter = ""
       blockRightDelimiter = ""
-      # 默认行内定界符是 $ ... $ 和 \\( ... \\)
+      # default inline delimiter is $ ... $ and \\( ... \\)
       inlineLeftDelimiter = ""
       inlineRightDelimiter = ""
-      # KaTeX 插件 copy_tex
+      # KaTeX extension copy_tex
       copyTex = true
-      # KaTeX 插件 mhchem
+      # KaTeX extension mhchem
       mhchem = true
-      # 使用 MathJax 替代 KaTeX
+      # Use MathJax instead of KaTeX
       mathjax = false
-    # {{< version 0.2.0 >}} {{< link "https://docs.mapbox.com/mapbox-gl-js" "Mapbox GL JS" >}} 配置
+    # {{< version 0.2.0 >}} Code config
+    [params.page.code]
+      # the maximum number of lines of displayed code by default
+      maxShownLines = 10
+      # whether to enable line numbers in the code block
+      lineNos = true
+      # whether to enable line wrapping in the code block
+      wrap = false
+      # whether to display the header in the code block
+      header = true
+    # {{< version 0.2.14 >}} Table config
+    [params.page.table]
+      # whether to enable sorting in the tables
+      sort = true
+    # {{< version 0.2.0 >}} {{< link "https://docs.mapbox.com/mapbox-gl-js" "Mapbox GL JS" >}} config
     [params.page.mapbox]
-      # Mapbox GL JS 的 access token
+      # access token of Mapbox GL JS
       accessToken = ""
-      # 浅色主题的地图样式
+      # style for the light theme
       lightStyle = "mapbox://styles/mapbox/light-v9"
-      # 深色主题的地图样式
+      # style for the dark theme
       darkStyle = "mapbox://styles/mapbox/dark-v9"
-      # 是否添加 {{< link "https://docs.mapbox.com/mapbox-gl-js/api#navigationcontrol" NavigationControl >}}
+      # whether to add {{< link "https://docs.mapbox.com/mapbox-gl-js/api#navigationcontrol" NavigationControl >}}
       navigation = true
-      # 是否添加 {{< link "https://docs.mapbox.com/mapbox-gl-js/api#geolocatecontrol" GeolocateControl >}}
+      # whether to add {{< link "https://docs.mapbox.com/mapbox-gl-js/api#geolocatecontrol" GeolocateControl >}}
       geolocate = true
-      # 是否添加 {{< link "https://docs.mapbox.com/mapbox-gl-js/api#scalecontrol" ScaleControl >}}
+      # whether to add {{< link "https://docs.mapbox.com/mapbox-gl-js/api#scalecontrol" ScaleControl >}}
       scale = true
-      # 是否添加 {{< link "https://docs.mapbox.com/mapbox-gl-js/api#fullscreencontrol" FullscreenControl >}}
+      # whether to add {{< link "https://docs.mapbox.com/mapbox-gl-js/api#fullscreencontrol" FullscreenControl >}}
       fullscreen = true
-    # {{< version 0.2.0 changed >}} 文章页面的分享信息设置
+    # {{< version 0.2.0 changed >}} social share links in post page
     [params.page.share]
       enable = true
       Twitter = true
@@ -585,20 +582,20 @@ optimizeImages = true
       Mix = false
       Mastodon = false
 
-    # instant.page 设置
+    # instant.page config
     [params.page.instantpage]
       enable = false
 
-    # {{< version 0.2.0 changed >}} 评论系统设置
+    # {{< version 0.2.0 changed >}} Comment config
     [params.page.comment]
       enable = true
-      # {{< link "https://disqus.com/" Disqus >}} 评论系统设置
+      # {{< link "https://disqus.com/" Disqus >}} comment config
       [params.page.comment.disqus]
         # {{< version 0.1.1 >}}
         enable = false
-        # Disqus 的 shortname, 用来在文章中启用 Disqus 评论系统
+        # Disqus shortname to use Disqus in posts
         shortname = ""
-      # {{< link "https://github.com/gitalk/gitalk" Gitalk >}} 评论系统设置
+      # {{< link "https://github.com/gitalk/gitalk" Gitalk >}} comment config
       [params.page.comment.gitalk]
         # {{< version 0.1.1 >}}
         enable = false
@@ -606,7 +603,7 @@ optimizeImages = true
         repo = ""
         clientId = ""
         clientSecret = ""
-      # {{< link "https://github.com/xCss/Valine" Valine >}} 评论系统设置
+      # {{< link "https://github.com/xCss/Valine" Valine >}} comment config
       [params.page.comment.valine]
         enable = false
         appId = ""
@@ -621,13 +618,13 @@ optimizeImages = true
         highlight = true
         enableQQ = false
         serverURLs = ""
-        # {{< version 0.2.6 >}} emoji 数据文件名称, 默认是 "google.yml"
+        # {{< version 0.2.6 >}} emoji data file name, default is "google.yml"
         # ("apple.yml", "google.yml", "facebook.yml", "twitter.yml")
-        # 位于 "themes/DoIt/assets/data/emoji/" 目录
-        # 可以在你的项目下相同路径存放你自己的数据文件:
+        # located in "themes/DoIt/assets/data/emoji/" directory
+        # you can store your own data files in the same path under your project:
         # "assets/data/emoji/"
         emoji = ""
-      # {{< link "https://github.com/xCss/Valine" Waline >}} 评论系统设置
+      # {{< link "https://github.com/xCss/Valine" Waline >}} comment config
       [params.page.comment.waline]
         # {{< version 0.2.14 changed >}}
         enable = false
@@ -643,14 +640,14 @@ optimizeImages = true
         # imageUploader = false
         # highlighter = false
         # texRenderer = false
-      # {{< link "https://developers.facebook.com/docs/plugins/comments" "Facebook 评论系统" >}}设置
+      # {{< link "https://developers.facebook.com/docs/plugins/comments" "Facebook comment" >}} config
       [params.page.comment.facebook]
         enable = false
         width = "100%"
         numPosts = 10
         appId = ""
-        languageCode = "zh_CN"
-      # {{< version 0.2.0 >}} {{< link "https://comments.app/" "Telegram Comments" >}} 评论系统设置
+        languageCode = ""
+      # {{< version 0.2.0 >}} {{< link "https://comments.app/" "Telegram comments" >}} config
       [params.page.comment.telegram]
         enable = false
         siteID = ""
@@ -661,10 +658,10 @@ optimizeImages = true
         dislikes = false
         outlined = false
         dark = false
-      # {{< version 0.2.0 >}} {{< link "https://commento.io/" "Commento" >}} 评论系统设置
+      # {{< version 0.2.0 >}} {{< link "https://commento.io/" "Commento" >}} comment config
       [params.page.comment.commento]
         enable = false
-      # {{< version 0.2.5 >}} {{< link "https://utteranc.es/" "Utterances" >}} 评论系统设置
+      # {{< version 0.2.5 >}} {{< link "https://utteranc.es/" "Utterances" >}} comment config
       [params.page.comment.utterances]
         enable = false
         # owner/repo
@@ -673,16 +670,16 @@ optimizeImages = true
         label = ""
         lightTheme = "github-light"
         darkTheme = "github-dark"
-      # {{< version 0.2.12 >}} {{< link "https://twikoo.js.org/" "Twikoo" >}} 评论系统设置
+      # {{< version 0.2.12 >}} {{< link "https://twikoo.js.org/" "Twikoo" >}} comment config
       [params.page.comment.twikoo]
         enable = false
         envId = ""
         region = ""
         path = ""
-        cloudbase = true # boolean : true / false. # 是否部署在腾讯云 CloudBase
+        cloudbase = true # boolean : true / false. #If you deploy your Twikoo on CloudBase, set it to true.
         visitor = true
         commentCount = true
-      # {{< version 0.2.12 >}} {{< link "https://vssue.js.org/" "Vssue" >}} 评论系统设置
+      # {{< version 0.2.12 >}} {{< link "https://vssue.js.org/" "Vssue" >}} comment config
       [params.page.comment.vssue]
         enable = false
         platform = "" # ("bitbucket", "gitea", "gitee", "github", "gitlab")
@@ -690,7 +687,7 @@ optimizeImages = true
         repo = ""
         clientId = ""
         clientSecret = ""
-      # {{< version 0.2.13 >}} {{< link "https://remark42.com/" "Remark42" >}} 评论系统设置
+      # {{< version 0.2.13 >}} {{< link "https://remark42.com/" "Remark42" >}} comment config
       [params.page.comment.remark42]
         enable = false
         host = ""
@@ -698,7 +695,7 @@ optimizeImages = true
         max_shown_comments = 15
         show_email_subscription = true
         simple_view = false
-      # {{< version 0.2.13 >}} {{< link "https://giscus.app/" "giscus" >}} 评论系统设置
+      # {{< version 0.2.13 >}} {{< link "https://giscus.app/" "giscus" >}} comment config
       [params.page.comment.giscus]
         enable = false
         # owner/repo
@@ -712,9 +709,9 @@ optimizeImages = true
         dataInputPosition = "bottom"
         lightTheme = "light"
         darkTheme = "dark"
-        dataLang = "zh-CN"
+        dataLang = "en"
         dataLoading = "lazy"
-      # {{< link "https://artalk.js.org/" "artalk" >}} 评论系统设置
+      # {{< link "https://artalk.js.org/" "artalk" >}} comment config
       [params.page.comment.artalk]
         enable = false
         server = ""
@@ -724,62 +721,62 @@ optimizeImages = true
         lightbox = false
         pageview = true
         commentCount = true
-    # {{< version 0.2.7 >}} 第三方库配置
+    # {{< version 0.2.7 >}} Third-party library config
     [params.page.library]
       [params.page.library.css]
         # someCSS = "some.css"
-        # {{< version 0.2.14 >}} 更多第三方库配置
+        # {{< version 0.2.14 >}} Enhance third-party library config
         # [params.page.library.css.someOtherCSS]
         #   src = "someOther.css"
         #   defer = true
         #   attr = "customAttribute"
-        # 位于 "assets/"
-        # 或者
+        # located in "assets/"
+        # Or
         # someCSS = "https://cdn.example.com/some.css"
       [params.page.library.js]
         # someJavaScript = "some.js"
-        # {{< version 0.2.14 >}} 更多第三方库配置
+        # {{< version 0.2.14 >}} Enhance third-party library config
         # [params.page.library.js.someOtherJavaScript]
         #   src = "someOther.js"
         #   defer = false
         #   async = true
         #   attr = "customAttribute"
-        # 位于 "assets/"
-        # 或者
+        # located in "assets/"
+        # Or
         # someJavaScript = "https://cdn.example.com/some.js"
-    # {{< version 0.2.10 changed >}} 页面 SEO 配置
+    # {{< version 0.2.10 changed >}} Page SEO config
     [params.page.seo]
-      # 图片 URL
+      # image URL
       images = []
-      # 出版者信息
+      # Publisher info
       [params.page.seo.publisher]
         name = ""
         logoUrl = ""
-    # {{< version 0.2.14>}} 相关文章推荐配置
-    [params.page.related]
-      enable = true
-      count = 5
+    # {{< version 0.2.14>}} Related content config
+      [params.page.related]
+        enable = true
+        count = 5
 
 
-  # {{< version 0.2.13 >}} 赞赏配置
+  # {{< version 0.2.13 >}} Sponsor config
   [params.sponsor]
     enable = false
-    bio = "如果你觉得这篇文章对你有所帮助，欢迎赞赏~"
-    link = "https://www.buymeacoffee.com" # 你的赞赏页面的地址
-    custom = "" # 自定义 HTML
+    bio = "If you find this post helpful, please consider sponsoring."
+    link = "https://www.buymeacoffee.com" # The link to your sponsor page
+    custom = "" # Custom HTML button
 
-  # {{< version 0.2.5 >}} TypeIt 配置
+  # {{< version 0.2.5 >}} TypeIt config
   [params.typeit]
-    # 每一步的打字速度 (单位是毫秒)
+    # typing speed between each step (measured in milliseconds)
     speed = 100
-    # 光标的闪烁速度 (单位是毫秒)
+    # blinking speed of the cursor (measured in milliseconds)
     cursorSpeed = 1000
-    # 光标的字符 (支持 HTML 格式)
+    # character used for the cursor (HTML format is supported)
     cursorChar = "|"
-    # 打字结束之后光标的持续时间 (单位是毫秒, "-1" 代表无限大)
+    # cursor duration after typing finishing (measured in milliseconds, "-1" means unlimited)
     duration = -1
 
-  # 网站验证代码, 用于 Google/Bing/Yandex/Pinterest/Baidu
+  # Site verification code config for Google/Bing/Yandex/Pinterest/Baidu
   [params.verification]
     google = ""
     bing = ""
@@ -789,28 +786,28 @@ optimizeImages = true
     so = "" # 360 search
     sogou = ""
 
-  # {{< version 0.2.10 >}} 网站 SEO 配置
+  # {{< version 0.2.10 >}} Site SEO config
   [params.seo]
-    # 图片 URL
+    # image URL
     image = ""
-    # 缩略图 URL
+    # thumbnail URL
     thumbnailUrl = ""
     # {{< version 0.4.1 >}}
-    # Google 搜索结果中网站备用名字
+    # alternate site name in Google search result
     alternateName = ["Hugo DoIt"]
 
-  # {{< version 0.2.0 >}} 网站分析配置
+  # {{< version 0.2.0 >}} Analytics config
   [params.analytics]
     enable = false
     # Google Analytics
     [params.analytics.google]
       id = ""
-      # 是否匿名化用户 IP
+      # whether to anonymize IP
       anonymizeIP = true
     # Fathom Analytics
     [params.analytics.fathom]
       id = ""
-      # 自行托管追踪器时的主机路径
+      # server url for your tracker if you're self hosting
       server = ""
     # {{< version 0.2.13 >}} Baidu Analytics
     [params.analytics.baidu]
@@ -829,41 +826,42 @@ optimizeImages = true
     [params.analytics.cloudflare]
       token = ""
 
-  # {{< version 0.2.7 >}} Cookie 许可配置
+  # {{< version 0.2.7 >}} Cookie consent config
   [params.cookieconsent]
     enable = true
-    # 用于 Cookie 许可横幅的文本字符串
+    # text strings used for Cookie consent banner
     [params.cookieconsent.content]
       message = ""
       dismiss = ""
       link = ""
 
-  # {{< version 0.2.7 changed >}} 第三方库文件的 CDN 设置
+  # {{< version 0.2.7 changed >}} CDN config for third-party library files
   [params.cdn]
-    # CDN 数据文件名称, 默认不启用
+    # CDN data file name, disabled by default
     # ("jsdelivr.yml")
-    # 位于 "themes/DoIt/assets/data/cdn/" 目录
-    # 可以在你的项目下相同路径存放你自己的数据文件:
+    # located in "themes/DoIt/assets/data/cdn/" directory
+    # you can store your own data files in the same path under your project:
     # "assets/data/cdn/"
     data = ""
 
-  # {{< version 0.2.8 >}} 兼容性设置
+  # {{< version 0.2.8 >}} Compatibility config
   [params.compatibility]
-    # 是否使用 Polyfill.io 来兼容旧式浏览器
+    # whether to use Polyfill.io on cdnjs to be compatible with older browsers
+    # https://blog.cloudflare.com/polyfill-io-now-available-on-cdnjs-reduce-your-supply-chain-risk
     polyfill = false
 
-# Hugo 解析文档的配置
+# Markup related config in Hugo
 [markup]
-  # {{< link "https://gohugo.io/content-management/syntax-highlighting" "语法高亮设置" >}}
+  # {{< link "https://gohugo.io/content-management/syntax-highlighting" "Syntax Highlighting" >}}
   [markup.highlight]
     codeFences = true
     guessSyntax = true
     lineNos = true
     lineNumbersInTable = true
-    # false 是必要的设置
+    # false is a necessary configuration
     # ({{< link "https://github.com/dillonzq/LoveIt/issues/158" >}})
     noClasses = false
-  # Goldmark 是 Hugo 0.60 以来的默认 Markdown 解析库
+  # Goldmark is from Hugo 0.60 the default library used for Markdown
   [markup.goldmark]
     [markup.goldmark.extensions]
       definitionList = true
@@ -874,27 +872,27 @@ optimizeImages = true
       taskList = true
       typographer = true
     [markup.goldmark.renderer]
-      # 是否在文档中直接使用 HTML 标签
+      # whether to use HTML tags directly in the document
       unsafe = true
-  # 目录设置
+  # Table Of Contents settings
   [markup.tableOfContents]
     startLevel = 2
     endLevel = 6
 
-# 网站地图配置
+# Sitemap config
 [sitemap]
   changefreq = "weekly"
   filename = "sitemap.xml"
   priority = 0.5
 
-# {{< link "https://gohugo.io/content-management/urls#permalinks" "Permalinks 配置" >}}
+# {{< link "https://gohugo.io/content-management/urls#permalinks" "Permalinks config" >}}
 [Permalinks]
   # posts = ":year/:month/:filename"
   posts = ":filename"
 
-# {{< link "https://gohugo.io/about/hugo-and-gdpr/" "隐私信息配置" >}}
+# {{< link "https://gohugo.io/about/hugo-and-gdpr/" "Privacy config" >}}
 [privacy]
-  # {{< version 0.2.0 deleted >}} Google Analytics 相关隐私 (被 params.analytics.google 替代)
+  # {{< version 0.2.0 deleted >}} privacy of the Google Analytics (replaced by params.analytics.google)
   [privacy.googleAnalytics]
     # ...
   [privacy.twitter]
@@ -902,18 +900,18 @@ optimizeImages = true
   [privacy.youtube]
     privacyEnhanced = true
 
-# 用于输出 Markdown 格式文档的设置
+# Options to make output .md files
 [mediaTypes]
   [mediaTypes."text/plain"]
     suffixes = ["md"]
 
-# 用于输出 Markdown 格式文档的设置
+# Options to make output .md files
 [outputFormats.MarkDown]
   mediaType = "text/plain"
   isPlainText = true
   isHTML = false
 
-# 用于 Hugo 输出文档的设置
+# Options to make hugo output files
 [outputs]
   # {{< version 0.2.0 changed >}}
   home = ["HTML", "RSS", "JSON"]
@@ -921,7 +919,7 @@ optimizeImages = true
   section = ["HTML", "RSS"]
   taxonomy = ["HTML", "RSS"]
 
-# 用于分类的设置
+# Options for taxonomies
 [taxonomies]
 author = "authors"
 category = "categories"
@@ -930,87 +928,87 @@ series = "series"
 ```
 
 {{< admonition >}}
-请注意, 本文档其他部分将详细解释其中一些参数.
+Note that some of these parameters are explained in details in other sections of this documentation.
 {{< /admonition >}}
 
-{{< admonition note "Hugo 的运行环境" >}}
-`hugo serve` 的默认运行环境是 `development`,
-而 `hugo` 的默认运行环境是 `production`.
+{{< admonition note "Hugo environments" >}}
+Default environments are `development` with `hugo serve` and `production` with `hugo`.
 
-由于本地 `development` 环境的限制,
-**评论系统**, **CDN** 和 **fingerprint** 不会在 `development` 环境下启用.
+Due to limitations in the local `development` environment,
+the **comment system**, **CDN** and **fingerprint** will not be enabled in the `development` environment.
 
-你可以使用 `hugo serve -e production` 命令来开启这些特性.
+You could enable these features with `hugo serve -e production`.
 {{< /admonition >}}
 
-{{< admonition tip "关于头像配置的技巧" >}}
+{{< admonition tip "Tips about avatar Configuration" >}}
 
 ```toml
 [params.home.profile]
-  # Gravatar 邮箱, 用于优先在主页显示的头像
+  enable = true
+  # Gravatar Email for preferred avatar in home page
   gravatarEmail = ""
-  # 主页显示头像的 URL
+  # URL of avatar shown in home page
   avatarURL = "/images/avatar.webp"
-  # 头像的链接指向的 URL
+  # URL the avatar links to
   avatarLinkURL = ""
 ````
 
-你可以在 [Gravatar](https://cn.gravatar.com) 注册并设置自己的头像, 网站会通过`gravatarEmail`中填写的邮箱自动获取并设置你的头像.
+You can sign up and configure your avatar at [Gravatar](https://en.gravatar.com), the website will automatically obtain and set your avatar through the email address filled in `gravatarEmail`.
 
-或者可以在`/assets`或`/static`目录下放置图片文件, 并配置`avatarURL`下的地址来显示头像.引用资源的文件路径是相对于`assets`或`static`目录的.详细的本地资源引用方法请查看[这篇文档](/zh-cn/theme-documentation-content/#contents-organization).
+Or you can place image files in the `/assets` or `/static` directory, and configure the address under `avatarURL` to display the avatar. The file path of the referenced resource is relative to the `assets` or `static` directory. Please refer to [this document](/theme-documentation-content/#contents-organization) for detailed local resource reference method.
 
 {{< /admonition >}}
 
-{{< admonition tip "关于 CDN 配置的技巧" >}}
+{{< admonition tip "Tips about CDN Configuration" >}}
 {{< version 0.2.7 changed >}}
 
 ```toml
 [params.cdn]
-  # CDN 数据文件名称, 默认不启用
+  # CDN data file name, disabled by default
   # ("jsdelivr.yml")
   data = ""
 ````
 
-默认的 CDN 数据文件位于 `themes/DoIt/assets/data/cdn/` 目录.
-可以在你的项目下相同路径存放你自己的数据文件: `assets/data/cdn/`.
+The default CDN data file is located in `themes/DoIt/assets/data/cdn/` directory.
+You can store your own data file in the same path under your project: `assets/data/cdn/`.
 {{< /admonition >}}
 
-{{< admonition tip "关于社交链接配置的技巧" >}}
+{{< admonition tip "Tips about social Configuration" >}}
 {{< version 0.2.0 >}}
 
-你可以直接配置你的社交 ID 来生成一个默认社交链接和图标:
+You can directly set your ID to get a default social link and its icon:
 
 ```toml
 [params.social]
   Mastodon = "@xxxx"
 ```
 
-生成的社交链接是 `https://mastodon.technology/@xxxx`.
+The social link generated is `https://mastodon.technology/@xxxx`.
 
-或者你可以通过一个字典来设置更多的选项:
+Or You can set more options through a dict:
 
 ```toml
 [params.social]
   [params.social.Mastodon]
-    # 排列图标时的权重 (权重越大, 图标的位置越靠后)
+    # weight when arranging icons (the greater the weight, the later the icon is positioned)
     weight = 0
-    # 你的社交 ID
+    # your social ID
     id = "@xxxx"
-    # 你的社交链接的前缀
+    # prefix of your social link
     prefix = "https://mastodon.social/"
-    # 当鼠标停留在图标上时的提示内容
+    # content hovering on the icon
     title = "Mastodon"
 ```
 
-所有支持的社交链接的默认数据位于 `themes/DoIt/assets/data/social.yaml`.
-你可以参考它来配置你的社交链接.
+The default data of all supported social links is located in `themes/DoIt/assets/data/social.yaml`,
+which is you can refer to.
 {{< /admonition >}}
 
-{{< image src="complete-configuration-preview.zh-cn.webp" caption="完整配置下的预览" width="2450" height="1562" >}}
+{{< image src="complete-configuration-preview.webp" caption="Complete configuration preview" height="1562" width="2450">}}
 
-### 网站图标, 浏览器配置, 网站清单
+### Favicons, Browserconfig, Manifest
 
-强烈建议你把:
+It is recommended to put your own favicons:
 
 * apple-touch-icon.png (180x180)
 * favicon-32x32.png (32x32)
@@ -1019,57 +1017,58 @@ series = "series"
 * android-chrome-192x192.png (192x192)
 * android-chrome-512x512.png (512x512)
 
-放在 `/static` 目录. 利用 [https://realfavicongenerator.net/](https://realfavicongenerator.net/) 可以很容易地生成这些文件.
+into `/static`. They’re easily created via [https://realfavicongenerator.net/](https://realfavicongenerator.net/).
 
-可以自定义 `browserconfig.xml` 和 `site.webmanifest` 文件来设置 theme-color 和 background-color.
+Customize `browserconfig.xml` and `site.webmanifest` to set theme-color and background-color.
 
-### 自定义样式
+### Style Customization
 
 {{< version 0.2.8 changed >}}
 
 {{< admonition >}}
-Hugo **extended** 版本对于自定义样式是必需的.
+Hugo **extended** version is necessary for the style customization.
 {{< /admonition >}}
 
-通过定义自定义 `.scss` 样式文件, **DoIt** 主题支持可配置的样式.
+**DoIt** theme has been built to be as configurable as possible by defining custom `.scss` style files.
 
-包含自定义 `.scss` 样式文件的目录相对于 **你的项目根目录** 的路径为 `assets/css`.
+The directory including the custom `.scss` style files is `assets/css` relative to **your project root directory**.
 
-在 `assets/css/_override.scss` 中, 你可以覆盖 `themes/DoIt/assets/css/_variables.scss` 中的变量以自定义样式.
+In `assets/css/_override.scss`, you can override the variables in `themes/DoIt/assets/css/_variables.scss` to customize the style.
 
-这是一个例子:
+Here is a example:
 
 ```scss
 @import url('https://fonts.googleapis.com/css?family=Fira+Mono:400,700&display=swap&subset=latin-ext');
 $code-font-family: Fira Mono, Source Code Pro, Menlo, Consolas, Monaco, monospace;
 ```
 
-在 `assets/css/_custom.scss` 中, 你可以添加一些 CSS 样式代码以自定义样式.
+In `assets/css/_custom.scss`, you can add some css style code to customize the style.
 
-## 多语言和 i18n
+## Multilingual and i18n
 
-**DoIt** 主题完全兼容 Hugo 的多语言模式, 并且支持在网页上切换语言.
+**DoIt** theme is fully compatible with Hugo multilingual mode, which provides in-browser language switching.
 
-{{< image src="language-switch.gif" caption="语言切换" width="770" height="226" >}}
+{{< image src="language-switch.gif" caption="Language Switch" height="226" width="770">}}
 
-### 兼容性 {#language-compatibility}
+### Compatibility {#language-compatibility}
 
 {{< version 0.2.10 changed >}}
 
-| 语言         | Hugo 代码 | HTML `lang` 属性 |           主题文档            |
-| :----------- | :-------: | :--------------: | :---------------------------: |
-| 英语         |   `en`    |       `en`       | {{< fa-icon regular check-square >}} |
-| 简体中文     |  `zh-cn`  |     `zh-CN`      | {{< fa-icon regular check-square >}} |
-| 法语         |   `fr`    |       `fr`       |    {{< fa-icon regular square >}}    |
-| 波兰语       |   `pl`    |       `pl`       |    {{< fa-icon regular square >}}    |
-| 巴西葡萄牙语 |  `pt-br`  |     `pt-BR`      |    {{< fa-icon regular square >}}    |
-| 意大利语     |   `it`    |       `it`       |    {{< fa-icon regular square >}}    |
-| 西班牙语     |   `es`    |       `es`       |    {{< fa-icon regular square >}}    |
-| 德语         |   `de`    |       `de`       |    {{< fa-icon regular square >}}    |
-| 塞尔维亚语   |   `pl`    |       `pl`       |    {{< fa-icon regular square >}}    |
-| 俄语         |   `ru`    |       `ru`       |    {{< fa-icon regular square >}}    |
-| 罗马尼亚语   |   `ro`    |       `ro`       |    {{< fa-icon regular square >}}    |
-| 越南语       |   `vi`    |       `vi`       |    {{< fa-icon regular square >}}    |
+| Language             | Hugo Code | HTML `lang` Attribute | Theme Docs                    |
+|:---------------------|:---------:|:---------------------:|:-----------------------------:|
+| English              | `en`      | `en`                  | {{< fa-icon regular check-square >}} |
+| Simplified Chinese   | `zh-cn`   | `zh-CN`               | {{< fa-icon regular check-square >}} |
+| French               | `fr`      | `fr`                  | {{< fa-icon regular square >}}       |
+| Polish               | `pl`      | `pl`                  | {{< fa-icon regular square >}}       |
+| Brazilian Portuguese | `pt-br`   | `pt-BR`               | {{< fa-icon regular square >}}       |
+| Italian              | `it`      | `it`                  | {{< fa-icon regular square >}}       |
+| Spanish              | `es`      | `es`                  | {{< fa-icon regular square >}}       |
+| German               | `de`      | `de`                  | {{< fa-icon regular square >}}       |
+| German               | `de`      | `de`                  | {{< fa-icon regular square >}}       |
+| Serbian              | `sr`      | `sr`                  | {{< fa-icon regular square >}}       |
+| Russian              | `ru`      | `ru`                  | {{< fa-icon regular square >}}       |
+| Romanian             | `ro`      | `ro`                  | {{< fa-icon regular square >}}       |
+| Vietnamese           | `vi`      | `vi`                  | {{< fa-icon regular square >}}       |
 | Arabic               | `ar`      | `ar`                  | {{< fa-icon regular square >}}       |
 | Catalan              | `ca`      | `ca`                  | {{< fa-icon regular square >}}       |
 | Hindi                | `hi`      | `hi`                  | {{< fa-icon regular square >}}       |
@@ -1080,15 +1079,15 @@ $code-font-family: Fira Mono, Source Code Pro, Menlo, Consolas, Monaco, monospac
 | Ukrainian            | `uk`      | `uk`                  | {{< fa-icon regular square >}}       |
 | Traditional Chinese  | `zh-tw`   | `zh-tw`               | {{< fa-icon regular square >}}       |
 
-### 基本配置
+### Basic Configuration
 
-学习了 [Hugo如何处理多语言网站](https://gohugo.io/content-management/multilingual) 之后, 请在 [站点配置](#site-configuration) 中定义你的网站语言.
+After learning [how Hugo handle multilingual websites](https://gohugo.io/content-management/multilingual), define your languages in your [site configuration](#site-configuration).
 
-例如, 一个支持英语, 中文和法语的网站配置:
+For example with English, Chinese and French website:
 
 ```toml
-# [en, zh-cn, fr, pl, ...] 设置默认的语言
-defaultContentLanguage = "zh-cn"
+# [en, zh-cn, fr, pl, ...] determines default content language
+defaultContentLanguage = "en"
 
 [languages]
   [languages.en]
@@ -1124,10 +1123,10 @@ defaultContentLanguage = "zh-cn"
   [languages.zh-cn]
     weight = 2
     title = "我的全新 Hugo 网站"
-    # 网站语言, 仅在这里 CN 大写
+    # language code, CN only here
     languageCode = "zh-CN"
     languageName = "简体中文"
-    # 是否包括中日韩文字
+    # whether to include Chinese/Japanese/Korean
     hasCJKLanguage = true
     [[languages.zh-cn.menu.main]]
       identifier = "posts"
@@ -1155,67 +1154,66 @@ defaultContentLanguage = "zh-cn"
       weight = 3
 ```
 
-然后, 对于每个新页面, 将语言代码附加到文件名中.
+Then, for each new page, append the language code to the file name.
 
-单个文件 `my-page.md` 需要分为两个文件:
+Single file `my-page.md` is split in two files:
 
-* 英语: `my-page.en.md`
-* 中文: `my-page.zh-cn.md`
+* in English: `my-page.en.md`
+* in Chinese: `my-page.zh-cn.md`
 
 {{< admonition >}}
-请注意, 菜单中仅显示翻译的页面. 它不会替换为默认语言内容.
+Be aware that only translated pages are displayed in menu. It’s not replaced with default language content.
 {{< /admonition >}}
 
 {{< admonition tip >}}
-也可以使用 [文章前置参数](https://gohugo.io/content-management/multilingual#translate-your-content) 来翻译网址.
+Use [Front Matter parameter](https://gohugo.io/content-management/multilingual#translate-your-content) to translate urls too.
 {{< /admonition >}}
 
-### 修改默认的翻译字符串
+### Overwrite Translation Strings
 
-翻译字符串用于在主题中使用的常见默认值.
-目前提供[一些语言](#language-compatibility)的翻译, 但你可能自定义其他语言或覆盖默认值.
+Translations strings are used for common default values used in the theme. Translations are available in [some languages](#language-compatibility), but you may use another language or want to override default values.
 
-要覆盖默认值, 请在你项目的 i18n 目录 `i18n/<languageCode>.toml` 中创建一个新文件, 并从 `themes/DoIt/i18n/en.toml` 中获得提示.
+To override these values, create a new file in your local i18n folder `i18n/<languageCode>.toml` and inspire yourself from `themes/DoIt/i18n/en.toml`.
 
-另外, 由于你的翻译可能会帮助到其他人, 请花点时间通过 [{{< fa-icon solid code-branch >}} 创建一个 PR](https://github.com/HEIGE-PCloud/DoIt/pulls) 来贡献主题翻译, 谢谢!
+By the way, as these translations could be used by other people, please take the time to propose a translation by [{{< fa-icon solid code-branch >}} making a PR](https://github.com/HEIGE-PCloud/DoIt/pulls) to the theme!
 
-## 搜索
+## Search
 
 {{< version 0.2.0 >}}
 
-基于 [Lunr.js](https://lunrjs.com/) 或 [algolia](https://www.algolia.com/), **DoIt** 主题支持搜索功能.
+Based on [algolia](https://www.algolia.com/), searching is supported in **DoIt** theme.
 
-### 输出配置
+### Output Configuration
 
-为了生成搜索功能所需要的 `index.json`, 请在你的 [网站配置](#site-configuration) 中添加 `JSON` 输出文件类型到 `outputs` 部分的 `home` 字段中.
+In order to generate `index.json` for searching, add `JSON` output file type to the `home` of the `outputs` part in your [site configuration](#site-configuration).
 
 ```toml
 [outputs]
   home = ["HTML", "RSS", "JSON"]
 ```
 
-### 搜索配置
+### Search Configuration
 
-基于 Hugo 生成的 `index.json` 文件, 你可以激活搜索功能.
+Based on `index.json` generated by Hugo, you could activate searching.
 
-这是你的 [网站配置](#site-configuration) 中的搜索部分:
+Here is the search configuration in your [site configuration](#site-configuration):
 
 ```toml
 [params.search]
   enable = true
-  # 搜索引擎的类型 ("algolia", "fuse")
+  # type of search engine ("algolia", "fuse")
   type = "fuse"
-  # 文章内容最长索引长度
+  # max index length of the chunked content
   contentLength = 4000
-  # 搜索框的占位提示语
+  # placeholder of the search bar
   placeholder = ""
-  # {{< version 0.2.1 >}} 最大结果数目
+  # {{< version 0.2.1 >}} max number of results length
   maxResultLength = 10
-  # {{< version 0.2.3 >}} 结果内容片段长度
-  snippetLength = 50
-  # {{< version 0.2.1 >}} 搜索结果中高亮部分的 HTML 标签
+  # {{< version 0.2.3 >}} snippet length of the result
+  snippetLength = 30
+  # {{< version 0.2.1 >}} HTML tag name of the highlight part in results
   highlightTag = "em"
-  # {{< version 0.2.4 >}} 是否在搜索索引中使用基于 baseURL 的绝对路径
+  # {{< version 0.2.4 >}} whether to use the absolute URL based on the baseURL in search index
   absoluteURL = false
   [params.search.algolia]
     index = ""
@@ -1234,18 +1232,20 @@ defaultContentLanguage = "zh-cn"
     ignoreFieldNorm = false
 ```
 
-{{< admonition note "怎样选择搜索引擎?" >}}
-以下是两种搜索引擎的对比:
+{{< admonition note "How to choose search engine?" >}}
+The following is a comparison of two search engines:
 
-* `fuse`: 简单, 无需同步 `index.json`, 没有 `contentLength` 的限制, 性能高
-* `algolia`: 高性能并且占用带宽低, 但需要同步 `index.json` 且有 `contentLength` 的限制
+* `fuse`: simple, no need to synchronize `index.json`, no limit for `contentLength`, high performance
+* `algolia`: high performance and low bandwidth, but need to synchronize `index.json` and limit for `contentLength`
 
-{{< version 0.2.3 >}} 文章内容被 `h2` 和 `h3` HTML 标签切分来提高查询效果并且基本实现全文搜索.
-`contentLength` 用来限制 `h2` 和 `h3` HTML 标签开头的内容部分的最大长度.
+{{< version 0.2.3 >}} The content of the post is separated by `h2` and `h3` HTML tag to improve query performance and basically implement full-text search.
+`contentLength` is used to limit the max index length of the part starting with `h2` and `h3` HTML tag.
 {{< /admonition >}}
 
-{{< admonition tip "关于 algolia 的使用技巧" >}}
-你需要上传 `index.json` 到 algolia 来激活搜索功能. 你可以使用浏览器来上传 `index.json` 文件但是一个自动化的脚本可能效果更好.
-[Algolia Atomic](https://github.com/chrisdmacrae/atomic-algolia) 是一个不错的选择.
-为了兼容 Hugo 的多语言模式, 你需要上传不同语言的 `index.json` 文件到对应的 algolia index, 例如 `zh-cn/index.json` 或 `fr/index.json`...
+{{< admonition tip "Tips about algolia" >}}
+You need to upload `index.json` files to algolia to activate searching.
+You could upload the `index.json` files by browsers but a CLI tool may be better.
+[Algolia Atomic](https://github.com/chrisdmacrae/atomic-algolia) is a good choice.
+To be compatible with Hugo multilingual mode,
+you need to upload different `index.json` for each language to the different index of algolia, such as `zh-cn/index.json` or `fr/index.json`...
 {{< /admonition >}}
