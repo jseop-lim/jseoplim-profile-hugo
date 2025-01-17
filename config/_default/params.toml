@@ -766,10 +766,10 @@ keywords = [
   # Home page posts
   # 主页文章列表
   [home.posts]
-    enable = false
+    enable = true
     # special amount of posts in each home posts page
     # 主页每页显示文章数量
-    paginate = 7
+    paginate = 5
 # Social config in home page
 # 主页的社交信息设置
 [social]
