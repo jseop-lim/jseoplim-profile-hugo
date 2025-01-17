@@ -1,4 +1,4 @@
-disabled = true
+disabled = false
 weight = 2
 # language code
 languageCode = "ko-KR"

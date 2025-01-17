@@ -9,7 +9,9 @@ dateFormat = "2006년 1월 2일"
 # 搜索配置
 [search]
   [search.algolia]
-    index = "ko_index"
+    index = "netlify_db81fa40-6297-411f-a24a-499a84859294_main_all"
+    appID = "CIUENLVN56"
+    searchKey = "729757e8444c96c60033c58a74236747"
 # Home page config
 # 主页信息设置
 [home]
