@@ -1,6 +1,6 @@
 +++
 title = "About"
-date = 2024-12-31T02:17:04+09:00
+date = 2024-12-31
 draft = false
 
 [params.header.number]

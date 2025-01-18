@@ -1,6 +1,6 @@
 +++
 title = "소개"
-date = 2025-01-08T20:19:09+09:00
+date = 2025-01-08
 draft = false
 
 [params.header.number]
