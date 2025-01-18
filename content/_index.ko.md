@@ -8,7 +8,7 @@ enable = false
 +++
 
 {{< style "text-align:center;" >}}
-학부연구생  
+학부 연구생  
 
 [소프트웨어 분석 연구실](https://prl.korea.ac.kr)  
 [고려대학교](https://korea.ac.kr) [정보대학](https://info.korea.ac.kr) [컴퓨터학과](https://cs.korea.ac.kr)  
@@ -26,7 +26,7 @@ enable = false
 
 ## 경력
 
-- [고려대학교](https://korea.ac.kr) [소프트웨어 분석 연구실](https://prl.korea.ac.kr) **학부연구생** (2025. 1.~현재)
+- [고려대학교](https://korea.ac.kr) [소프트웨어 분석 연구실](https://prl.korea.ac.kr) **학부 연구생** (2025. 1.~현재)
 
 - [(주)에잇퍼센트](https://8percent.kr) **백엔드 개발자** (2022. 8.~2024. 8.)  
   산업기능요원 복무
