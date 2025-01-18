@@ -6,7 +6,7 @@ date = 2025-01-10
 authors = ["Jeongseop Lim"]
 description = "진로를 고민하던 와중 프로그래밍 언어 수업을 듣고 분야에 대한 확신이 생겨 대학원을 가기로 정했다."
 
-tags = []
+tags = ["진로", "대학원", "취업", "프로그래밍언어", "PL", "개발자", "백엔드"]
 categories = ["reflection"]
 series = []
 series_weight = 1
