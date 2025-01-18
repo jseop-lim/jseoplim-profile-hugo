@@ -47,3 +47,5 @@ The website is built using [Hugo](https://gohugo.io/), created with the [DoIt Th
 4. Create a pull request to merge the `develop` branch into the `main` branch, and inspect the preview provided by Netlify.
 
 5. Merge the pull request, and check the deployed [website](https://about.jseoplim.com/).
+
+6. If a new post has been added, visit the [Korean site](https://about.jseoplim.com/ko/) after deployment and leave a relaction. A [GitHub discussion](https://github.com/jseop-lim/jseoplim-profile-hugo/discussions/categories/comments) will be created by [giscus](https://giscus.app/).
