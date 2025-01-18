@@ -1,5 +1,5 @@
 +++
-draft = true
+draft = false
 
 title = "대학원 가기로 정한 계기"
 date = 2025-01-10
