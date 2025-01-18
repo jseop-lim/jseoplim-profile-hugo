@@ -24,4 +24,3 @@ lightgallery = false
 +++
 
 <!--more-->
-
