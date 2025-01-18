@@ -11,6 +11,7 @@ categories = ["reflection"]
 series = []
 series_weight = 1
 
+featuredImage = "thumbnail.jpg"
 lightgallery = false
 +++
 
