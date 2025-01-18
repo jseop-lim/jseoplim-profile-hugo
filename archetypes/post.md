@@ -6,7 +6,7 @@ date = {{ .Date }}
 authors = ["Jeongseop Lim"]
 description = "내용을 입력하세요"
 
-tags = ["Python", "Litestar", "Starlite", "FastAPI", "backend", "framework"]
+tags = []
 categories = [
     "record",
     "reflection",
@@ -24,3 +24,4 @@ lightgallery = false
 +++
 
 <!--more-->
+
