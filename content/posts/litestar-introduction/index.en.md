@@ -4,13 +4,15 @@ draft = false
 title = "Litestar, 새롭고 빠른 Python API 프레임워크"
 date = 2023-09-23
 authors = ["Jeongseop Lim"]
-description = "Litestar 붐은 온다"
+description = "Litestar 붐은 온다."
 
 tags = ["Python", "Litestar", "Starlite", "FastAPI", "backend", "framework"]
 categories = ["explanation"]
+series = []
+series_weight = 1
 
 featuredImage = "thumbnail.png"
-lightgallery = true
+lightgallery = false
 +++
 
 <!--more-->

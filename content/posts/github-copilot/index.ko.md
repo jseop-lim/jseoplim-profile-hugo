@@ -6,11 +6,13 @@ date = 2022-12-18
 authors = ["Jeongseop Lim"]
 description = "언어와 프레임워크 자체에 대해 쌓은 지식이 코딩 AI 시대가 도래하면 휴지조각이 될까?"
 
-tags = ["GitHub Copilot", "developer", "coding", "AI", "코파일럿", "개발자", "코딩", "인공지능"]
+tags = ["GitHub Copilot", "AI", "developer", "coding"]
 categories = ["opinion"]
+series = []
+series_weight = 1
 
 featuredImage = "thumbnail.png"
-lightgallery = true
+lightgallery = false
 +++
 
 <!--more-->

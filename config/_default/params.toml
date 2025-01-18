@@ -59,7 +59,7 @@ keywords = [
   # Image resizing and optimisation
   # 图片缩放和优化
   optimise = true
-  
+
 # Header config
 # 页面头部导航栏配置
 [header]
@@ -204,6 +204,9 @@ keywords = [
   # whether to enable reading time estimation
   # 是否启用阅读时间估计
   enableReadingTime = true
+  # License information
+  license = '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
+
   # Display a message at the beginning of an article to warn the reader that its content might be outdated.
   # 在文章开头显示提示信息，提醒读者文章内容可能过时。
   # instant.page config
