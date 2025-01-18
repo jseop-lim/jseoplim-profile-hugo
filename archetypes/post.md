@@ -20,6 +20,7 @@ categories = [
 series = []
 series_weight = 1
 
+featuredImage = "thumbnail.png"
 lightgallery = false
 +++
 
