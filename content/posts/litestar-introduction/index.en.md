@@ -8,9 +8,10 @@ description = "Litestar 붐은 온다"
 
 tags = ["Python", "Litestar", "Starlite", "FastAPI", "backend", "framework"]
 categories = ["explanation"]
+series = []
+series_weight = 1
 
-featuredImage = "thumbnail.png"
-lightgallery = true
+lightgallery = false
 +++
 
 <!--more-->
