@@ -6,7 +6,7 @@ date = 2023-09-23
 authors = ["Jeongseop Lim"]
 description = "Litestar 붐은 온다."
 
-tags = ["Python", "Litestar", "Starlite", "FastAPI", "backend", "framework"]
+tags = ["Python", "Litestar", "Starlite", "FastAPI", "Django", "backend", "framework"]
 categories = ["explanation"]
 series = []
 series_weight = 1
