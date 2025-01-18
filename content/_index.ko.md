@@ -8,10 +8,10 @@ enable = false
 +++
 
 {{< style "text-align:center;" >}}
-학부 연구생  
+학부 연구생
 
-[소프트웨어 분석 연구실](https://prl.korea.ac.kr)  
-[고려대학교](https://korea.ac.kr) [정보대학](https://info.korea.ac.kr) [컴퓨터학과](https://cs.korea.ac.kr)  
+[소프트웨어 분석 연구실](https://prl.korea.ac.kr) \
+[고려대학교](https://korea.ac.kr) [정보대학](https://info.korea.ac.kr) [컴퓨터학과](https://cs.korea.ac.kr)
 {{< /style >}}
 
 ## 소개
@@ -22,13 +22,13 @@ enable = false
 
 - [고려대학교](https://korea.ac.kr) [산업경영공학](https://ie.korea.ac.kr), [컴퓨터학](https://cs.korea.ac.kr)(이중전공) 학사 재학 (2020. 3.~현재)
 
-- [대구과학고등학교](https://dshs.dge.hs.kr) 졸업 (2016. 2.~2019. 2.)
+- [영재학교 대구과학고등학교](https://dshs.dge.hs.kr) 졸업 (2016. 2.~2019. 2.)
 
 ## 경력
 
 - [고려대학교](https://korea.ac.kr) [소프트웨어 분석 연구실](https://prl.korea.ac.kr) **학부 연구생** (2025. 1.~현재)
 
-- [(주)에잇퍼센트](https://8percent.kr) **백엔드 개발자** (2022. 8.~2024. 8.)  
+- [(주)에잇퍼센트](https://8percent.kr) **백엔드 개발자** (2022. 8.~2024. 8.) \
   산업기능요원 복무
   - 백엔드 개발자 온보딩 프로그램 수립
   - 레거시 대출 신청 시스템 재설계
@@ -37,13 +37,13 @@ enable = false
 
 ## 출판물
 
-- **"에잇퍼센트 백엔드 개발자로 합류할 당신에게"**, 에잇퍼센트 프로덕트 블로그 (2024).  
-  
+- **"에잇퍼센트 백엔드 개발자로 합류할 당신에게"**, 에잇퍼센트 프로덕트 블로그 (2024).
+
   [{{< fa-icon solid link >}}Link](https://8percent.github.io/2024-07-14/%EB%B0%B1%EC%97%94%EB%93%9C-%EC%98%A8%EB%B3%B4%EB%94%A9-%EC%88%98%EB%A6%BD)
 
 ## 수상 및 장학
 
-- **국가우수장학금(이공계)**, [한국장학재단](https://www.kosaf.go.kr) (2022년 1학기~2025년 2학기)  
+- **국가우수장학금(이공계)**, [한국장학재단](https://www.kosaf.go.kr) (2022년 1학기~2025년 2학기)
 
-- **학장상**, [고려대학교 공과대학](https://eng.korea.ac.kr) (2022. 2.)  
+- **학장상**, [고려대학교 공과대학](https://eng.korea.ac.kr) (2022. 2.) \
   2021학년도 2학기 학업 우수상
