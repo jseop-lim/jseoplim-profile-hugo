@@ -1,10 +1,10 @@
-name: Compare Multi-Lang Posts
+name: CI
 
 on:
   push: {}
 
 jobs:
-  compare-posts:
+  compare-multilingual-posts:
     runs-on: ubuntu-latest
 
     steps:
@@ -29,3 +29,12 @@ jobs:
           fi
         env:
           result: ${{ env.result }}
+
+  markdown-lint:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - uses: DavidAnson/markdownlint-cli2-action@v19
+      with:
+        globs: |
+          *.md
