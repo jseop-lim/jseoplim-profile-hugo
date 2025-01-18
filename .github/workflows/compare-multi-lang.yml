@@ -1,0 +1,31 @@
+name: Compare Multi-Lang Posts
+
+on:
+  push: {}
+
+jobs:
+  compare-posts:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Make the script executable
+        run: chmod +x scripts/compare-multi-lang-posts.sh
+
+      - name: Run Compare Script
+        id: compare
+        run: |
+          OUTPUT=$(./scripts/compare-multi-lang-posts.sh)
+          echo "$OUTPUT"
+          echo "result=$OUTPUT" >> $GITHUB_ENV
+
+      - name: Verify Script Output
+        run: |
+          if [[ "$result" != *"0 different"* ]]; then
+            echo "Error: Script output does not contain '0 different'."
+            exit 1
+          fi
+        env:
+          result: ${{ env.result }}
