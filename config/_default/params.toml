@@ -840,8 +840,8 @@ keywords = [
   Youtubecustom = ""
   Youtubelegacy = ""
   [social.CV]
-    id = "cv"
+    id = "pdf/cv.pdf"
     title = "CV"
-    url = "/pdf/cv.pdf"
+    prefix = "https://about.jseoplim.com"
     [social.CV.icon]
       src = "/images/icons/cv.svg"
