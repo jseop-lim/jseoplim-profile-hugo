@@ -24,7 +24,7 @@ I am a senior undergraduate student interested in programming languages, softwar
 
 - **Bachelor of Science** in [Industrial and Management Engineering](https://ie.korea.ac.kr) and [Computer Science and Engineering](https://cs.korea.ac.kr), [Korea University](https://korea.ac.kr) (2020. 3.~present)
 
-- **[Daegu Science High School](https://dshs.dge.hs.kr)** (2016. 2.~2019. 2.)
+- **[Daegu Science High School](https://dshs.dge.hs.kr)** (2016. 2.~2019. 1.)
 
 ## Experience
 
