@@ -18,7 +18,7 @@ Undergraduate Researcher
 
 ## About Me
 
-I am a senior undergraduate student interested in programming languages, software engineering, machine learning, and numerical engineering. I have worked as a Python backend developer in the financial industry, where I focused on building clean and maintainable software. Now, I am preparing for graduate studies in programming languages and look forward to starting research in this field.
+I am a senior undergraduate student interested in programming languages, software engineering, machine learning, and numerical optimization. I have worked as a Python backend developer in the financial industry, where I focused on building clean and maintainable software. Now, I am preparing for graduate studies in programming languages and look forward to starting research in this field.
 
 ## Education
 
