@@ -22,15 +22,15 @@ I am a senior undergraduate student interested in programming languages, softwar
 
 ## Education
 
-- **Bachelor of Science** in [Industrial and Management Engineering](https://ie.korea.ac.kr) and [Computer Science and Engineering](https://cs.korea.ac.kr), [Korea University](https://korea.ac.kr) (Mar. 2020-present)
+- **Bachelor of Science** in [Industrial and Management Engineering](https://ie.korea.ac.kr) and [Computer Science and Engineering](https://cs.korea.ac.kr), [Korea University](https://korea.ac.kr) (Mar. 2020–present)
 
-- **[Daegu Science High School](https://dshs.dge.hs.kr)** (Feb. 2016-Jan. 2019)
+- **[Daegu Science High School](https://dshs.dge.hs.kr)** (Feb. 2016–Jan. 2019)
 
 ## Experience
 
-- **Undergraduate Researcher**, [Software Analysis Labatory](https://prl.korea.ac.kr), [Korea University](https://korea.ac.kr) (Jan. 2025-present)
+- **Undergraduate Researcher**, [Software Analysis Labatory](https://prl.korea.ac.kr), [Korea University](https://korea.ac.kr) (Jan. 2025–present)
 
-- **Backend Developer**, [8PERCENT, Inc.](https://8percent.kr) (Aug. 2022-Aug. 2024) \
+- **Backend Developer**, [8PERCENT, Inc.](https://8percent.kr) (Aug. 2022–Aug. 2024) \
   Skilled Industrial Personnel (산업기능요원)
   - Established a onboarding program for backend developers
   - Redesigned a legacy loan application system
@@ -49,7 +49,7 @@ I am a senior undergraduate student interested in programming languages, softwar
 - **Dean's List**, [Korea University](https://korea.ac.kr) (Feb. 2025) \
   Academic Excellence Award for a GPA of 4.5 in Fall 2024
 
-- **The National Scholarship for Science and Engineering**, [Korea Student Aid Foundation](https://www.kosaf.go.kr) (Spring 2022-Fall 2025) \
+- **The National Scholarship for Science and Engineering**, [Korea Student Aid Foundation](https://www.kosaf.go.kr) (Spring 2022–Fall 2025) \
   Full tuition fee for 4 semesters
 
 - **Dean's List**, [Korea University](https://korea.ac.kr) (Feb. 2022) \
