@@ -24,7 +24,7 @@ images = ["/images/avatar.png"]  # XXX: gravatar 되는지 점검 필요
 enablePWA = false
 # license information
 # 许可协议信息 (支持 HTML 格式)
-license = '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
+license = "All rights reserved."
 # [Experimental] Bundle js
 bundle = false
 # site keywords
@@ -114,7 +114,7 @@ keywords = [
   icp = ""
   # license info (HTML format is supported)
   # 许可协议信息 (支持 HTML 格式)
-  license= '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a'
+  license= "All rights reserved."
 
 # Section (all posts) page config
 # Section (所有文章) 页面配置
