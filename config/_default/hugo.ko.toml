@@ -7,4 +7,4 @@ languageName = "한국어"
 # whether to include Chinese/Japanese/Korean
 hasCJKLanguage = true
 # copyright description used only for seo schema
-copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License."
+copyright = "이 사이트의 전체 콘텐츠는 모든 권리가 보호됩니다. 다만, 일부 블로그 글은 Creative Commons Attribution-NonCommercial 4.0 International License에 따라 이용하실 수 있습니다."

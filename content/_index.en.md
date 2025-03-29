@@ -18,7 +18,9 @@ Undergraduate Researcher
 
 ## About Me
 
-I am a senior undergraduate student interested in programming languages, software engineering, machine learning, and numerical optimization. I have worked as a Python backend developer in the financial industry, where I focused on building clean and maintainable software. Now, I am preparing for graduate studies in programming languages and look forward to starting research in this field.
+Hello! I’m a senior undergraduate student at the School of Industrial and Management Engineering, Korea University. I’m currently preparing for graduate studies while exploring specific topics in programming languages and software engineering. My research interests include _Python_, _static program analysis_, and _machine learning techniques for software testing_.
+
+Previously, I worked as a Python backend developer at a fintech startup, where I developed software to automate loan and investment processes. I care deeply about techniques, documentation, and practices that improve software maintainability.
 
 ## Education
 
