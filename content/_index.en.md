@@ -10,7 +10,7 @@ enable = false
 {{< style "text-align:center;" >}}
 Undergraduate Researcher
 
-[Software Analysis Laboratory](https://prl.korea.ac.kr) \
+[Software Analysis Lab](https://prl.korea.ac.kr) \
 [Dept. of Computer Science and Engineering](https://cs.korea.ac.kr) \
 [College of Informatics](https://info.korea.ac.kr) \
 [Korea University](https://korea.ac.kr)
@@ -30,7 +30,7 @@ Previously, I worked as a Python backend developer at a fintech startup, where I
 
 ## Experience
 
-- **Undergraduate Researcher**, [Software Analysis Labatory](https://prl.korea.ac.kr), [Korea University](https://korea.ac.kr) (Jan. 2025–present)
+- **Undergraduate Researcher**, [Software Analysis Lab](https://prl.korea.ac.kr), [Korea University](https://korea.ac.kr) (Jan. 2025–present)
 
 - **Backend Developer**, [8PERCENT, Inc.](https://8percent.kr) (Aug. 2022–Aug. 2024) \
   Skilled Industrial Personnel (산업기능요원)
