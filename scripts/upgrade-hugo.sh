@@ -44,11 +44,11 @@ cp "$NETLIFY_FILE" "$NETLIFY_FILE.bak"
 echo "Updating files..."
 
 # Update README.md
-sed -i.tmp "s/hugo-v[0-9]*\.[0-9]*\.[0-9]*-ff4088/hugo-v$HUGO_VERSION-ff4088/g" "$README_FILE"
+sed -i.tmp "s/hugo-v[0-9]+\.[0-9]+\.[0-9]+-ff4088/hugo-v$HUGO_VERSION-ff4088/g" "$README_FILE"
 rm -f "$README_FILE.tmp"
 
 # Update netlify.toml
-sed -i.tmp "s/HUGO_VERSION = \"[0-9]*\.[0-9]*\.[0-9]*\"/HUGO_VERSION = \"$HUGO_VERSION\"/g" "$NETLIFY_FILE"
+sed -i.tmp "s/HUGO_VERSION = \"[0-9]+\.[0-9]+\.[0-9]+\"/HUGO_VERSION = \"$HUGO_VERSION\"/g" "$NETLIFY_FILE"
 rm -f "$NETLIFY_FILE.tmp"
 
 # Remove backups
