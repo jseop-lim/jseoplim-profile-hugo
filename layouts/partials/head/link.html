@@ -24,21 +24,12 @@
 {{ end }}
 
 {{- /* Multilingual SEO: canonical URL and hreflang tags */ -}}
-{{- $defaultLang := "en" -}}
-{{- range $i, $lang := .Site.Languages -}}
-  {{- if eq $i 0 -}}
-    {{- $defaultLang = $lang.Lang -}}
-  {{- end -}}
-{{- end -}}
+{{- $defaultLang := (index .Site.Languages 0).Lang -}}
 {{- $defaultVersion := false -}}
 
 {{- /* Find default language version once */ -}}
 {{- if .IsTranslated -}}
-  {{- range .Translations -}}
-    {{- if eq .Lang $defaultLang -}}
-      {{- $defaultVersion = . -}}
-    {{- end -}}
-  {{- end -}}
+  {{- $defaultVersion = (where .Translations "Lang" $defaultLang) | first -}}
 {{- end -}}
 
 {{- /* Canonical URL: non-default languages point to default language */ -}}
@@ -91,7 +82,7 @@
 {{- $style = dict "Context" . "ToCSS" $options | merge $style -}}
 {{- partial "plugin/style.html" $style -}}
 
-{{- if .Site.Params.enablePWA | and hugo.IsProduction -}}
+{{- if and .Site.Params.enablePWA hugo.IsProduction -}}
     {{ $options := dict }}
     {{ $options = dict "targetPath" "sw.min.js" | merge $options }}
     {{ $options = dict "minify" true | merge $options }}
