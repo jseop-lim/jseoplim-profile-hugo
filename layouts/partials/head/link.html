@@ -25,6 +25,11 @@
 
 {{- /* Multilingual SEO: canonical URL and hreflang tags */ -}}
 {{- $defaultLang := "en" -}}
+{{- range $i, $lang := .Site.Languages -}}
+  {{- if eq $i 0 -}}
+    {{- $defaultLang = $lang.Lang -}}
+  {{- end -}}
+{{- end -}}
 {{- $defaultVersion := false -}}
 
 {{- /* Find default language version once */ -}}
