@@ -29,7 +29,7 @@
 
 {{- /* Find default language version once */ -}}
 {{- if .IsTranslated -}}
-  {{- $defaultVersion = (where .Translations "Lang" $defaultLang) | first -}}
+  {{- $defaultVersion = index (where .Translations "Lang" $defaultLang) 0 -}}
 {{- end -}}
 
 {{- /* Canonical URL: non-default languages point to default language */ -}}
