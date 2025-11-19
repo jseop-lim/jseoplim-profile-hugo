@@ -1,0 +1,91 @@
+{{- $cdn := .Scratch.Get "cdn" | default dict -}}
+{{- $fingerprint := .Scratch.Get "fingerprint" -}}
+
+{{- if not .Site.Params.app.noFavicon -}}
+    {{- with .Site.Params.app.svgFavicon -}}
+        <link rel="icon" href="{{ . }}">
+    {{- else -}}
+        <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    {{- end -}}
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    {{- with .Site.Params.app.iconColor -}}
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="{{ . }}">
+    {{- end -}}
+    {{- if eq .Site.Params.enablePWA true -}}
+        <link rel="manifest" href="/site.webmanifest">
+    {{- end -}}
+{{- end -}}
+
+{{ $canonicalURL := .Permalink }}
+{{ with .Scratch.Get "paginatorPager"  }}
+  {{ $canonicalURL = .URL | absLangURL }}
+{{ end }}
+
+{{- /* Multilingual SEO: canonical URL and hreflang tags */ -}}
+{{- $defaultLang := (index .Site.Languages 0).Lang -}}
+{{- $defaultVersion := false -}}
+
+{{- /* Find default language version once */ -}}
+{{- if .IsTranslated -}}
+  {{- $defaultVersion = index (where .Translations "Lang" $defaultLang) 0 -}}
+{{- end -}}
+
+{{- /* Canonical URL: non-default languages point to default language */ -}}
+{{- if ne .Lang $defaultLang -}}
+  {{- if $defaultVersion -}}
+    <link rel="canonical" href="{{ $defaultVersion.Permalink }}" />
+  {{- else -}}
+    <link rel="canonical" href="{{ $canonicalURL }}" />
+  {{- end -}}
+{{- else -}}
+  <link rel="canonical" href="{{ $canonicalURL }}" />
+{{- end -}}
+
+{{- /* hreflang alternate tags for all language versions */ -}}
+{{- if .IsTranslated -}}
+  {{- range .AllTranslations -}}
+    <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}" />
+  {{- end -}}
+  {{- /* x-default points to default language version */ -}}
+  {{- if $defaultVersion -}}
+    <link rel="alternate" hreflang="x-default" href="{{ $defaultVersion.Permalink }}" />
+  {{- else if eq .Lang $defaultLang -}}
+    <link rel="alternate" hreflang="x-default" href="{{ .Permalink }}" />
+  {{- end -}}
+{{- end -}}
+
+{{- if .PrevInSection -}}
+    <link rel="prev" href="{{ .PrevInSection.Permalink }}" />
+{{- end -}}
+{{- if .NextInSection -}}
+    <link rel="next" href="{{ .NextInSection.Permalink }}" />
+{{- end -}}
+
+{{- with .OutputFormats.Get "RSS" -}}
+    <link rel="alternate" href="{{ .RelPermalink }}" type="application/rss+xml" title="{{ $.Site.Title }}">
+    <link rel="feed" href="{{ .RelPermalink }}" type="application/rss+xml" title="{{ $.Site.Title }}">
+{{- end -}}
+
+{{- with .OutputFormats.Get "JsonFeed" -}}
+    <link rel="alternate" type="application/feed+json" href="{{ .RelPermalink }}" title="{{ $.Site.Title }}" />
+{{- end -}}
+
+{{/*  tailwind.css  */}}
+{{ $style := dict "Source" "css/main.css" "Minify" true }}
+{{- partial "plugin/style.html" $style -}}
+
+{{- /* style.min.css */ -}}
+{{- $style := dict "Source" "css/style.scss" -}}
+{{- $options := dict "targetPath" "css/style.min.css" "enableSourceMap" true -}}
+{{- $style = dict "Context" . "ToCSS" $options | merge $style -}}
+{{- partial "plugin/style.html" $style -}}
+
+{{- if and .Site.Params.enablePWA hugo.IsProduction -}}
+    {{ $options := dict }}
+    {{ $options = dict "targetPath" "sw.min.js" | merge $options }}
+    {{ $options = dict "minify" true | merge $options }}
+    {{ $js := resources.Get "js/sw.js" | js.Build $options }}
+    {{ $_ := $js.RelPermalink }}
+{{- end -}}
