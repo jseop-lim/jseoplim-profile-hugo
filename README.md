@@ -1,6 +1,6 @@
 # Jeongseop Lim's Profile Website
 
-[![Hugo](https://img.shields.io/badge/hugo-v0.148.2-ff4088?style=flat-square&logo=hugo&logoColor=white)](https://gohugo.io/) [![Netlify Status](https://api.netlify.com/api/v1/badges/db81fa40-6297-411f-a24a-499a84859294/deploy-status)](https://app.netlify.com/sites/jseoplim-profile-hugo/deploys)
+[![Hugo](https://img.shields.io/badge/hugo-v0.152.2-ff4088?style=flat-square&logo=hugo&logoColor=white)](https://gohugo.io/) [![Netlify Status](https://api.netlify.com/api/v1/badges/db81fa40-6297-411f-a24a-499a84859294/deploy-status)](https://app.netlify.com/sites/jseoplim-profile-hugo/deploys)
 
 The website is built using [Hugo](https://gohugo.io/), created with the [DoIt Theme](https://github.com/HEIGE-PCloud/DoIt), and deployed via [Netlify](https://www.netlify.com/).
 
