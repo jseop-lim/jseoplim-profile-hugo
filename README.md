@@ -4,7 +4,7 @@
 
 The website is built using [Hugo](https://gohugo.io/), created with the [DoIt Theme](https://github.com/HEIGE-PCloud/DoIt), and deployed via [Netlify](https://www.netlify.com/).
 
-:link: [about.jseoplim.com](https://about.jseoplim.com/)
+:link: [**about.jseoplim.com**](https://about.jseoplim.com/)
 
 ## Installation
 
@@ -49,3 +49,8 @@ The website is built using [Hugo](https://gohugo.io/), created with the [DoIt Th
 5. Merge the pull request, and check the deployed [website](https://about.jseoplim.com/).
 
 6. If a new post has been added, visit the [Korean site](https://about.jseoplim.com/ko/) after deployment and leave a relaction. A [GitHub discussion](https://github.com/jseop-lim/jseoplim-profile-hugo/discussions/categories/comments) will be created by [giscus](https://giscus.app/).
+
+## License
+The source code of this repository is licensed under the [MIT License](./LICENSE).
+
+The content of the website (images, articles) is licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/).
