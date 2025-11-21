@@ -24,7 +24,6 @@
                 <div class="content" id="content">
                     {{- dict "Content" .Content "Ruby" $params.ruby "Fraction" $params.fraction "Fontawesome" $params.fontawesome | partial "function/content.html" | safeHTML -}}
                 </div>
-                
                 {{- /* Footer */ -}}
                 {{- partial "home/footer.html" . -}}
             </div>

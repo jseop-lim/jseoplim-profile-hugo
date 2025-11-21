@@ -11,9 +11,9 @@ enable = false
 Undergraduate Researcher
 
 [Software Analysis Lab](https://prl.korea.ac.kr) \
-[Dept. of Computer Science and Engineering](https://cs.korea.ac.kr) \
-[College of Informatics](https://info.korea.ac.kr) \
-[Korea University](https://korea.ac.kr)
+[Dept. of Computer Science and Engineering](https://cs.korea.edu) \
+[College of Informatics](https://info.korea.edu) \
+[Korea University](https://korea.edu)
 {{< /style >}}
 
 ## About Me
@@ -24,13 +24,13 @@ Previously, I worked as a Python backend developer at a fintech startup, where I
 
 ## Education
 
-- **Bachelor of Science** in [Industrial and Management Engineering](https://ie.korea.ac.kr) and [Computer Science and Engineering](https://cs.korea.ac.kr), [Korea University](https://korea.ac.kr) (Mar. 2020–present)
+- **Bachelor of Science** in [Industrial and Management Engineering](https://ie.korea.edu) and [Computer Science and Engineering](https://cs.korea.edu), [Korea University](https://korea.edu) (Mar. 2020–present)
 
 - **[Daegu Science High School](https://dshs.dge.hs.kr)** (Feb. 2016–Jan. 2019)
 
 ## Experience
 
-- **Undergraduate Researcher**, [Software Analysis Lab](https://prl.korea.ac.kr), [Korea University](https://korea.ac.kr) (Jan. 2025–present)
+- **Undergraduate Researcher**, [Software Analysis Lab](https://prl.korea.ac.kr), [Korea University](https://korea.edu) (Jan. 2025–present)
 
 - **Backend Developer**, [8PERCENT, Inc.](https://8percent.kr) (Aug. 2022–Aug. 2024) \
   Skilled Industrial Personnel (산업기능요원)
@@ -48,11 +48,11 @@ Previously, I worked as a Python backend developer at a fintech startup, where I
 
 ## Honors & Awards
 
-- **Dean's List**, [Korea University](https://korea.ac.kr) (Feb. 2025) \
+- **Dean's List**, [Korea University](https://korea.edu) (Feb. 2025) \
   Academic Excellence Award for a GPA of 4.5 in Fall 2024
 
-- **The National Scholarship for Science and Engineering**, [Korea Student Aid Foundation](https://www.kosaf.go.kr) (Spring 2022–Fall 2025) \
+- **The National Scholarship for Science and Engineering**, [Korea Student Aid Foundation(KOSAF)](https://www.kosaf.go.kr) (Spring 2022–Fall 2025) \
   Full tuition fee for 4 semesters
 
-- **Dean's List**, [Korea University](https://korea.ac.kr) (Feb. 2022) \
+- **Dean's List**, [Korea University](https://korea.edu) (Feb. 2022) \
   Academic Excellence Award for a GPA of 4.5 in Fall 2021
