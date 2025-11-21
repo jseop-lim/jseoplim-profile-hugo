@@ -22,9 +22,9 @@ enable = false
 
 ## 학력
 
-- [고려대학교](https://korea.ac.kr) [산업경영공학](https://ie.korea.ac.kr), [컴퓨터학](https://cs.korea.ac.kr)(이중전공) 학사 재학 (2020. 3.~현재)
+- [**고려대학교**](https://korea.ac.kr) [산업경영공학](https://ie.korea.ac.kr), [컴퓨터학](https://cs.korea.ac.kr)(이중전공) 학사 재학 (2020. 3.~현재)
 
-- [영재학교 대구과학고등학교](https://dshs.dge.hs.kr) 졸업 (2016. 2.~2019. 1.)
+- [영재학교 **대구과학고등학교**](https://dshs.dge.hs.kr) 졸업 (2016. 2.~2019. 1.)
 
 ## 경력
 
