@@ -4,7 +4,7 @@ draft = false
 title = "ASE 2025 기행문"
 date = 2025-11-25
 authors = ["Jeongseop Lim"]
-description = "2025년 11월 17~19일 서울에서 ASE 2025 학회가 열렸다."
+description = "2025년 11월 16~20일 서울에서 ASE 2025 학회가 열렸다."
 
 tags = ["research", "conference", "software engineering"]
 categories = ["record"]
@@ -19,7 +19,7 @@ lightgallery = true
 
 ## 들어가며
 
-[ASE 2025](https://conf.researchr.org/home/ase-2025)(40th IEEE/ACM International Conference on Automated Software Engineering)가 올해 서울 그랜드워커힐 호텔에서 개최되었다. ASE는 소프트웨어 공학 전반을 다루는 국제 학회로, 프로그램 분석, 테스트 자동화, 소프트웨어 보안, AI 기반 개발 지원 등 다양한 연구가 발표되는 자리이다. 나는 현재 Fuzzing(소프트웨어에 무작위 입력을 넣어 오류를 자동으로 발견하는 테스트 기법) 관련 연구를 진행 중이며, 평소에 정적 분석(프로그램을 실행시키지 않고 분석하는 기법)에도 큰 관심이 있어 학회 참석을 결심하게 되었다. 마침 올해 운 좋게도 PL 및 SE 분야의 국제 학회가 두 번이나 서울에서 열렸는데, 6월 PLDI 2025에는 일정상 참석하지 못해 아쉬움이 남아 이를 만회하고 싶은 마음도 있었다.
+[ASE 2025](https://conf.researchr.org/home/ase-2025)(40th IEEE/ACM International Conference on Automated Software Engineering)가 2025년 11월 16일부터 20일까지 그랜드 워커힐 서울에서 개최되었다. 나는 11월 17일부터 3일간 학회에 참석했다. ASE는 소프트웨어 공학 전반을 다루는 국제 학회로, 프로그램 분석, 테스트 자동화, 소프트웨어 보안, AI 기반 개발 지원 등 다양한 연구가 발표되는 자리이다. 나는 현재 Fuzzing(소프트웨어에 무작위 입력을 넣어 오류를 자동으로 발견하는 테스트 기법) 관련 연구를 진행 중이며, 평소에 정적 분석(프로그램을 실행시키지 않고 분석하는 기법)에도 큰 관심이 있어 학회 참석을 결심하게 되었다. 마침 올해 운 좋게도 PL 및 SE 분야의 국제 학회가 두 번이나 서울에서 열렸는데, 6월 PLDI 2025에는 일정상 참석하지 못해 아쉬움이 남아 이를 만회하고 싶은 마음도 있었다.
 
 이번 ASE 2025에서 기대한 점은 크게 세 가지였다.
 
