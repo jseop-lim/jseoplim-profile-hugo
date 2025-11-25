@@ -1,0 +1,15 @@
+{{- $gap := .Get "gap" | default "0.8rem" -}}
+{{- $minWidth := .Get "minWidth" | default "240px" -}}
+{{- $width := .Get "width" | default "100%" -}}
+<div class="image-gallery-container" style="display:flex; gap:{{ $gap }}; justify-content:center; flex-wrap:wrap; width:{{ $width }}; margin:0 auto;">
+  {{ .Inner }}
+</div>
+<style>
+  .image-gallery-container figure {
+    margin: 0;
+    flex: 1 1 {{ $minWidth }};
+  }
+  .image-gallery-container figure img {
+    width: 100%;
+  }
+</style>
