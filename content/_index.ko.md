@@ -22,15 +22,15 @@ enable = false
 
 ## 학력
 
-- [**고려대학교**](https://korea.ac.kr) [산업경영공학](https://ie.korea.ac.kr), [컴퓨터학](https://cs.korea.ac.kr)(이중전공) 학사 재학 (2020. 3.~현재)
+- [**고려대학교**](https://korea.ac.kr) [산업경영공학](https://ie.korea.ac.kr), [컴퓨터학](https://cs.korea.ac.kr)(이중전공) 학사 재학 ({{< period from="2020-03" >}})
 
-- [영재학교 **대구과학고등학교**](https://dshs.dge.hs.kr) 졸업 (2016. 2.~2019. 1.)
+- [영재학교 **대구과학고등학교**](https://dshs.dge.hs.kr) 졸업 ({{< period from="2016-02" to="2019-01" >}})
 
 ## 경력
 
-- [고려대학교](https://korea.ac.kr) [소프트웨어 분석 연구실](https://prl.korea.ac.kr) **학부 연구생** (2025. 1.~현재)
+- [고려대학교](https://korea.ac.kr) [소프트웨어 분석 연구실](https://prl.korea.ac.kr) **학부 연구생** ({{< period from="2025-01" >}})
 
-- [(주)에잇퍼센트](https://8percent.kr) **백엔드 개발자** (2022. 8.~2024. 8.) \
+- [(주)에잇퍼센트](https://8percent.kr) **백엔드 개발자** ({{< period from="2022-08" to="2024-08" >}}) \
   산업기능요원 복무
   - 백엔드 개발자 온보딩 프로그램 수립
   - 레거시 대출 신청 시스템 재설계
