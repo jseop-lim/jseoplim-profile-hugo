@@ -1,0 +1,8 @@
+{{- $start := .start -}}
+{{- $end := .end -}}
+
+{{- $formatter := default "format-date-en.html" .formatter -}}
+{{- $formattedStart := partial $formatter $start -}}
+{{- $formattedEnd := cond $end (partial $formatter $end) "present" -}}
+
+{{- printf "%s–%s" $formattedStart $formattedEnd -}}
