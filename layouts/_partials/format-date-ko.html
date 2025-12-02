@@ -1,0 +1,11 @@
+{{- $dateInput := . -}}
+
+{{- if findRE "^\\d{4}-\\d{2}(-\\d{2})?$" $dateInput -}}
+  {{- $hasDay := findRE "^\\d{4}-\\d{2}-\\d{2}$" $dateInput -}}
+  {{- $dateStr := cond $hasDay $dateInput (printf "%s-01" $dateInput) -}}
+  {{- $date := time.AsTime $dateStr -}}
+  {{- printf "%d. %d." $date.Year (int $date.Month) -}}
+{{- else -}}
+  {{- $dateInput -}}
+
+{{- end -}}

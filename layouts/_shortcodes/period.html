@@ -1,0 +1,8 @@
+{{- $start := .Get "from" -}}
+{{- $end := .Get "to" -}}
+
+{{- $lang := .Page.Lang -}}
+{{- $periodFormatter := cond (eq $lang "ko") "format-period-ko.html" "format-period-en.html" -}}
+{{- $period := dict "start" $start "end" $end -}}
+
+{{- partial $periodFormatter $period -}}

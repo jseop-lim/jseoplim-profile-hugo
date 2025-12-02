@@ -1,0 +1,8 @@
+{{- $start := .start -}}
+{{- $end := .end -}}
+
+{{- $formatter := default "format-date-ko.html" .formatter -}}
+{{- $formattedStart := partial $formatter $start -}}
+{{- $formattedEnd := cond $end (partial $formatter $end) "현재" -}}
+
+{{- printf "%s~%s" $formattedStart $formattedEnd -}}

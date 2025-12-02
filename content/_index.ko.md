@@ -22,15 +22,15 @@ enable = false
 
 ## 학력
 
-- [**고려대학교**](https://korea.ac.kr) [산업경영공학](https://ie.korea.ac.kr), [컴퓨터학](https://cs.korea.ac.kr)(이중전공) 학사 재학 (2020. 3.~현재)
+- [**고려대학교**](https://korea.ac.kr) [산업경영공학](https://ie.korea.ac.kr), [컴퓨터학](https://cs.korea.ac.kr)(이중전공) 학사 재학 ({{< period from="2020-03" >}})
 
-- [영재학교 **대구과학고등학교**](https://dshs.dge.hs.kr) 졸업 (2016. 2.~2019. 1.)
+- [영재학교 **대구과학고등학교**](https://dshs.dge.hs.kr) 졸업 ({{< period from="2016-02" to="2019-01" >}})
 
 ## 경력
 
-- [고려대학교](https://korea.ac.kr) [소프트웨어 분석 연구실](https://prl.korea.ac.kr) **학부 연구생** (2025. 1.~현재)
+- [고려대학교](https://korea.ac.kr) [소프트웨어 분석 연구실](https://prl.korea.ac.kr) **학부 연구생** ({{< period from="2025-01" >}})
 
-- [(주)에잇퍼센트](https://8percent.kr) **백엔드 개발자** (2022. 8.~2024. 8.) \
+- [(주)에잇퍼센트](https://8percent.kr) **백엔드 개발자** ({{< period from="2022-08" to="2024-08" >}}) \
   산업기능요원 복무
   - 백엔드 개발자 온보딩 프로그램 수립
   - 레거시 대출 신청 시스템 재설계
@@ -45,11 +45,11 @@ enable = false
 
 ## 수상 및 장학
 
-- **학장상**, [고려대학교](https://korea.ac.kr) (2025. 2.) \
+- **학장상**, [고려대학교](https://korea.ac.kr) ({{< date "2025-02" >}}) \
   2024학년도 2학기 성적우수상
 
-- **국가우수장학금(이공계)**, [한국장학재단](https://www.kosaf.go.kr) (2022년 1학기~2025년 2학기) \
+- **국가우수장학금(이공계)**, [한국장학재단](https://www.kosaf.go.kr) ({{< period from="2022년 1학기" to="2025년 2학기" >}}) \
   4학기간 전액 장학금 수혜
 
-- **학장상**, [고려대학교](https://korea.ac.kr) (2022. 2.) \
+- **학장상**, [고려대학교](https://korea.ac.kr) ({{< date "2022-02" >}}) \
   2021학년도 2학기 성적우수상

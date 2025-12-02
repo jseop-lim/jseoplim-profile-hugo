@@ -1,0 +1,6 @@
+{{- $dateInput := or (.Get "at") (.Get 0) -}}
+
+{{- $lang := .Page.Lang -}}
+{{- $dateFormatter := cond (eq $lang "ko") "format-date-ko.html" "format-date-en.html" -}}
+
+{{- partial $dateFormatter $dateInput -}}
