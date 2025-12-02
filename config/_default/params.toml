@@ -18,7 +18,7 @@ fingerprint = ""
 dateFormat = "2006-01-02"
 # website images for Open Graph and Twitter Cards
 # 网站图片, 用于 Open Graph 和 Twitter Cards
-images = ["/images/avatar.png"]  # XXX: gravatar 되는지 점검 필요
+images = ["/images/avatar.png"]
 # enable PWA
 # 开启 PWA 支持
 enablePWA = false
