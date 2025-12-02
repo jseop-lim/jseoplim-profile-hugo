@@ -564,8 +564,8 @@ keywords = [
   # 打字结束之后光标的持续时间 (单位是毫秒, "-1" 代表无限大)
   duration = -1
 
-# Site verification code for Google/Bing/Yandex/Pinterest/Baidu
-# 网站验证代码，用于 Google/Bing/Yandex/Pinterest/Baidu
+# Site verification code for Google/Bing/Yandex/Pinterest/Baidu/Naver
+# 网站验证代码，用于 Google/Bing/Yandex/Pinterest/Baidu/Naver
 [verification]
   google = "MQ8DNu27ayX6B_4ObiEDK09vGr1fdy7kOAnbd09hJk4"  # NOTE: 내 거 아님
   bing = ""
@@ -574,6 +574,7 @@ keywords = [
   baidu = ""
   so = ""
   sogou = ""
+  naver = "9b0343d75d91928ce8940f381d93f2568bf92068"
 
 # Site SEO config
 # 网站 SEO 配置
