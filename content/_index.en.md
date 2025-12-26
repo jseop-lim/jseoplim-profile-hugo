@@ -56,3 +56,9 @@ Previously, I worked as a Python backend developer at a fintech startup, where I
 
 - **Dean's List**, [Korea University](https://korea.edu) ({{< date "2022-02" >}}) \
   Academic Excellence Award for a GPA of 4.5 in Fall 2021
+
+- **Woonhae Scholarship**, [Woonhae Foundation](https://woonhaefoundation.org) ({{< period from="Spring 2021" to="Fall 2021" >}}) \
+  KRW 8,000,000 for 2 semesters
+
+- **Gaheon Sindoh Scholarship**, [Gaheon Sindoh Foundation](https://www.gaheon-sindoh.or.kr) ({{< date "Fall 2020" >}}) \
+  KRW 3,000,000 for 1 semester

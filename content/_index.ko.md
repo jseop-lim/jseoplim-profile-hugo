@@ -53,3 +53,9 @@ enable = false
 
 - **학장상**, [고려대학교](https://korea.ac.kr) ({{< date "2022-02" >}}) \
   2021학년도 2학기 성적우수상
+
+- **제8기 S&T장학생**, [운해장학재단](https://woonhaefoundation.org) ({{< period from="2021년 1학기" to="2021년 2학기" >}}) \
+  2학기간 장학금 8,000,000원
+
+- **가헌신도재단 장학생**, [가헌신도재단](https://www.gaheon-sindoh.or.kr) ({{< date "2020년 2학기" >}}) \
+  한 학기 장학금 3,000,000원
