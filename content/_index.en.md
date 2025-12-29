@@ -8,7 +8,7 @@ enable = false
 +++
 
 {{< style "text-align:center;" >}}
-Undergraduate Researcher
+Master’s Student
 
 [Software Analysis Lab](https://prl.korea.ac.kr) \
 [Dept. of Computer Science and Engineering](https://cs.korea.edu) \
@@ -18,33 +18,30 @@ Undergraduate Researcher
 
 ## About Me
 
-Hello! I’m a senior undergraduate student at the School of Industrial and Management Engineering, Korea University. I’m currently preparing for graduate studies while exploring specific topics in programming languages and software engineering. My research interests include _Python_ and _data-driven static program analysis_.
+Hello! I am a master’s student in Computer Science and Engineering at Korea University and a member of the Software Analysis Lab, advised by Prof. Hakjoo Oh. My research focuses on programming Languages (PL) and software engineering (SE), with a particular interest in _Python_ and _data-driven static program analysis_.
 
 Previously, I worked as a Python backend developer at a fintech startup, where I developed software to automate loan and investment processes. I care deeply about techniques, documentation, and practices that improve software maintainability.
 
 ## Education
 
-- **Bachelor of Science** in [Industrial and Management Engineering](https://ie.korea.edu) and [Computer Science and Engineering](https://cs.korea.edu), [Korea University](https://korea.edu) ({{< period from="2020-03" >}})
+- **Master of Science** in [Computer Science and Engineering](https://cs.korea.edu), [Korea University](https://korea.edu) ({{< period from="2026-03" >}})
+  - [Software Analysis Lab](https://prl.korea.ac.kr), advised by [Prof. Hakjoo Oh](https://prl.korea.ac.kr/members/hakjoo-oh)
+
+- **Bachelor of Science** in [Industrial and Management Engineering](https://ie.korea.edu) and [Computer Science and Engineering](https://cs.korea.edu), [Korea University](https://korea.edu) ({{< period from="2020-03" to="2026-02" >}})
+  - GPA: 4.45 / 4.5
 
 - **[Daegu Science High School](https://dshs.dge.hs.kr)** ({{< period from="2016-02" to="2019-01" >}})
 
 ## Experience
 
-- **Undergraduate Researcher**, [Software Analysis Lab](https://prl.korea.ac.kr), [Korea University](https://korea.edu) ({{< period from="2025-01" >}})
+- **Undergraduate Researcher**, [Software Analysis Lab](https://prl.korea.ac.kr), [Korea University](https://korea.edu) ({{< period from="2025-01" to="2026-02" >}})
 
 - **Backend Developer**, [8PERCENT, Inc.](https://8percent.kr) ({{< period from="2022-08" to="2024-08" >}}) \
   Skilled Industrial Personnel (산업기능요원)
-  - Established a onboarding program for backend developers
+  - Established a onboarding program for backend developers[{{< fa-icon solid link >}}](https://8percent.github.io/2024-07-14/%EB%B0%B1%EC%97%94%EB%93%9C-%EC%98%A8%EB%B3%B4%EB%94%A9-%EC%88%98%EB%A6%BD)
   - Redesigned a legacy loan application system
   - Upgraded the backend framework from Django 3.2 to 4.1
   - Developed and managed a push notification system using Firebase Cloud Messaging
-
-## Publications
-
-- **"에잇퍼센트 백엔드 개발자로 합류할 당신에게"**, 8PERCENT Product Blog (2024). \
-  Explored onboarding strategies for backend developers and shared insights on setting up efficient development workflows.
-
-  [{{< fa-icon solid link >}}Link](https://8percent.github.io/2024-07-14/%EB%B0%B1%EC%97%94%EB%93%9C-%EC%98%A8%EB%B3%B4%EB%94%A9-%EC%88%98%EB%A6%BD)
 
 ## Honors & Awards
 
