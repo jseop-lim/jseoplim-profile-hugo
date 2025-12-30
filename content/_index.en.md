@@ -18,9 +18,11 @@ Master’s Student
 
 ## About Me
 
-Hello! I am a master’s student in Computer Science and Engineering at Korea University and a member of the Software Analysis Lab, advised by Prof. Hakjoo Oh. My research focuses on programming Languages (PL) and software engineering (SE), with a particular interest in _Python_ and _data-driven static program analysis_.
+I am a master’s student in Computer Science and Engineering at Korea University and a member of the Software Analysis Lab under the supervision of Prof. Hakjoo Oh. My research goal is to make program analysis techniques practical for real-world software systems.
 
-Previously, I worked as a Python backend developer at a fintech startup, where I developed software to automate loan and investment processes. I care deeply about techniques, documentation, and practices that improve software maintainability.
+Previously, I worked as a Python backend developer at a fintech startup, developing automated systems for loan and investment processes. In this role, I focused on software maintainability through robust architectural design, clear documentation, and sustainable engineering practices.
+
+_Research Interests_: Programming languages | Static program analysis | Python | Automated software testing
 
 ## Education
 
