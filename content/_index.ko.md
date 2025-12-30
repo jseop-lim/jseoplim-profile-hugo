@@ -36,10 +36,12 @@ enable = false
 
 - [(주)에잇퍼센트](https://8percent.kr) **백엔드 개발자** ({{< period from="2022-08" to="2024-08" >}}) \
   산업기능요원 복무
-  - 백엔드 개발자 온보딩 프로그램 수립[{{< fa-icon solid link >}}](https://8percent.github.io/2024-07-14/%EB%B0%B1%EC%97%94%EB%93%9C-%EC%98%A8%EB%B3%B4%EB%94%A9-%EC%88%98%EB%A6%BD)
+  - 백엔드 개발자 온보딩 프로그램 수립 [{{< fa-icon solid link >}}](https://8percent.github.io/2024-07-14/%EB%B0%B1%EC%97%94%EB%93%9C-%EC%98%A8%EB%B3%B4%EB%94%A9-%EC%88%98%EB%A6%BD)
   - 레거시 대출 신청 시스템 재설계
   - Python 백엔드 프레임워크 Django 버전을 3.2에서 4.1로 업그레이드
   - Firebase Cloud Messaging을 이용한 푸시 알림 시스템 개발 및 관리
+
+<!-- ## 출판물 -->
 
 ## 수상 및 장학
 
