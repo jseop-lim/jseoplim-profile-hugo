@@ -28,7 +28,7 @@ _연구 관심 분야_: 프로그래밍 언어 | 정적 프로그램 분석 | Py
   - [소프트웨어 분석 연구실](https://prl.korea.ac.kr)(지도교수: [오학주](https://prl.korea.ac.kr/members/hakjoo-oh))
 
 - [**고려대학교**](https://korea.ac.kr) [산업경영공학](https://ie.korea.ac.kr), [컴퓨터학](https://cs.korea.ac.kr)(이중전공) **학사** 졸업 ({{< period from="2020-03" to="2026-02" >}})
-  - 학점: 4.45 / 4.5
+  - 학점: 4.46 / 4.5
 
 - [영재학교 **대구과학고등학교**](https://dshs.dge.hs.kr) 졸업 ({{< period from="2016-02" to="2019-01" >}})
 

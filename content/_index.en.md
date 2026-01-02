@@ -30,7 +30,7 @@ _Research Interests_: Programming languages | Static program analysis | Python |
   - [Software Analysis Lab](https://prl.korea.ac.kr), advised by [Prof. Hakjoo Oh](https://prl.korea.ac.kr/members/hakjoo-oh)
 
 - **Bachelor of Science** in [Industrial and Management Engineering](https://ie.korea.edu) and [Computer Science and Engineering](https://cs.korea.edu), [Korea University](https://korea.edu) ({{< period from="2020-03" to="2026-02" >}})
-  - GPA: 4.45 / 4.5
+  - GPA: 4.46 / 4.5
 
 - **[Daegu Science High School](https://dshs.dge.hs.kr)** ({{< period from="2016-02" to="2019-01" >}})
 
