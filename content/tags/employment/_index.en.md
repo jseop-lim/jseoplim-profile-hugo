@@ -1,3 +1,3 @@
 +++
-title = "employment"
+title = "취업"
 +++

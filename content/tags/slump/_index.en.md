@@ -1,3 +1,3 @@
 +++
-title = "slump"
+title = "슬럼프"
 +++

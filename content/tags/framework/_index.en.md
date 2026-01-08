@@ -1,3 +1,3 @@
 +++
-title = "framework"
+title = "프레임워크"
 +++

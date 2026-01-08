@@ -1,3 +1,3 @@
 +++
-title = "graduate school"
+title = "대학원"
 +++

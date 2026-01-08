@@ -1,3 +1,3 @@
 +++
-title = "clean architecture"
+title = "클린 아키텍처"
 +++

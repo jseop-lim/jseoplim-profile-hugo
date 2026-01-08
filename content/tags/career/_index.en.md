@@ -1,3 +1,3 @@
 +++
-title = "career"
+title = "진로"
 +++
