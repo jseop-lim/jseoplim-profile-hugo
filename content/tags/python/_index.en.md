@@ -1,3 +1,3 @@
 +++
-title = "파이썬"
+title = "Python"
 +++
