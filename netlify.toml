@@ -5,3 +5,44 @@ TZ = "Asia/Seoul"
 [build]
 publish = "public"
 command = "hugo --gc --minify"
+
+# Redirect old post URLs to new /posts/ structure
+[[redirects]]
+from = "/ase2025-trip-report"
+to = "/posts/ase2025-trip-report"
+status = 301
+
+[[redirects]]
+from = "/cs-study-meaning"
+to = "/posts/cs-study-meaning"
+status = 301
+
+[[redirects]]
+from = "/github-copilot"
+to = "/posts/github-copilot"
+status = 301
+
+[[redirects]]
+from = "/graduate-school-reason"
+to = "/posts/graduate-school-reason"
+status = 301
+
+[[redirects]]
+from = "/litestar-introduction"
+to = "/posts/litestar-introduction"
+status = 301
+
+[[redirects]]
+from = "/new-recruit-0-final"
+to = "/posts/new-recruit-0-final"
+status = 301
+
+[[redirects]]
+from = "/romance"
+to = "/posts/romance"
+status = 301
+
+[[redirects]]
+from = "/slump-after-training"
+to = "/posts/slump-after-training"
+status = 301
