@@ -1,7 +1,9 @@
 +++
-title = "About"
-date = 2024-12-31
 draft = false
+
+title = "Profile"
+date = 2024-12-31
+description = "Personal profile of Jeongseop Lim, a graduate student at Korea University with research interests in programming languages and software engineering."
 
 [params.header.number]
 enable = false
