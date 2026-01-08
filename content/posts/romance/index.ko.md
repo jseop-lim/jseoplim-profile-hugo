@@ -4,7 +4,8 @@ draft = false
 title = "가슴이 웅장해지는 느낌"
 date = 2025-03-29
 authors = ["Jeongseop Lim"]
-description = "새가 날아가면서 뒤를 돌아보지 않는 방법"
+description = ""
+summary = "새가 날아가면서 뒤를 돌아보지 않는 방법"
 
 tags = ["진로", "대학원", "경험"]
 categories = ["reflection"]

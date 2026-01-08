@@ -4,7 +4,8 @@ draft = false
 title = "컴퓨터 과학 공부의 의의"
 date = 2025-03-18
 authors = ["Jeongseop Lim"]
-description = "컴퓨터 과학은 역사이다."
+description = ""
+summary = "컴퓨터 과학은 역사이다."
 
 tags = ["study"]
 categories = ["opinion"]

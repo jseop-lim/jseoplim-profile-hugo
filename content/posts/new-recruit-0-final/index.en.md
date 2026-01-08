@@ -4,7 +4,8 @@ draft = true
 title = "신병 시즌0 마지막화 리뷰 - 심진우 일병 (스포주의)"
 date = 2023-10-02
 authors = ["Jeongseop Lim"]
-description = "대인배가 되자"
+description = ""
+summary = "대인배가 되자."
 
 tags = ["신병", "시즌", "마지막화"]
 categories = ["review"]

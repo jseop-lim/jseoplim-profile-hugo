@@ -4,7 +4,8 @@ draft = false
 title = "슬럼프의 이유"
 date = 2023-04-27
 authors = ["Jeongseop Lim"]
-description = "백엔드 개발자가 슬럼프에 빠졌던 이유와 극복 경험"
+description = ""
+summary = "백엔드 개발자가 슬럼프에 빠졌던 이유와 극복 경험"
 
 tags = ["slump", "backend", "developer", "clean architecture"]
 categories = ["reflection"]
