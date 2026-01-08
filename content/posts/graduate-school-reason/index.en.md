@@ -7,7 +7,7 @@ authors = ["Jeongseop Lim"]
 description = "프로그래밍 언어 수업 경험을 계기로 대학원 진학을 결심하게 된 과정과 진로 고민에서의 기준을 회고한 글입니다."
 summary = "진로를 고민하던 와중 프로그래밍 언어 수업을 듣고 분야에 대한 확신이 생겨 대학원을 가기로 정했다."
 
-tags = ["진로", "대학원", "취업", "programming language", "developer", "backend"]
+tags = ["career", "graduate school", "employment", "programming language", "developer", "backend"]
 categories = ["reflection"]
 series = []
 series_weight = 1
