@@ -4,7 +4,7 @@ draft = true
 title = "신병 시즌0 마지막화 리뷰 - 심진우 일병 (스포주의)"
 date = 2023-10-02
 authors = ["Jeongseop Lim"]
-description = ""
+description = "드라마 ‘신병’ 시즌0 마지막화를 보고 심진우 일병 에피소드의 핵심 갈등과 ‘대인배’라는 메시지를 중심으로 느낀 점을 정리한 글입니다."
 summary = "대인배가 되자."
 
 tags = ["신병", "시즌", "마지막화"]

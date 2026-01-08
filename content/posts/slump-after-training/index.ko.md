@@ -4,7 +4,7 @@ draft = false
 title = "슬럼프의 이유"
 date = 2023-04-27
 authors = ["Jeongseop Lim"]
-description = ""
+description = "백엔드 개발자가 클린 아키텍처와 코드 품질에 대한 고민으로 슬럼프를 겪게 된 원인과, 회복을 위해 시도한 접근을 정리한 회고 글입니다."
 summary = "백엔드 개발자가 슬럼프에 빠졌던 이유와 극복 경험"
 
 tags = ["slump", "backend", "developer", "clean architecture"]
