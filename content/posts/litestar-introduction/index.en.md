@@ -4,7 +4,8 @@ draft = false
 title = "Litestar, 새롭고 빠른 Python API 프레임워크"
 date = 2023-09-23
 authors = ["Jeongseop Lim"]
-description = "Litestar 붐은 온다."
+description = "Python API 프레임워크 Litestar(구 Starlite)의 특징과 개발 철학을 중심으로, 등장 배경과 설계 방향을 소개하는 글입니다."
+summary = "Litestar 붐은 온다."
 
 tags = ["Python", "Litestar", "Starlite", "FastAPI", "Django", "backend", "framework"]
 categories = ["explanation"]

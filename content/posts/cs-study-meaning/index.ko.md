@@ -4,7 +4,8 @@ draft = false
 title = "컴퓨터 과학 공부의 의의"
 date = 2025-03-18
 authors = ["Jeongseop Lim"]
-description = "컴퓨터 과학은 역사이다."
+description = "운영체제·네트워크·컴파일러 등 기초 CS 과목을 ‘역사’로 바라보며, 왜 공부해야 하는지를 정리한 글입니다."
+summary = "컴퓨터 과학은 역사이다."
 
 tags = ["study"]
 categories = ["opinion"]

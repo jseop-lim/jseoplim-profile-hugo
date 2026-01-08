@@ -1,7 +1,10 @@
 +++
-title = "About"
-date = 2024-12-31
 draft = false
+
+# NOTE: title, description이 params.toml에 의해 덮어씌워지고, twitter/og tag에만 사용됨
+title = "Profile"
+date = 2024-12-31
+description = "Personal profile of Jeongseop Lim, a graduate student at Korea University with research interests in programming languages and software engineering."
 
 [params.header.number]
 enable = false
@@ -49,13 +52,13 @@ _Research Interests_: Programming languages | Static program analysis | Python |
 
 ## Honors & Awards
 
-- **Dean's List**, [Korea University](https://korea.edu) ({{< date "2025-02" >}}) \
+- **Dean’s List**, [Korea University](https://korea.edu) ({{< date "2025-02" >}}) \
   Academic Excellence Award for a GPA of 4.5 in Fall 2024
 
 - **The National Scholarship for Science and Engineering**, [Korea Student Aid Foundation (KOSAF)](https://www.kosaf.go.kr) ({{< period from="Spring 2022" to="Fall 2025" >}}) \
   Full tuition fee for 4 semesters
 
-- **Dean's List**, [Korea University](https://korea.edu) ({{< date "2022-02" >}}) \
+- **Dean’s List**, [Korea University](https://korea.edu) ({{< date "2022-02" >}}) \
   Academic Excellence Award for a GPA of 4.5 in Fall 2021
 
 - **Woonhae Scholarship**, [Woonhae Foundation](https://woonhaefoundation.org) ({{< period from="Spring 2021" to="Fall 2021" >}}) \

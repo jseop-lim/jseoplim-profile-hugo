@@ -1,3 +1,3 @@
 +++
-title = "study"
+title = "학습"
 +++

@@ -1,3 +1,3 @@
 +++
-title = "Conference"
+title = "학회"
 +++
