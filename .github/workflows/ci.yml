@@ -4,7 +4,7 @@ on:
   push: {}
 
 jobs:
-  compare-multilingual-posts:
+  compare-multi-lang:
     runs-on: ubuntu-latest
 
     steps:
@@ -12,12 +12,12 @@ jobs:
         uses: actions/checkout@v6
 
       - name: Make the script executable
-        run: chmod +x scripts/compare-multi-lang-posts.sh
+        run: chmod +x scripts/compare-multi-lang.sh
 
       - name: Run Compare Script
         id: compare
         run: |
-          OUTPUT=$(./scripts/compare-multi-lang-posts.sh)
+          OUTPUT=$(./scripts/compare-multi-lang.sh)
           echo "$OUTPUT"
           echo "result=$OUTPUT" >> $GITHUB_ENV
 

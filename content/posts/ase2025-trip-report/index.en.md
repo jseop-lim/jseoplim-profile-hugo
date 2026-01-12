@@ -4,7 +4,8 @@ draft = false
 title = "ASE 2025 기행문"
 date = 2025-11-25
 authors = ["Jeongseop Lim"]
-description = "2025년 11월 16~20일 서울에서 ASE 2025 학회가 열렸다."
+description = "ASE 2025 참가 경험을 바탕으로 발표·포스터에서 인상 깊었던 연구와 학회 운영 및 네트워킹 경험을 정리한 기행문입니다."
+summary = "2025년 11월 16~20일 서울에서 ASE 2025 학회가 열렸다."
 
 tags = ["research", "conference", "software engineering"]
 categories = ["record"]

@@ -4,7 +4,8 @@ draft = false
 title = "관심 영역에 따른 개발자의 분류와 코딩 AI로 인한 미래"
 date = 2022-12-18
 authors = ["Jeongseop Lim"]
-description = "언어와 프레임워크 자체에 대해 쌓은 지식이 코딩 AI 시대가 도래하면 휴지조각이 될까?"
+description = "개발자를 관심 영역에 따라 분류하고, GitHub Copilot 같은 코딩 AI가 개발자의 역량과 역할에 어떤 변화를 가져올지에 대해 정리한 글입니다."
+summary = "언어와 프레임워크 자체에 대해 쌓은 지식이 코딩 AI 시대가 도래하면 휴지조각이 될까?"
 
 tags = ["GitHub Copilot", "AI", "developer", "coding"]
 categories = ["opinion"]

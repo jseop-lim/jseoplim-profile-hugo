@@ -1,6 +1,6 @@
 # website title
 # 网站标题
-title = "Jeongseop's Site"
+title = "Jeongseop Lim"
 # DoIt theme version
 # DoIt 主题版本
 version = "0.4.X"
@@ -29,21 +29,7 @@ license = "All rights reserved."
 bundle = false
 # site keywords
 # 网站关键词
-keywords = [
-  "Jeongseop Lim",
-  "임정섭",
-  "Jeong Seop Lim",
-  "Jeongseop",
-  "Jeongseop",
-  "Lim",
-  "Blog",
-  "Website",
-  "CV",
-  "Resume",
-  "Portfolio",
-  "Projects",
-  "Hugo",
-]
+keywords = []  # NOTE: HTML 렌더링 안되고 있고, 현대 검색엔진에서 무의미하므로 비움.
 
 [author]
   name = "Jeongseop Lim"
@@ -74,7 +60,7 @@ keywords = [
     logo = "/images/avatar.png"
     # title name
     # 标题名称
-    name = "Jeongseop's Site"
+    name = "Jeongseop Lim"
     # you can add extra information before the name (HTML format is supported), such as icons
     # 你可以在名称 (允许 HTML 格式) 之前添加其他信息, 例如图标
     # pre = '<svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M402.3 344.9l32-32c5-5 13.7-1.5 13.7 5.7V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V112c0-26.5 21.5-48 48-48h273.5c7.1 0 10.7 8.6 5.7 13.7l-32 32c-1.5 1.5-3.5 2.3-5.7 2.3H48v352h352V350.5c0-2.1.8-4.1 2.3-5.6zm156.6-201.8L296.3 405.7l-90.4 10c-26.2 2.9-48.5-19.2-45.6-45.6l10-90.4L432.9 17.1c22.9-22.9 59.9-22.9 82.7 0l43.2 43.2c22.9 22.9 22.9 60 .1 82.8zM460.1 174L402 115.9 216.2 301.8l-7.3 65.3 65.3-7.3L460.1 174zm64.8-79.7l-43.2-43.2c-4.1-4.1-10.8-4.1-14.8 0L436 82l58.1 58.1 30.9-30.9c4-4.2 4-10.8-.1-14.9z"/></svg>'
@@ -581,14 +567,14 @@ keywords = [
 [seo]
   # image URL
   # 图片 URL
-  image = ""  # TODO
+  image = "/images/screenshot.png"
   # thumbnail URL
   # 缩略图 URL
-  thumbnailUrl = ""  # TODO
+  thumbnailUrl = "/images/avatar.png"
   # Google 搜索结果中网站备用名字
   # alternate site name in Google search result
   # https://developers.google.com/search/docs/appearance/site-names#alternative
-  # alternateName = ["Hugo DoIt"]
+  alternateName = ["Jeongseop Lim"]
 
 # Analytics config
 # 网站分析配置
@@ -673,7 +659,7 @@ keywords = [
 [app]
   # optional site title override for the app when added to an iOS home screen or Android launcher
   # 当添加到 iOS 主屏幕或者 Android 启动器时的标题, 覆盖默认标题
-  title = "Jeongseop's Site"
+  title = "Jeongseop Lim"
   # whether to omit favicon resource links
   # 是否隐藏网站图标资源链接
   noFavicon = false

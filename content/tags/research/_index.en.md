@@ -1,3 +1,3 @@
 +++
-title = "Research"
+title = "연구"
 +++

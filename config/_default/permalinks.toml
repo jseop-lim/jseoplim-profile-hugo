@@ -2,4 +2,4 @@
 # Permalinks 配置 (https://gohugo.io/content-management/urls/#permalinks)
 
 # posts = ":year/:month/:contentbasename"
-posts = ":contentbasename"
+posts = "posts/:contentbasename"
