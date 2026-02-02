@@ -6,6 +6,12 @@ TZ = "Asia/Seoul"
 publish = "public"
 command = "hugo --gc --minify"
 
+# Redirect sitemap.xml to the localized version
+[[redirects]]
+from = "/sitemap.xml"
+to = "/en/sitemap.xml"
+status = 301
+
 # Redirect old post URLs to new /posts/ structure
 [[redirects]]
 from = "/ase2025-trip-report"
