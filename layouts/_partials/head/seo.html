@@ -52,6 +52,13 @@
                 "url": "{{ .url }}"
             },
         {{- end -}}
+        {{- with .alumniOf -}}
+            "alumniOf": {
+                "@type": "{{ .type }}",
+                "name": "{{ .name }}",
+                "url": "{{ .url }}"
+            },
+        {{- end -}}
         {{- with .sameAs -}}
             "sameAs": [
                 {{- range $index, $value := . -}}

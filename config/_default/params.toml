@@ -55,7 +55,11 @@ keywords = []  # NOTE: HTML 렌더링 안되고 있고, 현대 검색엔진에�
   [person.affiliation]
     type = "CollegeOrUniversity"
     name = "Korea University"
-    url = "https://korea.edu"
+    url = "https://korea.ac.kr"
+  [person.alumniOf]
+    type = "CollegeOrUniversity"
+    name = "Korea University"
+    url = "https://korea.ac.kr"
 
 [image]
   # cache remote images for better optimisations
