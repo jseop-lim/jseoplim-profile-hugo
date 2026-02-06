@@ -1,5 +1,4 @@
 +++
-title = "Authors"
 [sitemap]
   disable = true
 [cascade.sitemap]
