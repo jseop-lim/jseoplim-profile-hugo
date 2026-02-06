@@ -279,10 +279,9 @@
                 {{- else -}}
                     "copyrightYear": {{ now.Year }},
                 {{- end -}}
-                {{- if .Site.Params.footer.author -}}
+                {{- if .Site.Params.person -}}
                     "copyrightHolder": {
-                        "@type": "Person",
-                        "name": {{ .Site.Params.footer.author | safeHTML }}
+                        "@id": "{{ .Site.Params.person.url }}/#person"
                     },
                 {{- else if .Site.Params.Author.name -}}
                     "copyrightHolder": {
