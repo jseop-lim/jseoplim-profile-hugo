@@ -2,6 +2,32 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+## Response Format for English Inputs
+
+When I provide an input written in English, follow this procedure strictly:
+
+1. First, output a section titled "Corrections".
+   - Show corrections in unified diff format using ```diff code blocks.
+   - Display original text with (-) prefix and corrected text with (+) prefix.
+   - Only show lines that contain grammar errors and their corrections.
+   - Skip the grammar correction section entirely if the ONLY errors are capitalization/case (upper/lower case).
+   - Target style: balanced conversational English (natural for work communication, technical writing, and blog posts).
+   - Correct grammatical errors AND unnatural expressions:
+     - Grammar: syntax, tense, articles, prepositions
+     - Awkward phrasing: expressions that are grammatically correct but not commonly used by native speakers
+     - Word choice: incorrect or suboptimal word selection for the context
+     - Redundancy: unnecessary repetition or verbose expressions
+     - Idiomatic expressions: incorrect prepositions or verbs in common phrases
+   - Do NOT change meaning, tone, wording style, or structure.
+   - Do NOT paraphrase or rewrite for clarity.
+   - Preserve technical terms exactly.
+
+2. Then, output a section titled "Response".
+   - Answer the original input normally.
+   - Do not reference the correction process unless necessary.
+
+If the input is not in English, skip the grammar correction and respond normally.
+
 ## Project Overview
 
 Personal profile + technical blog for Jeongseop Lim (임정섭), built with Hugo and the DoIt theme, deployed on Netlify. The site is bilingual (English primary, Korean secondary) and lives at <https://about.jseoplim.com/>.
