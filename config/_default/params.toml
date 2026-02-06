@@ -44,7 +44,7 @@ keywords = []  # NOTE: HTML 렌더링 안되고 있고, 현대 검색엔진에�
   alternateName = "임정섭"
   url = "https://about.jseoplim.com"
   email = "jeongseop_lim@korea.ac.kr"
-  gravatarEmail = "jseoplim@gmail.com"
+  image = "https://www.gravatar.com/avatar/bf58c456601a5a79921f60c3b62a41c2?s=400&d=mp"
   jobTitle = "Graduate Student"
   sameAs = [
     "https://github.com/jseop-lim",

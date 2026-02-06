@@ -39,12 +39,8 @@
         {{- with .email -}}
             "email": "{{ . }}",
         {{- end -}}
-        {{- with .gravatarEmail -}}
-            "image": "{{ md5 . | printf "https://www.gravatar.com/avatar/%v?s=400&d=mp" }}",
-        {{- else -}}
-            {{- with .image -}}
-                "image": "{{ $.Site.Params.person.url }}{{ . }}",
-            {{- end -}}
+        {{- with .image -}}
+            "image": "{{ . }}",
         {{- end -}}
         {{- with .jobTitle -}}
             "jobTitle": "{{ . }}",
