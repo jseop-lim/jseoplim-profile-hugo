@@ -1,7 +1,3 @@
-{{- /* noindex for taxonomy and term pages to prevent thin content from being indexed */ -}}
-{{- if or (eq .Kind "taxonomy") (eq .Kind "term") -}}
-    <meta name="robots" content="noindex, follow" />
-{{- end -}}
 {{- /* noindex for pages that opt in via front matter */ -}}
 {{- if .Params.noindex -}}
     <meta name="robots" content="noindex, follow" />
