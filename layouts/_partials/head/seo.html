@@ -24,8 +24,11 @@
 {{- end -}}
 
 {{- define "personEntity" -}}
-{{- with .Site.Params.person -}}
+{{- with $.Site.Params.person -}}
     {
+        {{- if $.Standalone -}}
+        "@context": "https://schema.org",
+        {{- end -}}
         "@type": "Person",
         "@id": "{{ .url }}/#person",
         "name": {{ .name | safeHTML }},
@@ -287,7 +290,7 @@
                 "name": {{ .Site.Title | safeHTML }}
             },
             {{- /* Person entity in @graph */ -}}
-            {{- template "personEntity" . -}}
+            {{- template "personEntity" (dict "Site" .Site "Standalone" false) -}}
             {{- if $showBlogPosting -}},{{- end -}}
         {{- end -}}
         {{- if $showBlogPosting -}}
@@ -309,48 +312,7 @@
     {{- /* Standalone Person entity on every page */ -}}
     {{- with .Site.Params.person -}}
     <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "@id": "{{ .url }}/#person",
-        "name": {{ .name | safeHTML }},
-        {{- with .alternateName -}}
-            "alternateName": {{ . | safeHTML }},
-        {{- end -}}
-        "url": "{{ .url }}",
-        {{- with .email -}}
-            "email": "{{ . }}",
-        {{- end -}}
-        {{- with .gravatarEmail -}}
-            "image": "{{ md5 . | printf "https://www.gravatar.com/avatar/%v?s=400&d=mp" }}",
-        {{- else -}}
-            {{- with .image -}}
-                "image": "{{ $.Site.Params.person.url }}{{ . }}",
-            {{- end -}}
-        {{- end -}}
-        {{- with .jobTitle -}}
-            "jobTitle": "{{ . }}",
-        {{- end -}}
-        {{- with .affiliation -}}
-            "affiliation": {
-                "@type": "{{ .type }}",
-                "name": "{{ .name }}",
-                "url": "{{ .url }}"
-            },
-        {{- end -}}
-        {{- with .sameAs -}}
-            "sameAs": [
-                {{- range $index, $value := . -}}
-                    {{- if gt $index 0 }},{{ end -}}
-                    "{{ $value }}"
-                {{- end -}}
-            ],
-        {{- end -}}
-        "mainEntityOfPage": {
-            "@type": "WebPage",
-            "@id": "{{ $.Site.Params.person.url }}/"
-        }
-    }
+    {{- template "personEntity" (dict "Site" $.Site "Standalone" true) -}}
     </script>
     {{- end -}}
 {{- end -}}
