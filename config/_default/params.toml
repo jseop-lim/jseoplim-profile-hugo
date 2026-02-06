@@ -38,6 +38,29 @@ keywords = []  # NOTE: HTML 렌더링 안되고 있고, 현대 검색엔진에�
   # avatar = ""
   gravatarEmail = "jseoplim@gmail.com"
 
+# Person entity for structured data (JSON-LD)
+[person]
+  name = "Jeongseop Lim"
+  alternateName = "임정섭"
+  url = "https://about.jseoplim.com"
+  email = "jeongseop_lim@korea.ac.kr"
+  image = "https://www.gravatar.com/avatar/bf58c456601a5a79921f60c3b62a41c2?s=400&d=mp"
+  jobTitle = "Graduate Student"
+  sameAs = [
+    "https://github.com/jseop-lim",
+    "https://www.linkedin.com/in/jseop-lim",
+    "https://velog.io/@azzurri21",
+    "https://prl.korea.ac.kr/members/jeongseop-lim",
+  ]
+  [person.affiliation]
+    type = "CollegeOrUniversity"
+    name = "Korea University"
+    url = "https://korea.ac.kr"
+  [person.alumniOf]
+    type = "CollegeOrUniversity"
+    name = "Korea University"
+    url = "https://korea.ac.kr"
+
 [image]
   # cache remote images for better optimisations
   # 缓存图片链接到本地

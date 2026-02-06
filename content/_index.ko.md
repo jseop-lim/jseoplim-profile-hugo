@@ -1,7 +1,7 @@
 +++
 draft = false
 
-title = "프로필"
+title = "임정섭"
 date = 2025-01-08
 description = "고려대학교 대학원생 Jeongseop Lim (임정섭)의 개인 프로필 페이지이다. 연구 관심 분야는 프로그래밍 언어와 소프트웨어 분석이다."
 

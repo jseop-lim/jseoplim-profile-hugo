@@ -2,7 +2,7 @@
 draft = false
 
 # NOTE: title, description이 params.toml에 의해 덮어씌워지고, twitter/og tag에만 사용됨
-title = "Profile"
+title = "Jeongseop Lim"
 date = 2024-12-31
 description = "Personal profile of Jeongseop Lim (임정섭), a graduate student at Korea University with research interests in programming languages and software engineering."
 
