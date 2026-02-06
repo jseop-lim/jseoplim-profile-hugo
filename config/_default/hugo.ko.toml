@@ -1,5 +1,6 @@
 disabled = false
 weight = 2
+disableKinds = ["sitemap"]
 # language code
 languageCode = "ko-KR"
 # language name
