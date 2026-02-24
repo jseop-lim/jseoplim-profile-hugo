@@ -52,6 +52,9 @@ _Research Interests_: Programming languages | Static program analysis | Python |
 
 ## Honors & Awards
 
+- **Highest Honor**, [Korea University](https://korea.edu) ({{< date "2026-02" >}}) \
+  Valedictorian of the College of Engineering
+
 - **Dean’s List**, [Korea University](https://korea.edu) ({{< date "2025-02" >}}) \
   Academic Excellence Award for a GPA of 4.5 in Fall 2024
 
