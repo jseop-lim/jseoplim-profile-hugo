@@ -2,10 +2,10 @@
 draft = false
 
 title = "산업공학이 뭔가요?"
-date = 2026-03-07
+date = 2026-03-15
 authors = ["Jeongseop Lim"]
-description = "산업공학 학부 졸업생이 4년간 배운 산업공학의 본질과 학문적 경험을 정리한 회고 글입니다."
-summary = "학부 동안 산업공학에 대해 알게 된 것"
+description = "산업공학이 무엇인지 시스템 분석과 최적화 관점에서 설명하고, 산업공학과 학부 경험과 이중전공 선택이 진로에 미친 영향을 정리한 글입니다."
+summary = "산업공학이 뭐냐는 질문에 졸업하고서야 답해본 이야기"
 
 tags = ["study", "industrial engineering", "major", "korea university"]
 categories = ["opinion"]
