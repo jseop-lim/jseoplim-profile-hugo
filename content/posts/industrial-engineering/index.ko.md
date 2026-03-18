@@ -7,12 +7,12 @@ authors = ["Jeongseop Lim"]
 description = "산업공학 학부 졸업생이 4년간 배운 산업공학의 본질과 학문적 경험을 정리한 회고 글입니다."
 summary = "학부 동안 산업공학에 대해 알게 된 것"
 
-tags = ["study", "industrial engineering", "major"]
+tags = ["study", "industrial engineering", "major", "korea university"]
 categories = ["opinion"]
 series = ["major-review"]
 series_weight = 1
 
-featuredImage = "thumbnail.png"
+featuredImage = "thumbnail.webp"
 lightgallery = true
 +++
 
