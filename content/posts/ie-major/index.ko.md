@@ -16,14 +16,6 @@ featuredImage = "thumbnail.webp"
 lightgallery = true
 +++
 
-<!-- markdownlint-disable MD033 -->
-<style>
-@media (max-width: 600px) {
-  figure img { width: 100% !important; }
-}
-</style>
-<!-- markdownlint-enable MD033 -->
-
 <!--more-->
 
 ## 들어가며
@@ -40,7 +32,9 @@ lightgallery = true
 
 아래 그림은 현실 문제를 수리적 모델로 형식화하고 그 해를 구해 현실에 적용하는 산업공학의 핵심 방법론 중 하나인 [Operations Research (OR)](https://en.wikipedia.org/wiki/Operations_research)의 문제 해결 과정을 통해, 산업공학의 요소들이 어떻게 연결되는지 보여준다.
 
-{{< image src="ie-process-OR1.png" caption="Operations Research의 문제 해결 과정" width="70%" >}}
+{{< image-gallery width="70%" >}}
+{{< image src="ie-process-OR1.png" caption="Operations Research의 문제 해결 과정" >}}
+{{< /image-gallery >}}
 
 전공과목에서는 대부분의 시스템에 통용되는 분석 및 최적화 도구를 익히고, 산업공학에서 주로 다루는 시스템에 그 도구가 적용되는 양상을 배운다. 산업공학의 핵심 도구는 **수리적 최적화**, **통계**, **시뮬레이션**이다. 어느 시스템을 만나더라도 자유자재로 꺼낼 수 있어야 한다. 전공과목 간 관계를 통해 도구와 시스템 도메인이 결합하는 양상을 살펴보자.
 
@@ -53,7 +47,9 @@ lightgallery = true
 
 - *인간공학*은 학과 내에서 뼈 이름 외운다고 악명이 높았고, 나도 첫 수업 OT 들어가기 전까지 이걸 왜 배우는지 몰랐다. 전공필수라 신청해 놓고도 이게 왜 산업공학인지 의문스러웠다. 하지만 인간도 현실 시스템에 포함되며, 인간과 시스템 간 상호작용을 평가(Evaluation)하고 설계(Design)를 통해 성능(Performance)을 최적화하는 게 학문의 목표라는 교수님의 설명에 이해하게 되었다.
 
-  {{< image src="hfe-process.png" caption="인간공학의 흐름" width="35%" >}}
+  {{< image-gallery width="35%" >}}
+  {{< image src="hfe-process.png" caption="인간공학의 흐름" >}}
+  {{< /image-gallery >}}
 
 - *정보시스템설계*도 그냥 SQL 배우는 과목 아니냐고 물을 수 있다. 물론 Entity-Relationship Diagram (ERD), Relational Database (RDB) 같은 정보시스템에 특화된 분석 이론 자체도 중요하다. 하지만 컴퓨터학과 데이터베이스 수업과 달리 산업공학 전공답게 프로세스 분석 기법과 프로젝트 관리까지 두루 다루면서 현실 시스템과의 연결고리를 강화하고, 데이터베이스가 시스템을 묘사하는 수단이라는 배경을 보여준다.
 
