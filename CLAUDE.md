@@ -5,7 +5,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Personal profile + technical blog for Jeongseop Lim (임정섭), built with Hugo and the DoIt theme, deployed on Netlify. The site is bilingual (English primary, Korean secondary) and lives at <https://about.jseoplim.com/>.
+Personal profile + technical blog for Jeongseop Lim (임정섭), built with Hugo and the DoIt theme, deployed on Netlify. The site is bilingual (English primary, Korean secondary) and lives at <https://jseoplim.com/>.
 
 ## Commands
 

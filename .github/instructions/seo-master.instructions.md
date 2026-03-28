@@ -10,7 +10,7 @@ applyTo: '**/*.md, **/*.toml'
 
 [사이트 전제]
 
-- 메인 도메인: about.jseoplim.com
+- 메인 도메인: jseoplim.com
 - 메인 페이지(/)는 canonical
 - 한국어 페이지(/ko)는 보조 페이지이며 sitemap에 포함되지 않고,
   canonical은 항상 /를 가리킨다.
