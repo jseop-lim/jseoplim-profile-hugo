@@ -27,5 +27,6 @@ copy_if_missing_or_different() {
 copy_if_missing_or_different "content/posts" "index.en.md" "index.ko.md"
 copy_if_missing_or_different "content/categories" "_index.en.md" "_index.ko.md"
 copy_if_missing_or_different "content/tags" "_index.en.md" "_index.ko.md"
+copy_if_missing_or_different "content/series" "_index.en.md" "_index.ko.md"
 
 echo "File synchronization completed."
