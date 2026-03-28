@@ -16,6 +16,14 @@ featuredImage = "thumbnail.webp"
 lightgallery = true
 +++
 
+<!-- markdownlint-disable MD033 -->
+<style>
+@media (max-width: 600px) {
+  figure img { width: 100% !important; }
+}
+</style>
+<!-- markdownlint-enable MD033 -->
+
 <!--more-->
 
 ## 들어가며
@@ -45,7 +53,7 @@ lightgallery = true
 
 - *인간공학*은 학과 내에서 뼈 이름 외운다고 악명이 높았고, 나도 첫 수업 OT 들어가기 전까지 이걸 왜 배우는지 몰랐다. 전공필수라 신청해 놓고도 이게 왜 산업공학인지 의문스러웠다. 하지만 인간도 현실 시스템에 포함되며, 인간과 시스템 간 상호작용을 평가(Evaluation)하고 설계(Design)를 통해 성능(Performance)을 최적화하는 게 학문의 목표라는 교수님의 설명에 이해하게 되었다.
 
-{{< image src="hfe-process.png" caption="인간공학의 흐름" width="35%" >}}
+  {{< image src="hfe-process.png" caption="인간공학의 흐름" width="35%" >}}
 
 - *정보시스템설계*도 그냥 SQL 배우는 과목 아니냐고 물을 수 있다. 물론 Entity-Relationship Diagram (ERD), Relational Database (RDB) 같은 정보시스템에 특화된 분석 이론 자체도 중요하다. 하지만 컴퓨터학과 데이터베이스 수업과 달리 산업공학 전공답게 프로세스 분석 기법과 프로젝트 관리까지 두루 다루면서 현실 시스템과의 연결고리를 강화하고, 데이터베이스가 시스템을 묘사하는 수단이라는 배경을 보여준다.
 
