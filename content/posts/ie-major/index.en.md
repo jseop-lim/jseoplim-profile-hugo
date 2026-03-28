@@ -47,7 +47,7 @@ lightgallery = true
 
 - *인간공학*은 학과 내에서 뼈 이름 외운다고 악명이 높았고, 나도 첫 수업 OT 들어가기 전까지 이걸 왜 배우는지 몰랐다. 전공필수라 신청해 놓고도 이게 왜 산업공학인지 의문스러웠다. 하지만 인간도 현실 시스템에 포함되며, 인간과 시스템 간 상호작용을 평가(Evaluation)하고 설계(Design)를 통해 성능(Performance)을 최적화하는 게 학문의 목표라는 교수님의 설명에 이해하게 되었다.
 
-  {{< image-gallery width="35%" >}}
+  {{< image-gallery width="40%" >}}
   {{< image src="hfe-process.png" caption="인간공학의 흐름" >}}
   {{< /image-gallery >}}
 
