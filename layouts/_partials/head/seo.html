@@ -46,7 +46,7 @@
         {{- with .alternateName -}}
             "alternateName": {{ . | safeHTML }},
         {{- end -}}
-        "url": "{{ .url }}",
+        "url": "{{ .url }}/",
         {{- with .email -}}
             "email": "{{ . }}",
         {{- end -}}
