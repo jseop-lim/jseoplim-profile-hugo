@@ -52,20 +52,17 @@ _Research Interests_: Programming languages | Static program analysis | Python |
 
 ## Honors & Awards
 
+- **Kwanjeong Scholarship**, [Kwanjeong Foundation](https://www.ikef.or.kr) ({{< period from="Spring 2026" >}})
+
 - **Highest Honor**, [Korea University](https://korea.edu) ({{< date "2026-02" >}}) \
   Valedictorian of the College of Engineering
 
-- **Dean’s List**, [Korea University](https://korea.edu) ({{< date "2025-02" >}}) \
-  Academic Excellence Award for a GPA of 4.5 in Fall 2024
+- **Dean’s List**, [Korea University](https://korea.edu) ({{< date "2025-02" >}}, {{< date "2022-02" >}}) \
+  Academic Excellence Award for a GPA of 4.5
 
 - **The National Scholarship for Science and Engineering**, [Korea Student Aid Foundation (KOSAF)](https://www.kosaf.go.kr) ({{< period from="Spring 2022" to="Fall 2025" >}}) \
   Full tuition fee for 4 semesters
 
-- **Dean’s List**, [Korea University](https://korea.edu) ({{< date "2022-02" >}}) \
-  Academic Excellence Award for a GPA of 4.5 in Fall 2021
+- **Woonhae Scholarship**, [Woonhae Foundation](https://woonhaefoundation.org) ({{< period from="Spring 2021" to="Fall 2021" >}})
 
-- **Woonhae Scholarship**, [Woonhae Foundation](https://woonhaefoundation.org) ({{< period from="Spring 2021" to="Fall 2021" >}}) \
-  KRW 8,000,000 for 2 semesters
-
-- **Gaheon Sindoh Scholarship**, [Gaheon Sindoh Foundation](https://www.gaheon-sindoh.or.kr) ({{< date "Fall 2020" >}}) \
-  KRW 3,000,000 for 1 semester
+- **Gaheon Sindoh Scholarship**, [Gaheon Sindoh Foundation](https://www.gaheon-sindoh.or.kr) ({{< date "Fall 2020" >}})
