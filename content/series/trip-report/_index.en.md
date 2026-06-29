@@ -1,3 +1,3 @@
 +++
-title = "Trip Report"
+title = "기행문"
 +++

@@ -4,7 +4,8 @@ draft = true
 title = "{{ .Name | humanize | title }}"
 date = {{ .Date }}
 authors = ["Jeongseop Lim"]
-description = "내용을 입력하세요"
+description = "SEO에 적합한 설명을 입력하세요"
+summary = "웹페이지 제목 밑에 보이는 짧은 설명을 입력하세요"
 
 tags = []
 categories = [

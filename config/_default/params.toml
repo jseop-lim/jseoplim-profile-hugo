@@ -34,7 +34,7 @@ keywords = []  # NOTE: HTML 렌더링 안되고 있고, 현대 검색엔진에�
 [author]
   name = "Jeongseop Lim"
   email = "jeongseop_lim@korea.ac.kr"
-  link = "https://about.jseoplim.com"
+  link = "https://jseoplim.com"
   # avatar = ""
   gravatarEmail = "jseoplim@gmail.com"
 
@@ -42,7 +42,7 @@ keywords = []  # NOTE: HTML 렌더링 안되고 있고, 현대 검색엔진에�
 [person]
   name = "Jeongseop Lim"
   alternateName = "임정섭"
-  url = "https://about.jseoplim.com"
+  url = "https://jseoplim.com"
   email = "jeongseop_lim@korea.ac.kr"
   image = "https://www.gravatar.com/avatar/bf58c456601a5a79921f60c3b62a41c2?s=400&d=mp"
   jobTitle = "Graduate Student"
@@ -583,7 +583,7 @@ keywords = []  # NOTE: HTML 렌더링 안되고 있고, 현대 검색엔진에�
   baidu = ""
   so = ""
   sogou = ""
-  naver = "9b0343d75d91928ce8940f381d93f2568bf92068"
+  naver = "e2d27c1344992307f3dda399ad6b9f1e59218354"
 
 # Site SEO config
 # 网站 SEO 配置
@@ -852,6 +852,6 @@ keywords = []  # NOTE: HTML 렌더링 안되고 있고, 현대 검색엔진에�
   [social.CV]
     id = "pdf/cv.pdf"
     title = "CV"
-    prefix = "https://about.jseoplim.com"
+    prefix = "https://jseoplim.com"
     [social.CV.icon]
       src = "/images/icons/cv.svg"
