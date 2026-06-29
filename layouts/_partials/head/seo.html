@@ -37,6 +37,12 @@
         "@type": "Person",
         "@id": "{{ .url }}/#person",
         "name": {{ .name | safeHTML }},
+        {{- with .givenName -}}
+            "givenName": {{ . | safeHTML }},
+        {{- end -}}
+        {{- with .familyName -}}
+            "familyName": {{ . | safeHTML }},
+        {{- end -}}
         {{- with .alternateName -}}
             "alternateName": {{ . | safeHTML }},
         {{- end -}}
@@ -50,6 +56,17 @@
         {{- with .jobTitle -}}
             "jobTitle": "{{ . }}",
         {{- end -}}
+        {{- with .description -}}
+            "description": {{ . | safeHTML }},
+        {{- end -}}
+        {{- with .knowsAbout -}}
+            "knowsAbout": [
+                {{- range $index, $value := . -}}
+                    {{- if gt $index 0 }},{{ end -}}
+                    "{{ $value }}"
+                {{- end -}}
+            ],
+        {{- end -}}
         {{- with .affiliation -}}
             "affiliation": {
                 "@type": "{{ .type }}",
@@ -57,12 +74,24 @@
                 "url": "{{ .url }}"
             },
         {{- end -}}
-        {{- with .alumniOf -}}
-            "alumniOf": {
+        {{- with .memberOf -}}
+            "memberOf": {
                 "@type": "{{ .type }}",
                 "name": "{{ .name }}",
                 "url": "{{ .url }}"
             },
+        {{- end -}}
+        {{- with .alumniOf -}}
+            "alumniOf": [
+                {{- range $index, $value := . -}}
+                    {{- if gt $index 0 }},{{ end -}}
+                    {
+                        "@type": "{{ $value.type }}",
+                        "name": "{{ $value.name }}",
+                        "url": "{{ $value.url }}"
+                    }
+                {{- end -}}
+            ],
         {{- end -}}
         {{- with .sameAs -}}
             "sameAs": [
