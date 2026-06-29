@@ -363,4 +363,28 @@
     {{- template "personEntity" (dict "Site" $.Site "Standalone" true) -}}
     </script>
     {{- end -}}
+
+{{- /* Section SEO — indexed sections only */ -}}
+{{- else if and .IsSection (eq .Section "posts") -}}
+    <script type="application/ld+json">
+        {"@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "Blog",
+                "@id": "{{ .Permalink }}#blog",
+                "url": {{ .Permalink }},
+                "name": {{ T "allSome" (dict "Some" (T .Section)) | safeHTML }},
+                {{- with .Site.LanguageCode -}}
+                    "inLanguage": "{{ . }}",
+                {{- end -}}
+                "author": {
+                    "@id": "{{ .Site.Params.person.url }}/#person"
+                },
+                "publisher": {
+                    "@id": "{{ .Site.Params.person.url }}/#person"
+                }
+            },
+            {{- template "personEntity" (dict "Site" .Site "Standalone" false) -}}
+        ]}
+    </script>
 {{- end -}}
