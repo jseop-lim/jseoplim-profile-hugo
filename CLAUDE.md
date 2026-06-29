@@ -75,7 +75,9 @@ See `.github/instructions/seo-master.instructions.md` for detailed SEO rules. Ke
 GitHub Actions runs on every push:
 
 1. `compare-multi-lang` — verifies English/Korean content files match
-2. `markdown-lint` — validates all Markdown files
+2. `markdown-lint` — runs markdownlint-cli2 over all `**/*.md`, including `.claude/`
+
+Keep the pre-commit `markdownlint-cli2` rev's markdownlint version in sync with the CI action's, or markdown can pass the local hook but fail CI.
 
 ## Workflow
 
