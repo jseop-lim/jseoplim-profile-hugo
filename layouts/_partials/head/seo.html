@@ -357,7 +357,29 @@
     <script type="application/ld+json">
         {{- template "blogPosting" . -}}
     </script>
-    {{- /* Standalone Person entity on every page */ -}}
+    {{- /* BreadcrumbList */ -}}
+    {{- $ancestors := .Ancestors.Reverse -}}
+    <script type="application/ld+json">
+        {"@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+        {{- range $index, $node := $ancestors -}}
+            {{- if gt $index 0 -}},{{- end -}}
+            {
+                "@type": "ListItem",
+                "position": {{ add $index 1 }},
+                "name": {{ $node.Title | safeHTML }},
+                "item": {{ $node.Permalink }}
+            }
+        {{- end -}}
+        ,{
+            "@type": "ListItem",
+            "position": {{ add (len $ancestors) 1 }},
+            "name": {{ .Title | safeHTML }}
+        }
+        ]}
+    </script>
+    {{- /* Standalone Person entity */ -}}
     {{- with .Site.Params.person -}}
     <script type="application/ld+json">
     {{- template "personEntity" (dict "Site" $.Site "Standalone" true) -}}
