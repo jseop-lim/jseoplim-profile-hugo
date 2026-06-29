@@ -62,6 +62,14 @@ See `.github/instructions/seo-master.instructions.md` for detailed SEO rules. Ke
 - Meta descriptions: 1-2 sentences, role-centric, not literary
 - Entity name format when combined: "Jeongseop Lim (임정섭)"
 
+### JSON-LD / Structured Data
+
+- Implemented in `layouts/_partials/head/seo.html` (overrides the DoIt theme); Person entity data lives in `config/_default/params.toml` `[person]`.
+- Entities: home → `WebSite` + `ProfilePage` + `Person`; posts → `BlogPosting` + `BreadcrumbList` + `Person`; `/posts/` → `Blog`. Cross-linked by `@id` (`#person`, `#profilepage`, `#blog`).
+- Do NOT emit JSON-LD on noindex pages (categories/tags/series/authors are intentionally noindex; only `/posts/` and posts are indexed) — it has no SEO value.
+- Keep structured data a clean, accurate core that mirrors visible content; don't maximize subjective fields (no ranking benefit, risks spammy-markup violations). E.g. model the grad lab as `memberOf`, not `worksFor`.
+- Verify by building (`hugo --gc --minify`) and extracting `application/ld+json` from `public/` (output HTML is minified).
+
 ## CI
 
 GitHub Actions runs on every push:
