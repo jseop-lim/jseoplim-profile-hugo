@@ -162,7 +162,6 @@
                 {{- end -}}
             ],
         {{- end -}}
-        "genre": "{{ .Type }}",
         {{- if .Params.keywords -}}
             "keywords": {{- apply .Params.keywords "safeHTML" "." -}},
         {{- else if .Params.tags -}}
