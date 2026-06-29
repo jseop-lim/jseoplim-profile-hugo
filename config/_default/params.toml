@@ -41,11 +41,20 @@ keywords = []  # NOTE: HTML 렌더링 안되고 있고, 현대 검색엔진에�
 # Person entity for structured data (JSON-LD)
 [person]
   name = "Jeongseop Lim"
+  givenName = "Jeongseop"
+  familyName = "Lim"
   alternateName = "임정섭"
   url = "https://jseoplim.com"
   email = "jeongseop_lim@korea.ac.kr"
   image = "https://www.gravatar.com/avatar/bf58c456601a5a79921f60c3b62a41c2?s=400&d=mp"
   jobTitle = "Graduate Student"
+  description = "Master's student in Computer Science and Engineering at Korea University's Software Analysis Lab, researching practical program analysis for real-world software."
+  knowsAbout = [
+    "Programming languages",
+    "Static program analysis",
+    "Python",
+    "Automated software testing",
+  ]
   sameAs = [
     "https://github.com/jseop-lim",
     "https://www.linkedin.com/in/jseop-lim",
@@ -56,10 +65,18 @@ keywords = []  # NOTE: HTML 렌더링 안되고 있고, 현대 검색엔진에�
     type = "CollegeOrUniversity"
     name = "Korea University"
     url = "https://korea.ac.kr"
-  [person.alumniOf]
+  [person.memberOf]
+    type = "ResearchOrganization"
+    name = "Software Analysis Lab"
+    url = "https://prl.korea.ac.kr"
+  [[person.alumniOf]]
     type = "CollegeOrUniversity"
     name = "Korea University"
     url = "https://korea.ac.kr"
+  [[person.alumniOf]]
+    type = "HighSchool"
+    name = "Daegu Science High School"
+    url = "https://dshs.dge.hs.kr"
 
 [image]
   # cache remote images for better optimisations

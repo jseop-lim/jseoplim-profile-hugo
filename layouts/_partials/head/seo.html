@@ -37,10 +37,16 @@
         "@type": "Person",
         "@id": "{{ .url }}/#person",
         "name": {{ .name | safeHTML }},
+        {{- with .givenName -}}
+            "givenName": {{ . | safeHTML }},
+        {{- end -}}
+        {{- with .familyName -}}
+            "familyName": {{ . | safeHTML }},
+        {{- end -}}
         {{- with .alternateName -}}
             "alternateName": {{ . | safeHTML }},
         {{- end -}}
-        "url": "{{ .url }}",
+        "url": "{{ .url }}/",
         {{- with .email -}}
             "email": "{{ . }}",
         {{- end -}}
@@ -50,6 +56,17 @@
         {{- with .jobTitle -}}
             "jobTitle": "{{ . }}",
         {{- end -}}
+        {{- with .description -}}
+            "description": {{ . | safeHTML }},
+        {{- end -}}
+        {{- with .knowsAbout -}}
+            "knowsAbout": [
+                {{- range $index, $value := . -}}
+                    {{- if gt $index 0 }},{{ end -}}
+                    "{{ $value }}"
+                {{- end -}}
+            ],
+        {{- end -}}
         {{- with .affiliation -}}
             "affiliation": {
                 "@type": "{{ .type }}",
@@ -57,12 +74,24 @@
                 "url": "{{ .url }}"
             },
         {{- end -}}
-        {{- with .alumniOf -}}
-            "alumniOf": {
+        {{- with .memberOf -}}
+            "memberOf": {
                 "@type": "{{ .type }}",
                 "name": "{{ .name }}",
                 "url": "{{ .url }}"
             },
+        {{- end -}}
+        {{- with .alumniOf -}}
+            "alumniOf": [
+                {{- range $index, $value := . -}}
+                    {{- if gt $index 0 }},{{ end -}}
+                    {
+                        "@type": "{{ $value.type }}",
+                        "name": "{{ $value.name }}",
+                        "url": "{{ $value.url }}"
+                    }
+                {{- end -}}
+            ],
         {{- end -}}
         {{- with .sameAs -}}
             "sameAs": [
@@ -74,7 +103,7 @@
         {{- end -}}
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "{{ $.Site.Params.person.url }}/"
+            "@id": "{{ $.Site.Params.person.url }}/#profilepage"
         }
     }
 {{- end -}}
@@ -133,7 +162,6 @@
                 {{- end -}}
             ],
         {{- end -}}
-        "genre": "{{ .Type }}",
         {{- if .Params.keywords -}}
             "keywords": {{- apply .Params.keywords "safeHTML" "." -}},
         {{- else if .Params.tags -}}
@@ -224,7 +252,7 @@
     {{- $paginatorPager := .Scratch.Get "paginatorPager" -}}
     {{- /* If the post is disabled then it is the homepage */ -}}
     {{- $postDisable := not $.Site.Params.home.posts.enable -}}
-    {{- $isPaginationAndHomepage := and $paginatorPager (eq $paginatorPager.PageNumber 1) (eq $paginatorPager.URL "/") -}}
+    {{- $isPaginationAndHomepage := and $paginatorPager (eq $paginatorPager.PageNumber 1) (eq $paginatorPager.URL .RelPermalink) -}}
     {{- $showWebSite := or $isPaginationAndHomepage $postDisable -}}
     {{- if or $showBlogPosting $showWebSite -}}
         <script type="application/ld+json">
@@ -296,6 +324,18 @@
                 {{- end -}}
                 "name": {{ .Site.Title | safeHTML }}
             },
+            {{- /* ProfilePage entity in @graph */ -}}
+            {
+                "@type": "ProfilePage",
+                "@id": "{{ .Permalink }}#profilepage",
+                "url": {{ .Permalink }},
+                {{- if not .Lastmod.IsZero -}}
+                    "dateModified": {{ .Lastmod.Format "2006-01-02T15:04:05-07:00" | safeHTML }},
+                {{- end -}}
+                "mainEntity": {
+                    "@id": "{{ .Site.Params.person.url }}/#person"
+                }
+            },
             {{- /* Person entity in @graph */ -}}
             {{- template "personEntity" (dict "Site" .Site "Standalone" false) -}}
             {{- if $showBlogPosting -}},{{- end -}}
@@ -311,15 +351,61 @@
         </script>
     {{- end -}}
 
-{{- /* Page SEO */ -}}
-{{- else if .IsPage -}}
+{{- /* Page SEO — indexed pages only */ -}}
+{{- else if and .IsPage (not .Params.noindex) -}}
     <script type="application/ld+json">
         {{- template "blogPosting" . -}}
     </script>
-    {{- /* Standalone Person entity on every page */ -}}
+    {{- /* BreadcrumbList */ -}}
+    {{- $ancestors := .Ancestors.Reverse -}}
+    <script type="application/ld+json">
+        {"@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+        {{- range $index, $node := $ancestors -}}
+            {{- if gt $index 0 -}},{{- end -}}
+            {
+                "@type": "ListItem",
+                "position": {{ add $index 1 }},
+                "name": {{ $node.Title | safeHTML }},
+                "item": {{ $node.Permalink }}
+            }
+        {{- end -}}
+        ,{
+            "@type": "ListItem",
+            "position": {{ add (len $ancestors) 1 }},
+            "name": {{ .Title | safeHTML }}
+        }
+        ]}
+    </script>
+    {{- /* Standalone Person entity */ -}}
     {{- with .Site.Params.person -}}
     <script type="application/ld+json">
     {{- template "personEntity" (dict "Site" $.Site "Standalone" true) -}}
     </script>
     {{- end -}}
+
+{{- /* Section SEO — indexed sections only */ -}}
+{{- else if and .IsSection (eq .Section "posts") -}}
+    <script type="application/ld+json">
+        {"@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "Blog",
+                "@id": "{{ .Permalink }}#blog",
+                "url": {{ .Permalink }},
+                "name": {{ T "allSome" (dict "Some" (T .Section)) | safeHTML }},
+                {{- with .Site.LanguageCode -}}
+                    "inLanguage": "{{ . }}",
+                {{- end -}}
+                "author": {
+                    "@id": "{{ .Site.Params.person.url }}/#person"
+                },
+                "publisher": {
+                    "@id": "{{ .Site.Params.person.url }}/#person"
+                }
+            },
+            {{- template "personEntity" (dict "Site" .Site "Standalone" false) -}}
+        ]}
+    </script>
 {{- end -}}
