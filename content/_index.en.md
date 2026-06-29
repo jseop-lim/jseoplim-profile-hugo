@@ -52,6 +52,8 @@ _Research Interests_: Programming languages | Static program analysis | Python |
 
 ## Honors & Awards
 
+- **Kwanjeong Scholarship**, [Kwanjeong Foundation](https://www.ikef.or.kr) ({{< period from="Spring 2026" >}})
+
 - **Highest Honor**, [Korea University](https://korea.edu) ({{< date "2026-02" >}}) \
   Valedictorian of the College of Engineering
 
