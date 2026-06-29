@@ -253,7 +253,7 @@
     {{- $paginatorPager := .Scratch.Get "paginatorPager" -}}
     {{- /* If the post is disabled then it is the homepage */ -}}
     {{- $postDisable := not $.Site.Params.home.posts.enable -}}
-    {{- $isPaginationAndHomepage := and $paginatorPager (eq $paginatorPager.PageNumber 1) (eq $paginatorPager.URL "/") -}}
+    {{- $isPaginationAndHomepage := and $paginatorPager (eq $paginatorPager.PageNumber 1) (eq $paginatorPager.URL .RelPermalink) -}}
     {{- $showWebSite := or $isPaginationAndHomepage $postDisable -}}
     {{- if or $showBlogPosting $showWebSite -}}
         <script type="application/ld+json">
