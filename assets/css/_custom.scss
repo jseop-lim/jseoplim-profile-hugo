@@ -2,3 +2,11 @@
 // Custom style
 // 自定义样式
 // ==============================
+
+// 본문 리스트 들여쓰기 축소 (테마 기본값 2.5rem)
+.single .content {
+  ul,
+  ol {
+    padding-left: 1.5rem;
+  }
+}
