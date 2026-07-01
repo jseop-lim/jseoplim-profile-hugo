@@ -10,14 +10,12 @@ description = "Personal profile of Jeongseop Lim (임정섭), a graduate student
 enable = false
 +++
 
-{{< style "text-align:center;" >}}
-Master’s Student
+{{< style "text-align:center;" >}} Master’s Student
 
 [Software Analysis Lab](https://prl.korea.ac.kr) \
 [Dept. of Computer Science and Engineering](https://cs.korea.edu) \
 [College of Informatics](https://info.korea.edu) \
-[Korea University](https://korea.edu)
-{{< /style >}}
+[Korea University](https://korea.edu) {{< /style >}}
 
 ## About Me
 
@@ -60,7 +58,7 @@ _Research Interests_: Programming languages | Static program analysis | Python |
 - **Dean’s List**, [Korea University](https://korea.edu) ({{< date "2025-02" >}}, {{< date "2022-02" >}}) \
   Academic Excellence Award for a GPA of 4.5
 
-- **The National Scholarship for Science and Engineering**, [Korea Student Aid Foundation (KOSAF)](https://www.kosaf.go.kr) ({{< period from="Spring 2022" to="Fall 2025" >}}) \
+- **The National Scholarship for Science and Engineering**, [Korea Student Aid Foundation](https://www.kosaf.go.kr) ({{< period from="Spring 2022" to="Fall 2025" >}}) \
   Full tuition fee for 4 semesters
 
 - **Woonhae Scholarship**, [Woonhae Foundation](https://woonhaefoundation.org) ({{< period from="Spring 2021" to="Fall 2021" >}})
