@@ -9,12 +9,10 @@ description = "고려대학교 대학원생 Jeongseop Lim (임정섭)의 개인 
 enable = false
 +++
 
-{{< style "text-align:center;" >}}
-석사과정 학생
+{{< style "text-align:center;" >}} 석사과정 학생
 
 [소프트웨어 분석 연구실](https://prl.korea.ac.kr) \
-[고려대학교](https://korea.ac.kr) [정보대학](https://info.korea.ac.kr) [컴퓨터학과](https://cs.korea.ac.kr)
-{{< /style >}}
+[고려대학교](https://korea.ac.kr) [정보대학](https://info.korea.ac.kr) [컴퓨터학과](https://cs.korea.ac.kr) {{< /style >}}
 
 ## 소개
 
