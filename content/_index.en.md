@@ -30,7 +30,7 @@ _Research Interests_: Programming languages | Static program analysis | Python |
 - **Master of Science** in [Computer Science and Engineering](https://cs.korea.edu), [Korea University](https://korea.edu) ({{< period from="2026-03" >}})
   - [Software Analysis Lab](https://prl.korea.ac.kr), advised by [Prof. Hakjoo Oh](https://prl.korea.ac.kr/members/hakjoo-oh)
 
-- **Bachelor of Science** in [Industrial and Management Engineering](https://ie.korea.edu) and [Computer Science and Engineering](https://cs.korea.edu), [Korea University](https://korea.edu) ({{< period from="2020-03" to="2026-02" >}})
+- **Bachelor of Science** in [Industrial and Management Engineering](https://ie.korea.ac.kr) and [Computer Science and Engineering](https://cs.korea.edu), [Korea University](https://korea.edu) ({{< period from="2020-03" to="2026-02" >}})
   - GPA: 4.46 / 4.5
 
 - **[Daegu Science High School](https://dshs.dge.hs.kr)** ({{< period from="2016-02" to="2019-01" >}})
@@ -50,7 +50,9 @@ _Research Interests_: Programming languages | Static program analysis | Python |
 
 ## Honors & Awards
 
-- **Kwanjeong Scholarship**, [Kwanjeong Foundation](https://www.ikef.or.kr) ({{< period from="Spring 2026" >}})
+- **Research Subsidies for Master’s Students**, [National Research Foundation of Korea](https://eng.nrf.re.kr) ({{< period from="2026-09" to="2027-08" >}})
+
+- **Kwanjeong Scholarship**, [Kwanjeong Foundation](https://www.ikef.or.kr) ({{< period from="Spring 2026" to="Fall 2027" >}})
 
 - **Highest Honor**, [Korea University](https://korea.edu) ({{< date "2026-02" >}}) \
   Valedictorian of the College of Engineering
